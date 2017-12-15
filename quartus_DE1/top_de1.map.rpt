@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Fri Dec 15 11:44:45 2017
+Fri Dec 15 12:28:52 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -13,7 +13,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |top_de1|helicopter:inst2|pos:lbl1|state
+  8. State Machine - |top_de1|helicopter:inst6|pos:lbl1|state
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
@@ -45,15 +45,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 15 11:44:45 2017            ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 15 12:28:52 2017            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 112                                              ;
-;     Total combinational functions  ; 112                                              ;
-;     Dedicated logic registers      ; 45                                               ;
-; Total registers                    ; 45                                               ;
+; Total logic elements               ; 110                                              ;
+;     Total combinational functions  ; 110                                              ;
+;     Dedicated logic registers      ; 47                                               ;
+; Total registers                    ; 47                                               ;
 ; Total pins                         ; 19                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -187,28 +187,28 @@ applicable agreement for further details.
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Estimated Total logic elements              ; 112                    ;
+; Estimated Total logic elements              ; 110                    ;
 ;                                             ;                        ;
-; Total combinational functions               ; 112                    ;
+; Total combinational functions               ; 110                    ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 35                     ;
-;     -- 3 input functions                    ; 14                     ;
-;     -- <=2 input functions                  ; 63                     ;
+;     -- 4 input functions                    ; 44                     ;
+;     -- 3 input functions                    ; 11                     ;
+;     -- <=2 input functions                  ; 55                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 75                     ;
-;     -- arithmetic mode                      ; 37                     ;
+;     -- normal mode                          ; 83                     ;
+;     -- arithmetic mode                      ; 27                     ;
 ;                                             ;                        ;
-; Total registers                             ; 45                     ;
-;     -- Dedicated logic registers            ; 45                     ;
+; Total registers                             ; 47                     ;
+;     -- Dedicated logic registers            ; 47                     ;
 ;     -- I/O registers                        ; 0                      ;
 ;                                             ;                        ;
 ; I/O pins                                    ; 19                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                      ;
 ; Maximum fan-out node                        ; gen6mhz:inst1|count[2] ;
-; Maximum fan-out                             ; 43                     ;
-; Total fan-out                               ; 448                    ;
-; Average fan-out                             ; 2.55                   ;
+; Maximum fan-out                             ; 45                     ;
+; Total fan-out                               ; 467                    ;
+; Average fan-out                             ; 2.65                   ;
 +---------------------------------------------+------------------------+
 
 
@@ -217,21 +217,21 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
-; |top_de1                   ; 112 (0)           ; 45 (0)       ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |top_de1                              ; work         ;
-;    |divider:inst3|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|divider:inst3                ; work         ;
+; |top_de1                   ; 110 (0)           ; 47 (0)       ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |top_de1                              ; work         ;
+;    |divider:inst7|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|divider:inst7                ; work         ;
 ;    |gen6mhz:inst1|         ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen6mhz:inst1                ; work         ;
-;    |helicopter:inst2|      ; 60 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst2             ; work         ;
-;       |draw:lbl2|          ; 35 (35)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst2|draw:lbl2   ; work         ;
-;       |pos:lbl1|           ; 13 (13)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst2|pos:lbl1    ; work         ;
-;       |posnew:lbl0|        ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst2|posnew:lbl0 ; work         ;
-;    |vga_controller:inst4|  ; 48 (48)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|vga_controller:inst4         ; work         ;
+;    |helicopter:inst6|      ; 56 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst6             ; work         ;
+;       |draw:lbl2|          ; 35 (35)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst6|draw:lbl2   ; work         ;
+;       |pos:lbl1|           ; 12 (12)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst6|pos:lbl1    ; work         ;
+;       |posnew:lbl0|        ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst6|posnew:lbl0 ; work         ;
+;    |vga_controller:inst4|  ; 50 (50)           ; 35 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|vga_controller:inst4         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +----------------------------------------------------------+
-; State Machine - |top_de1|helicopter:inst2|pos:lbl1|state ;
+; State Machine - |top_de1|helicopter:inst6|pos:lbl1|state ;
 +--------------+------------+-------------+----------------+
 ; Name         ; state.adds ; state.holds ; state.resets   ;
 +--------------+------------+-------------+----------------+
@@ -246,8 +246,8 @@ Encoding Type:  One-Hot
 +----------------------------------------+--------------------+
 ; Register name                          ; Reason for Removal ;
 +----------------------------------------+--------------------+
-; divider:inst3|v_count[1]               ; Lost fanout        ;
-; helicopter:inst2|pos:lbl1|state.resets ; Lost fanout        ;
+; divider:inst7|v_count[1]               ; Lost fanout        ;
+; helicopter:inst6|pos:lbl1|state.resets ; Lost fanout        ;
 ; Total Number of Removed Registers = 2  ;                    ;
 +----------------------------------------+--------------------+
 
@@ -257,12 +257,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 45    ;
+; Total registers                              ; 47    ;
 ; Number of registers using Synchronous Clear  ; 21    ;
 ; Number of registers using Synchronous Load   ; 2     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 21    ;
+; Number of registers using Clock Enable       ; 23    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -272,11 +272,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top_de1|vga_controller:inst4|row[3]     ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_de1|vga_controller:inst4|column[1]  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_de1|vga_controller:inst4|row[8]     ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |top_de1|vga_controller:inst4|column[7]  ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_de1|vga_controller:inst4|h_count[0] ;
 ; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top_de1|vga_controller:inst4|v_count[2] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_de1|helicopter:inst2|pos:lbl1|state ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_de1|helicopter:inst6|pos:lbl1|state ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
 
@@ -314,7 +314,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Dec 15 11:44:39 2017
+    Info: Processing started: Fri Dec 15 12:28:46 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/vga_controller.vhd
@@ -348,25 +348,25 @@ Info (12127): Elaborating entity "top_de1" for the top level hierarchy
 Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:inst4"
 Info (12128): Elaborating entity "gen6mhz" for hierarchy "gen6mhz:inst1"
 Info (12128): Elaborating entity "pre_vga_dac_4" for hierarchy "pre_vga_dac_4:inst"
-Info (12128): Elaborating entity "helicopter" for hierarchy "helicopter:inst2"
-Info (12128): Elaborating entity "posnew" for hierarchy "helicopter:inst2|posnew:lbl0"
-Info (12128): Elaborating entity "pos" for hierarchy "helicopter:inst2|pos:lbl1"
-Info (12128): Elaborating entity "draw" for hierarchy "helicopter:inst2|draw:lbl2"
+Info (12128): Elaborating entity "helicopter" for hierarchy "helicopter:inst6"
+Info (12128): Elaborating entity "posnew" for hierarchy "helicopter:inst6|posnew:lbl0"
+Info (12128): Elaborating entity "pos" for hierarchy "helicopter:inst6|pos:lbl1"
+Info (12128): Elaborating entity "draw" for hierarchy "helicopter:inst6|draw:lbl2"
 Warning (10492): VHDL Process Statement warning at draw-renderer.vhd(11): signal "y_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at draw-renderer.vhd(17): signal "y_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at draw-renderer.vhd(23): signal "y_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at draw-renderer.vhd(29): signal "y_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "divider" for hierarchy "divider:inst3"
+Info (12128): Elaborating entity "divider" for hierarchy "divider:inst7"
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 131 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 129 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 112 logic cells
+    Info (21061): Implemented 110 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 372 megabytes
-    Info: Processing ended: Fri Dec 15 11:44:45 2017
+    Info: Processing ended: Fri Dec 15 12:28:52 2017
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:02
 

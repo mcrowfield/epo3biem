@@ -2,8 +2,8 @@
 vga_hsync <= vga_controller:inst4.h_sync
 clock_50mhz => gen6mhz:inst1.clk50mhz
 reset => vga_controller:inst4.reset
-reset => helicopter:inst2.reset
-reset => divider:inst3.reset
+reset => helicopter:inst6.reset
+reset => divider:inst7.reset
 vga_vsync <= vga_controller:inst4.v_sync
 vga_b[0] <= pre_vga_dac_4:inst.vga_b[0]
 vga_b[1] <= pre_vga_dac_4:inst.vga_b[1]
@@ -12,7 +12,7 @@ vga_b[3] <= pre_vga_dac_4:inst.vga_b[3]
 GND => pre_vga_dac_4:inst.r
 GND => pre_vga_dac_4:inst.g
 button => inst5.IN0
-enable => helicopter:inst2.enable
+enable => helicopter:inst6.enable
 vga_g[0] <= pre_vga_dac_4:inst.vga_g[0]
 vga_g[1] <= pre_vga_dac_4:inst.vga_g[1]
 vga_g[2] <= pre_vga_dac_4:inst.vga_g[2]
@@ -162,7 +162,7 @@ vga_b[2] <= b.DB_MAX_OUTPUT_PORT_TYPE
 vga_b[3] <= b.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_de1|helicopter:inst2
+|top_de1|helicopter:inst6
 clk => pos:lbl1.clk
 reset => pos:lbl1.reset
 x_input[0] => draw:lbl2.x_input[0]
@@ -184,19 +184,19 @@ enable => pos:lbl1.enable
 blue <= draw:lbl2.blue_output
 
 
-|top_de1|helicopter:inst2|posnew:lbl0
-position_old[0] => Add0.IN12
-position_old[0] => newposition.DATAA
-position_old[1] => Add0.IN11
-position_old[1] => Add1.IN10
-position_old[2] => Add0.IN10
-position_old[2] => Add1.IN9
-position_old[3] => Add0.IN9
-position_old[3] => Add1.IN8
-position_old[4] => Add0.IN8
-position_old[4] => Add1.IN7
-position_old[5] => Add0.IN7
-position_old[5] => Add1.IN6
+|top_de1|helicopter:inst6|posnew:lbl0
+position_old[0] => Add1.IN12
+position_old[0] => newposition.DATAB
+position_old[1] => Add0.IN10
+position_old[1] => Add1.IN11
+position_old[2] => Add0.IN9
+position_old[2] => Add1.IN10
+position_old[3] => Add0.IN8
+position_old[3] => Add1.IN9
+position_old[4] => Add0.IN7
+position_old[4] => Add1.IN8
+position_old[5] => Add0.IN6
+position_old[5] => Add1.IN7
 button => newposition.OUTPUTSELECT
 button => newposition.OUTPUTSELECT
 button => newposition.OUTPUTSELECT
@@ -211,7 +211,7 @@ position_new[4] <= newposition.DB_MAX_OUTPUT_PORT_TYPE
 position_new[5] <= newposition.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_de1|helicopter:inst2|pos:lbl1
+|top_de1|helicopter:inst6|pos:lbl1
 clk => position_old[0]~reg0.CLK
 clk => position_old[1]~reg0.CLK
 clk => position_old[2]~reg0.CLK
@@ -239,7 +239,7 @@ position_old[4] <= position_old[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 position_old[5] <= position_old[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_de1|helicopter:inst2|draw:lbl2
+|top_de1|helicopter:inst6|draw:lbl2
 x_input[0] => logickout.IN0
 x_input[0] => logiclout.IN1
 x_input[0] => logiclout.IN1
@@ -251,7 +251,7 @@ x_input[2] => logicnout.IN1
 x_input[2] => logiclout.IN1
 x_input[3] => blue_output.IN1
 x_input[4] => blue_output.IN1
-x_input[5] => blue_output.IN0
+x_input[5] => blue_output.IN1
 x_input[6] => blue_output.IN1
 y_input[0] => Equal0.IN5
 y_input[0] => Equal1.IN5
@@ -304,7 +304,7 @@ position[5] => Add2.IN7
 blue_output <= blue_output.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_de1|divider:inst3
+|top_de1|divider:inst7
 disp_ena => xvt.OUTPUTSELECT
 disp_ena => xvt.OUTPUTSELECT
 disp_ena => xvt.OUTPUTSELECT

@@ -40,15 +40,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "x_input[5..0]" (rect 0 0 48 12)(font "Arial" ))
-		(text "x_input[5..0]" (rect 21 59 69 71)(font "Arial" ))
+		(text "x_input[6..0]" (rect 0 0 48 12)(font "Arial" ))
+		(text "x_input[6..0]" (rect 21 59 69 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "y_input[4..0]" (rect 0 0 50 12)(font "Arial" ))
-		(text "y_input[4..0]" (rect 21 75 71 87)(font "Arial" ))
+		(text "y_input[5..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "y_input[5..0]" (rect 21 75 70 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port

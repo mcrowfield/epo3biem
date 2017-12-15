@@ -1,5 +1,5 @@
 Fitter report for top_de1
-Fri Dec 15 11:44:53 2017
+Fri Dec 15 12:29:00 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -61,17 +61,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Dec 15 11:44:53 2017            ;
+; Fitter Status                      ; Successful - Fri Dec 15 12:29:00 2017            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C20F484C7                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 114 / 18,752 ( < 1 % )                           ;
-;     Total combinational functions  ; 112 / 18,752 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 45 / 18,752 ( < 1 % )                            ;
-; Total registers                    ; 45                                               ;
+; Total logic elements               ; 112 / 18,752 ( < 1 % )                           ;
+;     Total combinational functions  ; 110 / 18,752 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 47 / 18,752 ( < 1 % )                            ;
+; Total registers                    ; 47                                               ;
 ; Total pins                         ; 19 / 315 ( 6 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                              ;
@@ -139,12 +139,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 2.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ; < 0.1%      ;
+;     Processors 2-4         ;  33.3%      ;
 +----------------------------+-------------+
 
 
@@ -194,23 +194,23 @@ The pin-out file can be found in /home/michaelkraaije/epo3git/epo3biem/quartus_D
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 114 / 18,752 ( < 1 % ) ;
-;     -- Combinational with no register       ; 69                     ;
+; Total logic elements                        ; 112 / 18,752 ( < 1 % ) ;
+;     -- Combinational with no register       ; 65                     ;
 ;     -- Register only                        ; 2                      ;
-;     -- Combinational with a register        ; 43                     ;
+;     -- Combinational with a register        ; 45                     ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 35                     ;
-;     -- 3 input functions                    ; 14                     ;
-;     -- <=2 input functions                  ; 63                     ;
+;     -- 4 input functions                    ; 44                     ;
+;     -- 3 input functions                    ; 11                     ;
+;     -- <=2 input functions                  ; 55                     ;
 ;     -- Register only                        ; 2                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 75                     ;
-;     -- arithmetic mode                      ; 37                     ;
+;     -- normal mode                          ; 83                     ;
+;     -- arithmetic mode                      ; 27                     ;
 ;                                             ;                        ;
-; Total registers*                            ; 45 / 19,649 ( < 1 % )  ;
-;     -- Dedicated logic registers            ; 45 / 18,752 ( < 1 % )  ;
+; Total registers*                            ; 47 / 19,649 ( < 1 % )  ;
+;     -- Dedicated logic registers            ; 47 / 18,752 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 897 ( 0 % )        ;
 ;                                             ;                        ;
 ; Total LABs:  partially or completely used   ; 9 / 1,172 ( < 1 % )    ;
@@ -230,10 +230,10 @@ The pin-out file can be found in /home/michaelkraaije/epo3git/epo3biem/quartus_D
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%           ;
-; Maximum fan-out                             ; 42                     ;
-; Highest non-global fan-out                  ; 20                     ;
-; Total fan-out                               ; 452                    ;
-; Average fan-out                             ; 2.47                   ;
+; Maximum fan-out                             ; 44                     ;
+; Highest non-global fan-out                  ; 22                     ;
+; Total fan-out                               ; 471                    ;
+; Average fan-out                             ; 2.57                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -246,23 +246,23 @@ The pin-out file can be found in /home/michaelkraaije/epo3git/epo3biem/quartus_D
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 114 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 69                    ; 0                              ;
+; Total logic elements                        ; 112 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 65                    ; 0                              ;
 ;     -- Register only                        ; 2                     ; 0                              ;
-;     -- Combinational with a register        ; 43                    ; 0                              ;
+;     -- Combinational with a register        ; 45                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 35                    ; 0                              ;
-;     -- 3 input functions                    ; 14                    ; 0                              ;
-;     -- <=2 input functions                  ; 63                    ; 0                              ;
+;     -- 4 input functions                    ; 44                    ; 0                              ;
+;     -- 3 input functions                    ; 11                    ; 0                              ;
+;     -- <=2 input functions                  ; 55                    ; 0                              ;
 ;     -- Register only                        ; 2                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 75                    ; 0                              ;
-;     -- arithmetic mode                      ; 37                    ; 0                              ;
+;     -- normal mode                          ; 83                    ; 0                              ;
+;     -- arithmetic mode                      ; 27                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 45                    ; 0                              ;
-;     -- Dedicated logic registers            ; 45 / 18752 ( < 1 % )  ; 0 / 18752 ( 0 % )              ;
+; Total registers                             ; 47                    ; 0                              ;
+;     -- Dedicated logic registers            ; 47 / 18752 ( < 1 % )  ; 0 / 18752 ( 0 % )              ;
 ;                                             ;                       ;                                ;
 ; Total LABs:  partially or completely used   ; 9 / 1172 ( < 1 % )    ; 0 / 1172 ( 0 % )               ;
 ;                                             ;                       ;                                ;
@@ -280,8 +280,8 @@ The pin-out file can be found in /home/michaelkraaije/epo3git/epo3biem/quartus_D
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 452                   ; 0                              ;
-;     -- Registered Connections               ; 176                   ; 0                              ;
+;     -- Total Connections                    ; 471                   ; 0                              ;
+;     -- Registered Connections               ; 192                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -314,10 +314,10 @@ The pin-out file can be found in /home/michaelkraaije/epo3git/epo3biem/quartus_D
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; GND         ; E9    ; 3        ; 13           ; 27           ; 0           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; button      ; R22   ; 6        ; 50           ; 10           ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; button      ; R22   ; 6        ; 50           ; 10           ; 1           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; clock_50mhz ; L1    ; 2        ; 0            ; 13           ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; enable      ; L21   ; 5        ; 50           ; 14           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; reset       ; L22   ; 5        ; 50           ; 14           ; 0           ; 20                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; reset       ; L22   ; 5        ; 50           ; 14           ; 0           ; 22                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -894,14 +894,14 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                   ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------+--------------+
-; |top_de1                   ; 114 (0)     ; 45 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 69 (0)       ; 2 (0)             ; 43 (0)           ; |top_de1                              ; work         ;
-;    |divider:inst3|         ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|divider:inst3                ; work         ;
+; |top_de1                   ; 112 (0)     ; 47 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 65 (0)       ; 2 (0)             ; 45 (0)           ; |top_de1                              ; work         ;
+;    |divider:inst7|         ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top_de1|divider:inst7                ; work         ;
 ;    |gen6mhz:inst1|         ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |top_de1|gen6mhz:inst1                ; work         ;
-;    |helicopter:inst2|      ; 60 (0)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 52 (0)       ; 0 (0)             ; 8 (0)            ; |top_de1|helicopter:inst2             ; work         ;
-;       |draw:lbl2|          ; 35 (35)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (35)      ; 0 (0)             ; 0 (0)            ; |top_de1|helicopter:inst2|draw:lbl2   ; work         ;
-;       |pos:lbl1|           ; 13 (13)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 8 (8)            ; |top_de1|helicopter:inst2|pos:lbl1    ; work         ;
-;       |posnew:lbl0|        ; 12 (12)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; |top_de1|helicopter:inst2|posnew:lbl0 ; work         ;
-;    |vga_controller:inst4|  ; 50 (50)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 2 (2)             ; 31 (31)          ; |top_de1|vga_controller:inst4         ; work         ;
+;    |helicopter:inst6|      ; 56 (0)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 48 (0)       ; 0 (0)             ; 8 (0)            ; |top_de1|helicopter:inst6             ; work         ;
+;       |draw:lbl2|          ; 35 (35)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (35)      ; 0 (0)             ; 0 (0)            ; |top_de1|helicopter:inst6|draw:lbl2   ; work         ;
+;       |pos:lbl1|           ; 12 (12)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 8 (8)            ; |top_de1|helicopter:inst6|pos:lbl1    ; work         ;
+;       |posnew:lbl0|        ; 9 (9)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; |top_de1|helicopter:inst6|posnew:lbl0 ; work         ;
+;    |vga_controller:inst4|  ; 52 (52)     ; 35 (35)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 2 (2)             ; 33 (33)          ; |top_de1|vga_controller:inst4         ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -949,13 +949,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - vga_r[0]                              ; 0                 ; 6       ;
 ; reset                                        ;                   ;         ;
 ; button                                       ;                   ;         ;
-;      - helicopter:inst2|pos:lbl1|Selector4~0 ; 1                 ; 6       ;
-;      - helicopter:inst2|pos:lbl1|Selector5~0 ; 1                 ; 6       ;
-;      - helicopter:inst2|pos:lbl1|Selector5~1 ; 1                 ; 6       ;
-;      - helicopter:inst2|pos:lbl1|Selector2~0 ; 1                 ; 6       ;
-;      - helicopter:inst2|pos:lbl1|Selector3~0 ; 1                 ; 6       ;
-;      - helicopter:inst2|pos:lbl1|Selector1~0 ; 1                 ; 6       ;
-;      - helicopter:inst2|posnew:lbl0|Add0~12  ; 1                 ; 6       ;
+;      - helicopter:inst6|posnew:lbl0|Add0~0   ; 0                 ; 6       ;
+;      - helicopter:inst6|posnew:lbl0|Add0~9   ; 0                 ; 6       ;
+;      - helicopter:inst6|pos:lbl1|Selector2~1 ; 0                 ; 6       ;
+;      - helicopter:inst6|pos:lbl1|Selector3~1 ; 0                 ; 6       ;
+;      - helicopter:inst6|pos:lbl1|Selector4~0 ; 0                 ; 6       ;
+;      - helicopter:inst6|pos:lbl1|Selector5~0 ; 0                 ; 6       ;
+;      - helicopter:inst6|posnew:lbl0|Add0~10  ; 0                 ; 6       ;
+;      - helicopter:inst6|posnew:lbl0|Add0~13  ; 0                 ; 6       ;
 ; clock_50mhz                                  ;                   ;         ;
 ; enable                                       ;                   ;         ;
 +----------------------------------------------+-------------------+---------+
@@ -967,12 +968,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                               ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 ; clock_50mhz                        ; PIN_L1             ; 3       ; Clock                     ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; gen6mhz:inst1|count[2]             ; LCFF_X24_Y26_N1    ; 42      ; Clock                     ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; reset                              ; PIN_L22            ; 20      ; Sync. clear, Sync. load   ; no     ; --                   ; --               ; --                        ;
-; vga_controller:inst4|column[1]~1   ; LCCOMB_X21_Y20_N30 ; 6       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; vga_controller:inst4|h_count[0]~18 ; LCCOMB_X20_Y20_N30 ; 18      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; vga_controller:inst4|row[3]~1      ; LCCOMB_X21_Y20_N26 ; 5       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; vga_controller:inst4|v_count[2]~18 ; LCCOMB_X19_Y20_N30 ; 10      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; gen6mhz:inst1|count[2]             ; LCFF_X24_Y26_N1    ; 44      ; Clock                     ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; reset                              ; PIN_L22            ; 22      ; Sync. clear, Sync. load   ; no     ; --                   ; --               ; --                        ;
+; vga_controller:inst4|column[7]~2   ; LCCOMB_X22_Y21_N14 ; 7       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; vga_controller:inst4|h_count[0]~18 ; LCCOMB_X23_Y21_N30 ; 18      ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; vga_controller:inst4|row[8]~1      ; LCCOMB_X25_Y21_N26 ; 6       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; vga_controller:inst4|v_count[2]~18 ; LCCOMB_X24_Y21_N6  ; 10      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
 +------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -982,214 +983,204 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                   ; Location        ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------+-----------------+---------+----------------------+------------------+---------------------------+
 ; clock_50mhz            ; PIN_L1          ; 3       ; Global Clock         ; GCLK2            ; --                        ;
-; gen6mhz:inst1|count[2] ; LCFF_X24_Y26_N1 ; 42      ; Global Clock         ; GCLK10           ; --                        ;
+; gen6mhz:inst1|count[2] ; LCFF_X24_Y26_N1 ; 44      ; Global Clock         ; GCLK10           ; --                        ;
 +------------------------+-----------------+---------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------+
-; Non-Global High Fan-Out Signals                        ;
-+----------------------------------------------+---------+
-; Name                                         ; Fan-Out ;
-+----------------------------------------------+---------+
-; reset                                        ; 20      ;
-; vga_controller:inst4|h_count[0]~18           ; 18      ;
-; vga_controller:inst4|v_count[2]~18           ; 10      ;
-; GND                                          ; 8       ;
-; helicopter:inst2|pos:lbl1|state.holds        ; 8       ;
-; helicopter:inst2|pos:lbl1|position_old[1]    ; 8       ;
-; button                                       ; 7       ;
-; helicopter:inst2|pos:lbl1|state.adds         ; 7       ;
-; helicopter:inst2|pos:lbl1|position_old[5]    ; 7       ;
-; helicopter:inst2|pos:lbl1|position_old[4]    ; 7       ;
-; helicopter:inst2|pos:lbl1|position_old[2]    ; 7       ;
-; helicopter:inst2|pos:lbl1|position_old[3]    ; 7       ;
-; vga_controller:inst4|column[1]~1             ; 6       ;
-; helicopter:inst2|pos:lbl1|position_old[0]    ; 6       ;
-; vga_controller:inst4|h_count[6]              ; 6       ;
-; vga_controller:inst4|h_count[5]              ; 6       ;
-; vga_controller:inst4|row[3]~1                ; 5       ;
-; vga_controller:inst4|v_count[9]              ; 5       ;
-; vga_controller:inst4|h_count[2]              ; 5       ;
-; vga_controller:inst4|h_count[7]              ; 5       ;
-; helicopter:inst2|draw:lbl2|blue_output       ; 4       ;
-; vga_controller:inst4|row[7]                  ; 4       ;
-; vga_controller:inst4|row[6]                  ; 4       ;
-; vga_controller:inst4|row[5]                  ; 4       ;
-; vga_controller:inst4|row[4]                  ; 4       ;
-; vga_controller:inst4|v_count[7]              ; 4       ;
-; vga_controller:inst4|v_count[6]              ; 4       ;
-; vga_controller:inst4|v_count[5]              ; 4       ;
-; vga_controller:inst4|v_count[4]              ; 4       ;
-; vga_controller:inst4|v_count[3]              ; 4       ;
-; vga_controller:inst4|h_count[1]              ; 4       ;
-; vga_controller:inst4|h_count[3]              ; 4       ;
-; vga_controller:inst4|h_count[4]              ; 4       ;
-; gen6mhz:inst1|count[0]                       ; 3       ;
-; vga_controller:inst4|LessThan7~0             ; 3       ;
-; vga_controller:inst4|column[3]               ; 3       ;
-; vga_controller:inst4|row[3]                  ; 3       ;
-; divider:inst3|v_count[0]                     ; 3       ;
-; vga_controller:inst4|shz                     ; 3       ;
-; vga_controller:inst4|v_count[8]              ; 3       ;
-; vga_controller:inst4|v_count[1]              ; 3       ;
-; vga_controller:inst4|v_count[0]              ; 3       ;
-; vga_controller:inst4|v_count[2]              ; 3       ;
-; vga_controller:inst4|h_count[0]              ; 3       ;
-; enable                                       ; 2       ;
-; vga_controller:inst4|LessThan1~2             ; 2       ;
-; vga_controller:inst4|LessThan0~1             ; 2       ;
-; gen6mhz:inst1|count[1]                       ; 2       ;
-; vga_controller:inst4|column[2]               ; 2       ;
-; vga_controller:inst4|column[1]               ; 2       ;
-; gen6mhz:inst1|count[0]~2                     ; 1       ;
-; divider:inst3|Add0~0                         ; 1       ;
-; vga_controller:inst4|shz~0                   ; 1       ;
-; gen6mhz:inst1|count[1]~1                     ; 1       ;
-; helicopter:inst2|pos:lbl1|state~6            ; 1       ;
-; helicopter:inst2|pos:lbl1|state~5            ; 1       ;
-; vga_controller:inst4|LessThan1~1             ; 1       ;
-; vga_controller:inst4|LessThan1~0             ; 1       ;
-; vga_controller:inst4|LessThan0~0             ; 1       ;
-; vga_controller:inst4|process_0~6             ; 1       ;
-; gen6mhz:inst1|count[2]~0                     ; 1       ;
-; vga_controller:inst4|column~7                ; 1       ;
-; vga_controller:inst4|column~6                ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector0~0        ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~12         ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector1~1        ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector1~0        ; 1       ;
-; vga_controller:inst4|row~5                   ; 1       ;
-; vga_controller:inst4|column~5                ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector3~1        ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector3~0        ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector2~1        ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector2~0        ; 1       ;
-; vga_controller:inst4|row~4                   ; 1       ;
-; vga_controller:inst4|row~3                   ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector5~1        ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector5~0        ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector4~1        ; 1       ;
-; helicopter:inst2|pos:lbl1|Selector4~0        ; 1       ;
-; vga_controller:inst4|row~2                   ; 1       ;
-; vga_controller:inst4|row~0                   ; 1       ;
-; vga_controller:inst4|column~4                ; 1       ;
-; vga_controller:inst4|column~3                ; 1       ;
-; vga_controller:inst4|process_0~5             ; 1       ;
-; vga_controller:inst4|column[1]~2             ; 1       ;
-; vga_controller:inst4|column~0                ; 1       ;
-; vga_controller:inst4|process_0~4             ; 1       ;
-; vga_controller:inst4|process_0~3             ; 1       ;
-; vga_controller:inst4|process_0~2             ; 1       ;
-; vga_controller:inst4|process_0~1             ; 1       ;
-; vga_controller:inst4|process_0~0             ; 1       ;
-; gen6mhz:inst1|count[2]                       ; 1       ;
-; helicopter:inst2|draw:lbl2|logiclout~4       ; 1       ;
-; helicopter:inst2|draw:lbl2|logiclout~3       ; 1       ;
-; helicopter:inst2|draw:lbl2|logiclout~2       ; 1       ;
-; helicopter:inst2|draw:lbl2|logiclout~1       ; 1       ;
-; helicopter:inst2|draw:lbl2|logiclout~0       ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~7     ; 1       ;
-; helicopter:inst2|draw:lbl2|Equal1~0          ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~6     ; 1       ;
-; helicopter:inst2|draw:lbl2|Equal0~0          ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~5     ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~4     ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~3     ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~2     ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~1     ; 1       ;
-; helicopter:inst2|draw:lbl2|logicnout~3       ; 1       ;
-; helicopter:inst2|draw:lbl2|logicnout~2       ; 1       ;
-; helicopter:inst2|draw:lbl2|logicnout~1       ; 1       ;
-; helicopter:inst2|draw:lbl2|logicnout~0       ; 1       ;
-; helicopter:inst2|draw:lbl2|blue_output~0     ; 1       ;
-; vga_controller:inst4|column[6]               ; 1       ;
-; vga_controller:inst4|column[5]               ; 1       ;
-; vga_controller:inst4|column[4]               ; 1       ;
-; vga_controller:inst4|v_count[9]~29           ; 1       ;
-; vga_controller:inst4|v_count[8]~28           ; 1       ;
-; vga_controller:inst4|v_count[8]~27           ; 1       ;
-; vga_controller:inst4|v_count[7]~26           ; 1       ;
-; vga_controller:inst4|v_count[7]~25           ; 1       ;
-; vga_controller:inst4|v_count[6]~24           ; 1       ;
-; vga_controller:inst4|v_count[6]~23           ; 1       ;
-; vga_controller:inst4|v_count[5]~22           ; 1       ;
-; vga_controller:inst4|v_count[5]~21           ; 1       ;
-; vga_controller:inst4|v_count[4]~20           ; 1       ;
-; vga_controller:inst4|v_count[4]~19           ; 1       ;
-; vga_controller:inst4|v_count[3]~17           ; 1       ;
-; vga_controller:inst4|v_count[3]~16           ; 1       ;
-; vga_controller:inst4|v_count[2]~15           ; 1       ;
-; vga_controller:inst4|v_count[2]~14           ; 1       ;
-; vga_controller:inst4|v_count[1]~13           ; 1       ;
-; vga_controller:inst4|v_count[1]~12           ; 1       ;
-; vga_controller:inst4|v_count[0]~11           ; 1       ;
-; vga_controller:inst4|v_count[0]~10           ; 1       ;
-; vga_controller:inst4|h_count[7]~23           ; 1       ;
-; vga_controller:inst4|h_count[6]~22           ; 1       ;
-; vga_controller:inst4|h_count[6]~21           ; 1       ;
-; vga_controller:inst4|h_count[5]~20           ; 1       ;
-; vga_controller:inst4|h_count[5]~19           ; 1       ;
-; vga_controller:inst4|h_count[4]~17           ; 1       ;
-; vga_controller:inst4|h_count[4]~16           ; 1       ;
-; vga_controller:inst4|h_count[3]~15           ; 1       ;
-; vga_controller:inst4|h_count[3]~14           ; 1       ;
-; vga_controller:inst4|h_count[2]~13           ; 1       ;
-; vga_controller:inst4|h_count[2]~12           ; 1       ;
-; vga_controller:inst4|h_count[1]~11           ; 1       ;
-; vga_controller:inst4|h_count[1]~10           ; 1       ;
-; vga_controller:inst4|h_count[0]~9            ; 1       ;
-; vga_controller:inst4|h_count[0]~8            ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~10         ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~8          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~9          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~8          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~7          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~6          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~7          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~6          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~5          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~4          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~5          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~4          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~3          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~2          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~3          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~2          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~1          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add0~0          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~1          ; 1       ;
-; helicopter:inst2|posnew:lbl0|Add1~0          ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~8            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~7            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~6            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~5            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~4            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~3            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~2            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~1            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add0~0            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add1~6            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add1~5            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add1~4            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add1~3            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add1~2            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add1~1            ; 1       ;
-; helicopter:inst2|draw:lbl2|Add1~0            ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[5]~10 ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[4]~9  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[4]~8  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[3]~7  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[3]~6  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[2]~5  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[2]~4  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[1]~3  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[1]~2  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[0]~1  ; 1       ;
-; helicopter:inst2|draw:lbl2|addoutthree[0]~0  ; 1       ;
-; vga_controller:inst4|disp_ena                ; 1       ;
-; vga_controller:inst4|v_sync                  ; 1       ;
-; vga_controller:inst4|h_sync                  ; 1       ;
-+----------------------------------------------+---------+
++-----------------------------------------------------+
+; Non-Global High Fan-Out Signals                     ;
++-------------------------------------------+---------+
+; Name                                      ; Fan-Out ;
++-------------------------------------------+---------+
+; reset                                     ; 22      ;
+; vga_controller:inst4|h_count[0]~18        ; 18      ;
+; vga_controller:inst4|v_count[2]~18        ; 10      ;
+; helicopter:inst6|pos:lbl1|position_old[1] ; 10      ;
+; helicopter:inst6|pos:lbl1|position_old[0] ; 9       ;
+; helicopter:inst6|pos:lbl1|position_old[2] ; 9       ;
+; helicopter:inst6|pos:lbl1|position_old[4] ; 9       ;
+; button                                    ; 8       ;
+; GND                                       ; 8       ;
+; helicopter:inst6|pos:lbl1|state.holds     ; 8       ;
+; helicopter:inst6|pos:lbl1|state.adds      ; 7       ;
+; vga_controller:inst4|column[7]~2          ; 7       ;
+; helicopter:inst6|pos:lbl1|position_old[5] ; 7       ;
+; helicopter:inst6|pos:lbl1|position_old[3] ; 7       ;
+; vga_controller:inst4|row[8]~1             ; 6       ;
+; vga_controller:inst4|h_count[7]           ; 6       ;
+; vga_controller:inst4|h_count[6]           ; 6       ;
+; vga_controller:inst4|h_count[5]           ; 6       ;
+; vga_controller:inst4|v_count[9]           ; 5       ;
+; vga_controller:inst4|h_count[2]           ; 5       ;
+; helicopter:inst6|draw:lbl2|blue_output    ; 4       ;
+; vga_controller:inst4|row[8]               ; 4       ;
+; vga_controller:inst4|row[6]               ; 4       ;
+; vga_controller:inst4|row[4]               ; 4       ;
+; vga_controller:inst4|row[5]               ; 4       ;
+; vga_controller:inst4|row[7]               ; 4       ;
+; helicopter:inst6|draw:lbl2|Add2~0         ; 4       ;
+; vga_controller:inst4|v_count[8]           ; 4       ;
+; vga_controller:inst4|v_count[7]           ; 4       ;
+; vga_controller:inst4|v_count[6]           ; 4       ;
+; vga_controller:inst4|v_count[5]           ; 4       ;
+; vga_controller:inst4|v_count[4]           ; 4       ;
+; vga_controller:inst4|v_count[3]           ; 4       ;
+; vga_controller:inst4|h_count[1]           ; 4       ;
+; vga_controller:inst4|h_count[3]           ; 4       ;
+; vga_controller:inst4|h_count[4]           ; 4       ;
+; gen6mhz:inst1|count[0]                    ; 3       ;
+; helicopter:inst6|posnew:lbl0|Add0~9       ; 3       ;
+; vga_controller:inst4|LessThan7~0          ; 3       ;
+; vga_controller:inst4|row[3]               ; 3       ;
+; vga_controller:inst4|column[3]            ; 3       ;
+; divider:inst7|v_count[0]                  ; 3       ;
+; vga_controller:inst4|shz                  ; 3       ;
+; vga_controller:inst4|v_count[1]           ; 3       ;
+; vga_controller:inst4|v_count[0]           ; 3       ;
+; vga_controller:inst4|v_count[2]           ; 3       ;
+; vga_controller:inst4|h_count[0]           ; 3       ;
+; helicopter:inst6|draw:lbl2|Add0~0         ; 3       ;
+; enable                                    ; 2       ;
+; vga_controller:inst4|LessThan1~2          ; 2       ;
+; vga_controller:inst4|LessThan0~1          ; 2       ;
+; gen6mhz:inst1|count[1]                    ; 2       ;
+; vga_controller:inst4|column[2]            ; 2       ;
+; vga_controller:inst4|column[1]            ; 2       ;
+; helicopter:inst6|draw:lbl2|Add2~1         ; 2       ;
+; gen6mhz:inst1|count[0]~2                  ; 1       ;
+; divider:inst7|Add0~0                      ; 1       ;
+; vga_controller:inst4|shz~0                ; 1       ;
+; gen6mhz:inst1|count[1]~1                  ; 1       ;
+; helicopter:inst6|pos:lbl1|state~6         ; 1       ;
+; helicopter:inst6|pos:lbl1|state~5         ; 1       ;
+; vga_controller:inst4|LessThan1~1          ; 1       ;
+; vga_controller:inst4|LessThan1~0          ; 1       ;
+; vga_controller:inst4|LessThan0~0          ; 1       ;
+; vga_controller:inst4|process_0~6          ; 1       ;
+; gen6mhz:inst1|count[2]~0                  ; 1       ;
+; vga_controller:inst4|column~8             ; 1       ;
+; vga_controller:inst4|column~7             ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector0~0     ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~13      ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~10      ; 1       ;
+; vga_controller:inst4|row~6                ; 1       ;
+; vga_controller:inst4|row~5                ; 1       ;
+; vga_controller:inst4|row~4                ; 1       ;
+; vga_controller:inst4|row~3                ; 1       ;
+; vga_controller:inst4|column~6             ; 1       ;
+; vga_controller:inst4|row~2                ; 1       ;
+; vga_controller:inst4|row~0                ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector5~0     ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector4~1     ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector4~0     ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector3~1     ; 1       ;
+; helicopter:inst6|draw:lbl2|Add2~2         ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector3~0     ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector2~1     ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector2~0     ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector1~1     ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~0       ; 1       ;
+; helicopter:inst6|pos:lbl1|Selector1~0     ; 1       ;
+; vga_controller:inst4|column~5             ; 1       ;
+; vga_controller:inst4|column~4             ; 1       ;
+; vga_controller:inst4|column~3             ; 1       ;
+; vga_controller:inst4|column~1             ; 1       ;
+; vga_controller:inst4|process_0~5          ; 1       ;
+; vga_controller:inst4|column[7]~0          ; 1       ;
+; vga_controller:inst4|process_0~4          ; 1       ;
+; vga_controller:inst4|process_0~3          ; 1       ;
+; vga_controller:inst4|process_0~2          ; 1       ;
+; vga_controller:inst4|process_0~1          ; 1       ;
+; vga_controller:inst4|process_0~0          ; 1       ;
+; gen6mhz:inst1|count[2]                    ; 1       ;
+; helicopter:inst6|draw:lbl2|logiclout~4    ; 1       ;
+; helicopter:inst6|draw:lbl2|logiclout~3    ; 1       ;
+; helicopter:inst6|draw:lbl2|logiclout~2    ; 1       ;
+; helicopter:inst6|draw:lbl2|logiclout~1    ; 1       ;
+; helicopter:inst6|draw:lbl2|logiclout~0    ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~9  ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~8  ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~7  ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~6  ; 1       ;
+; helicopter:inst6|draw:lbl2|Equal0~0       ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~5  ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~4  ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~3  ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~2  ; 1       ;
+; helicopter:inst6|draw:lbl2|logicnout~3    ; 1       ;
+; helicopter:inst6|draw:lbl2|Equal3~1       ; 1       ;
+; helicopter:inst6|draw:lbl2|logicnout~2    ; 1       ;
+; helicopter:inst6|draw:lbl2|logicnout~1    ; 1       ;
+; helicopter:inst6|draw:lbl2|logicnout~0    ; 1       ;
+; helicopter:inst6|draw:lbl2|Equal3~0       ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~1  ; 1       ;
+; helicopter:inst6|draw:lbl2|blue_output~0  ; 1       ;
+; vga_controller:inst4|column[7]            ; 1       ;
+; vga_controller:inst4|column[6]            ; 1       ;
+; vga_controller:inst4|column[5]            ; 1       ;
+; vga_controller:inst4|column[4]            ; 1       ;
+; vga_controller:inst4|v_count[9]~29        ; 1       ;
+; vga_controller:inst4|v_count[8]~28        ; 1       ;
+; vga_controller:inst4|v_count[8]~27        ; 1       ;
+; vga_controller:inst4|v_count[7]~26        ; 1       ;
+; vga_controller:inst4|v_count[7]~25        ; 1       ;
+; vga_controller:inst4|v_count[6]~24        ; 1       ;
+; vga_controller:inst4|v_count[6]~23        ; 1       ;
+; vga_controller:inst4|v_count[5]~22        ; 1       ;
+; vga_controller:inst4|v_count[5]~21        ; 1       ;
+; vga_controller:inst4|v_count[4]~20        ; 1       ;
+; vga_controller:inst4|v_count[4]~19        ; 1       ;
+; vga_controller:inst4|v_count[3]~17        ; 1       ;
+; vga_controller:inst4|v_count[3]~16        ; 1       ;
+; vga_controller:inst4|v_count[2]~15        ; 1       ;
+; vga_controller:inst4|v_count[2]~14        ; 1       ;
+; vga_controller:inst4|v_count[1]~13        ; 1       ;
+; vga_controller:inst4|v_count[1]~12        ; 1       ;
+; vga_controller:inst4|v_count[0]~11        ; 1       ;
+; vga_controller:inst4|v_count[0]~10        ; 1       ;
+; vga_controller:inst4|h_count[7]~23        ; 1       ;
+; vga_controller:inst4|h_count[6]~22        ; 1       ;
+; vga_controller:inst4|h_count[6]~21        ; 1       ;
+; vga_controller:inst4|h_count[5]~20        ; 1       ;
+; vga_controller:inst4|h_count[5]~19        ; 1       ;
+; vga_controller:inst4|h_count[4]~17        ; 1       ;
+; vga_controller:inst4|h_count[4]~16        ; 1       ;
+; vga_controller:inst4|h_count[3]~15        ; 1       ;
+; vga_controller:inst4|h_count[3]~14        ; 1       ;
+; vga_controller:inst4|h_count[2]~13        ; 1       ;
+; vga_controller:inst4|h_count[2]~12        ; 1       ;
+; vga_controller:inst4|h_count[1]~11        ; 1       ;
+; vga_controller:inst4|h_count[1]~10        ; 1       ;
+; vga_controller:inst4|h_count[0]~9         ; 1       ;
+; vga_controller:inst4|h_count[0]~8         ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~11      ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~8       ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~7       ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~6       ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~5       ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~4       ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~3       ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~2       ; 1       ;
+; helicopter:inst6|posnew:lbl0|Add0~1       ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~8         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~7         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~6         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~5         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~4         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~3         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~2         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add1~6         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add1~5         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add1~4         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add1~3         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add1~2         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add1~1         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add1~0         ; 1       ;
+; helicopter:inst6|draw:lbl2|Add0~1         ; 1       ;
+; vga_controller:inst4|disp_ena             ; 1       ;
+; vga_controller:inst4|v_sync               ; 1       ;
+; vga_controller:inst4|h_sync               ; 1       ;
++-------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -1197,24 +1188,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 123 / 54,004 ( < 1 % ) ;
-; C16 interconnects           ; 2 / 2,100 ( < 1 % )    ;
-; C4 interconnects            ; 23 / 36,000 ( < 1 % )  ;
-; Direct links                ; 53 / 54,004 ( < 1 % )  ;
+; Block interconnects         ; 108 / 54,004 ( < 1 % ) ;
+; C16 interconnects           ; 1 / 2,100 ( < 1 % )    ;
+; C4 interconnects            ; 47 / 36,000 ( < 1 % )  ;
+; Direct links                ; 48 / 54,004 ( < 1 % )  ;
 ; Global clocks               ; 2 / 16 ( 13 % )        ;
-; Local interconnects         ; 73 / 18,752 ( < 1 % )  ;
-; R24 interconnects           ; 6 / 1,900 ( < 1 % )    ;
-; R4 interconnects            ; 50 / 46,920 ( < 1 % )  ;
+; Local interconnects         ; 83 / 18,752 ( < 1 % )  ;
+; R24 interconnects           ; 5 / 1,900 ( < 1 % )    ;
+; R4 interconnects            ; 30 / 46,920 ( < 1 % )  ;
 +-----------------------------+------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 12.67) ; Number of LABs  (Total = 9) ;
+; Number of Logic Elements  (Average = 12.44) ; Number of LABs  (Total = 9) ;
 +---------------------------------------------+-----------------------------+
-; 1                                           ; 1                           ;
-; 2                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 1                           ;
 ; 3                                           ; 1                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
@@ -1225,21 +1216,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
+; 13                                          ; 1                           ;
 ; 14                                          ; 1                           ;
 ; 15                                          ; 0                           ;
-; 16                                          ; 6                           ;
+; 16                                          ; 5                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.56) ; Number of LABs  (Total = 9) ;
+; LAB-wide Signals  (Average = 1.33) ; Number of LABs  (Total = 9) ;
 +------------------------------------+-----------------------------+
-; 1 Clock                            ; 9                           ;
-; 1 Clock enable                     ; 3                           ;
-; 1 Sync. clear                      ; 1                           ;
+; 1 Clock                            ; 8                           ;
+; 1 Clock enable                     ; 1                           ;
+; 1 Sync. clear                      ; 2                           ;
 ; 1 Sync. load                       ; 1                           ;
 +------------------------------------+-----------------------------+
 
@@ -1251,9 +1242,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
-; 2                                            ; 1                           ;
+; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
+; 4                                            ; 1                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 1                           ;
 ; 7                                            ; 0                           ;
@@ -1262,66 +1253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 0                           ;
-; 17                                           ; 1                           ;
-; 18                                           ; 1                           ;
-; 19                                           ; 0                           ;
-; 20                                           ; 1                           ;
-; 21                                           ; 1                           ;
-; 22                                           ; 1                           ;
-; 23                                           ; 0                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 1                           ;
-; 27                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
-
-
-+-------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                       ;
-+-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 7.56) ; Number of LABs  (Total = 9) ;
-+-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 2                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 0                           ;
-; 6                                               ; 2                           ;
-; 7                                               ; 0                           ;
-; 8                                               ; 1                           ;
-; 9                                               ; 2                           ;
-; 10                                              ; 0                           ;
-; 11                                              ; 0                           ;
-; 12                                              ; 0                           ;
-; 13                                              ; 0                           ;
-; 14                                              ; 2                           ;
-+-------------------------------------------------+-----------------------------+
-
-
-+----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 11.33) ; Number of LABs  (Total = 9) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 1                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 2                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 1                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 1                           ;
-; 10                                           ; 1                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
+; 13                                           ; 1                           ;
 ; 14                                           ; 0                           ;
 ; 15                                           ; 0                           ;
 ; 16                                           ; 0                           ;
@@ -1329,12 +1261,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 18                                           ; 0                           ;
 ; 19                                           ; 1                           ;
 ; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
+; 21                                           ; 1                           ;
 ; 22                                           ; 1                           ;
 ; 23                                           ; 0                           ;
-; 24                                           ; 0                           ;
+; 24                                           ; 2                           ;
 ; 25                                           ; 0                           ;
 ; 26                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                       ;
++-------------------------------------------------+-----------------------------+
+; Number of Signals Sourced Out  (Average = 6.78) ; Number of LABs  (Total = 9) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 2                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
+; 6                                               ; 1                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 2                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 1                           ;
+; 13                                              ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 10.00) ; Number of LABs  (Total = 9) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 1                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 1                           ;
+; 4                                            ; 1                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 1                           ;
+; 10                                           ; 1                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 2                           ;
+; 14                                           ; 1                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 0                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 0                           ;
+; 22                                           ; 0                           ;
+; 23                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -1410,19 +1396,19 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  34 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X12_Y14 to location X24_Y27
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.40 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 14 output pins without output pin load capacitance assignment
     Info (306007): Pin "vga_hsync" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1442,11 +1428,11 @@ Warning (306006): Found 14 output pins without output pin load capacitance assig
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II 32-bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Fri Dec 15 11:44:54 2017
+    Info: Peak virtual memory: 509 megabytes
+    Info: Processing ended: Fri Dec 15 12:29:01 2017
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:05
 

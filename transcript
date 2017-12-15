@@ -1,4 +1,4 @@
-# //  ModelSim SE-64 10.5b May 20 2016Linux 3.10.0-693.11.1.el7.x86_64
+# //  ModelSim SE-64 10.5b May 20 2016Linux 3.12.74-60.64.40-default
 # //
 # //  Copyright 1991-2016 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -12,27 +12,15 @@
 # //  18 U.S.C. Section 1905.
 # //
 # vsim -lib work vga_tb_behavioural_cfg -do "/data/public/common/software/opprog/do_files/init_simulator.do" 
-# Start time: 10:54:26 on Dec 15,2017
+# Start time: 11:55:50 on Dec 15,2017
+# ** Error: (vsim-7) Failed to open info file "/home/vschonk/Downloads/epo3git/epo3biem/work/_info" in read mode.
+# Permission denied. (errno = EACCES)
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.vga_tb_behavioural_cfg#1
-# Loading work.vga_tb(behavioural)#1
-# Loading work.vga_controller_behavior_cfg#1
-# Loading work.vga_controller(behavior)#1
-# Loading work.divider_behavior_cfg#1
-# Loading work.divider(behavior)#1
-# Loading work.helicopter_toplevel_cfg#1
-# Loading work.helicopter(toplevel)#1
-# Loading work.posnew_nextcopter_cfg#1
-# Loading work.posnew(nextcopter)#1
-# Loading work.pos_statemachine_cfg#1
-# Loading work.pos(statemachine)#1
-# Loading work.draw_renderer_cfg#1
-# Loading work.draw(renderer)#1
-# do /data/public/common/software/opprog/do_files/init_simulator.do
-run 200 ms
-# End time: 10:54:55 on Dec 15,2017, Elapsed time: 0:00:29
-# Errors: 0, Warnings: 0
+# ** Error: (vopt-7) Failed to open info file "/home/vschonk/Downloads/epo3git/epo3biem/work/_info" in read mode.
+# Permission denied. (errno = EACCES)
+# Optimization failed
+# ** Error: (vopt-1933) Unable to create temporary directory /home/vschonk/Downloads/epo3git/epo3biem/work/_tempmsg
+# Permission denied. (errno = EACCES)
+# Error loading design
+# End time: 11:55:51 on Dec 15,2017, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

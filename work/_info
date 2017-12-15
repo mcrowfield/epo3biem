@@ -8,16 +8,6 @@ z2
 !i10f 100
 cModel Technology
 Z0 depo3nogeens
-T_opt
-!s110 1513331668
-VWiP:O[C:kVVlB^z?V]=HZ3
-04 22 0 work vga_tb_behavioural_cfg 1
-=1-000ae431a4f1-5a339bd4-372c6-17d6
-o-quiet -auto_acc_if_foreign -work work
-tCvgOpt 0
-n@_opt
-OL;O;10.5b;63
-R0
 Edivider
 Z1 w1513333002
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
@@ -322,7 +312,6 @@ R29
 R16
 R3
 R4
-Z38 d/epo3biem
 8VHDL/pos_SYNTH.vhd
 FVHDL/pos_SYNTH.vhd
 l43
@@ -385,24 +374,24 @@ R8
 R13
 R14
 Eposnew
-Z39 w1513332879
+Z38 w1513332879
 R2
 R3
 R4
 R5
-Z40 8VHDL/pos+.vhd
-Z41 FVHDL/pos+.vhd
+Z39 8VHDL/pos+.vhd
+Z40 FVHDL/pos+.vhd
 l0
 L5
 VTC6V1TdE^z1RG1=jS8cTB0
 !s100 lnkO[G4SGRS:5IB]<;F5a1
 R8
 33
-Z42 !s110 1513333432
+Z41 !s110 1513333432
 !i10b 1
-Z43 !s108 1513333432.000000
-Z44 !s90 -2008|-lower|-explicit|-work|work|VHDL/pos+.vhd|-quiet|-nologo|
-Z45 !s107 VHDL/pos+.vhd|
+Z42 !s108 1513333432.000000
+Z43 !s90 -2008|-lower|-explicit|-work|work|VHDL/pos+.vhd|-quiet|-nologo|
+Z44 !s107 VHDL/pos+.vhd|
 !i113 0
 R13
 R14
@@ -417,11 +406,11 @@ V>=[No8?oE^mhHej;z5^nd3
 !s100 B9Gje0IeI[>W8^bGAQ[XT3
 R8
 33
-R42
+R41
 !i10b 1
+R42
 R43
 R44
-R45
 !i113 0
 R13
 R14
@@ -440,9 +429,9 @@ VY00a>KX@db=<?SZWzYk8<1
 !s100 <lh3^8Fg0FF5A7KO777GS1
 R8
 33
-Z46 !s110 1513332784
+Z45 !s110 1513332784
 !i10b 1
-Z47 !s108 1513332784.000000
+Z46 !s108 1513332784.000000
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/posnew_SYNTH.vhd|
 !s107 VHDL/posnew_SYNTH.vhd|
 !i113 0
@@ -475,31 +464,31 @@ R8
 R13
 R14
 Evga_controller
-Z48 w1513325979
+Z47 w1513325979
 R2
 R3
 R4
 R5
-Z49 8VHDL/vga_controller.vhd
-Z50 FVHDL/vga_controller.vhd
+Z48 8VHDL/vga_controller.vhd
+Z49 FVHDL/vga_controller.vhd
 l0
 L34
 V2bGo?boo=km[V3`RYzVcN0
 !s100 mV76[M@IoLXE=LGEGLB0i2
 R8
 33
-R46
+R45
 !i10b 1
-R47
-Z51 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller.vhd|
-Z52 !s107 VHDL/vga_controller.vhd|
+R46
+Z50 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller.vhd|
+Z51 !s107 VHDL/vga_controller.vhd|
 !i113 0
 R13
 R14
 Asynthesised
-Z53 w1513327496
+w1513327496
 R2
-Z54 DEx4 work 14 vga_controller 0 22 2bGo?boo=km[V3`RYzVcN0
+Z52 DEx4 work 14 vga_controller 0 22 2bGo?boo=km[V3`RYzVcN0
 R16
 R3
 R4
@@ -511,9 +500,9 @@ V1@]7A6DiaCJiic9b:dLEj0
 !s100 7l^LoY]iZUn;PPEV5;9Nz1
 R8
 33
-R46
+R45
 !i10b 1
-R47
+R46
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller_SYNTH.vhd|
 !s107 VHDL/vga_controller_SYNTH.vhd|
 !i113 0
@@ -523,18 +512,18 @@ Abehavior
 R2
 R3
 R4
-R54
+R52
 l62
 L57
 VFW@jj5TSKfz:;oT]ahW0_0
 !s100 F=SBNiV<6T8dZcB8zldLC0
 R8
 33
-R46
+R45
 !i10b 1
-R47
+R46
+R50
 R51
-R52
 !i113 0
 R13
 R14
@@ -545,7 +534,7 @@ DAx4 work 14 vga_controller 8 behavior 22 FW@jj5TSKfz:;oT]ahW0_0
 R2
 R3
 R4
-R54
+R52
 R18
 R5
 8VHDL/vga_controller_behavior_cfg.vhd
@@ -556,48 +545,48 @@ VaLBW1>6>XOJA_=27Q6Dh11
 !s100 naen`dloE7YMO]:DHY:511
 R8
 33
-R46
+R45
 !i10b 0
-R47
+R46
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller_behavior_cfg.vhd|
 !s107 VHDL/vga_controller_behavior_cfg.vhd|
 !i113 0
 R13
 R14
 Evga_tb
-Z55 w1513333523
+Z53 w1513333523
 R2
 R3
 R4
-R38
-Z56 8VHDL/tb_divider.vhd
-Z57 FVHDL/tb_divider.vhd
+R5
+Z54 8VHDL/tb_divider.vhd
+Z55 FVHDL/tb_divider.vhd
 l0
 L14
 V[zQENhIkBi?oAd@>MNF401
 !s100 nA5i<QBiBGS2:eS8>6z`g2
 R8
 33
-Z58 !s110 1513333708
+Z56 !s110 1513333708
 !i10b 1
-Z59 !s108 1513333707.000000
-Z60 !s90 -2008|-lower|-explicit|-work|work|VHDL/tb_divider.vhd|-quiet|-nologo|
-Z61 !s107 VHDL/tb_divider.vhd|
+Z57 !s108 1513333707.000000
+Z58 !s90 -2008|-lower|-explicit|-work|work|VHDL/tb_divider.vhd|-quiet|-nologo|
+Z59 !s107 VHDL/tb_divider.vhd|
 !i113 0
 R13
 R14
 Asynthesised
 R2
-Z62 DEx4 work 6 vga_tb 0 22 [zQENhIkBi?oAd@>MNF401
+Z60 DEx4 work 6 vga_tb 0 22 [zQENhIkBi?oAd@>MNF401
 R16
 R3
 R4
-Z63 8VHDL/vga_tb_SYNTH.vhd
-Z64 FVHDL/vga_tb_SYNTH.vhd
+8VHDL/vga_tb_SYNTH.vhd
+FVHDL/vga_tb_SYNTH.vhd
 l35
 L7
-Z65 V4<UV8KFJD`mSC>A4<Kk4o3
-Z66 !s100 o:3hM9m5j8dZc48DanfkL2
+V4<UV8KFJD`mSC>A4<Kk4o3
+!s100 o:3hM9m5j8dZc48DanfkL2
 R8
 33
 !s110 1513333710
@@ -612,18 +601,18 @@ Abehavioural
 R2
 R3
 R4
-R62
+R60
 l66
 L17
 VJ6G:d9nLl62Oi]zPQ96XV1
 !s100 10f6HE?DYld`d]IH>XlH[1
 R8
 33
-R58
+R56
 !i10b 1
+R57
+R58
 R59
-R60
-R61
 !i113 0
 R13
 R14
@@ -632,7 +621,7 @@ evga_tb
 abehavioural
 DEx4 work 10 helicopter 0 22 MS[9d4[nU;99VZ3bi^Sgo2
 DEx4 work 7 divider 0 22 <aR0cRlP13iAJLgmCg[NM3
-R54
+R52
 DCx4 work 23 helicopter_toplevel_cfg 0 22 E]PgKnC<4UGWke1]V4XLS1
 DCx4 work 20 divider_behavior_cfg 0 22 b4SCz:ePeE>cTa_TUgSWm3
 DCx4 work 27 vga_controller_behavior_cfg 0 22 aLBW1>6>XOJA_=27Q6Dh11
@@ -640,7 +629,7 @@ DAx4 work 6 vga_tb 11 behavioural 22 ;InLEznTEBA9YoJfP?kDb2
 R2
 R3
 R4
-R62
+R60
 R18
 R5
 8VHDL/vga_tb_behavioural_cfg.vhd
