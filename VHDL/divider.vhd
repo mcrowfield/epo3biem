@@ -14,8 +14,8 @@ ENTITY divider IS
 	shz	     :  IN   STD_LOGIC;            --vsync in to generate game tick
 	reset	 :  IN   STD_LOGIC;
 	clk      :  IN   STD_LOGIC;
-    xv	     :  OUT	 STD_LOGIC_VECTOR(5 downto 0);
-    yv       :  OUT	 STD_LOGIC_VECTOR(4 downto 0);
+    xv	     :  OUT	 STD_LOGIC_VECTOR(6 downto 0);
+    yv       :  OUT	 STD_LOGIC_VECTOR(5 downto 0);
     tick     :  OUT  STD_LOGIC);
 END divider;
 
