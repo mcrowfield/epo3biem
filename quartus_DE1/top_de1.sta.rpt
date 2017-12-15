@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for top_de1
-Fri Dec 15 09:52:46 2017
+Fri Dec 15 10:40:52 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -102,11 +102,12 @@ applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -125,8 +126,8 @@ applicable agreement for further details.
 +------------+-----------------+------------------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name             ; Note                                                          ;
 +------------+-----------------+------------------------+---------------------------------------------------------------+
-; 280.43 MHz ; 280.43 MHz      ; gen6mhz:inst1|count[2] ;                                                               ;
-; 826.45 MHz ; 380.08 MHz      ; clock_50mhz            ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 301.57 MHz ; 301.57 MHz      ; gen6mhz:inst1|count[2] ;                                                               ;
+; 792.39 MHz ; 380.08 MHz      ; clock_50mhz            ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -136,8 +137,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------+--------+---------------+
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
-; gen6mhz:inst1|count[2] ; -2.566 ; -76.958       ;
-; clock_50mhz            ; -0.210 ; -0.210        ;
+; gen6mhz:inst1|count[2] ; -2.316 ; -74.302       ;
+; clock_50mhz            ; -0.262 ; -0.262        ;
 +------------------------+--------+---------------+
 
 
@@ -146,7 +147,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------+--------+---------------+
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
-; clock_50mhz            ; -2.694 ; -2.694        ;
+; clock_50mhz            ; -2.690 ; -2.690        ;
 ; gen6mhz:inst1|count[2] ; 0.445  ; 0.000         ;
 +------------------------+--------+---------------+
 
@@ -169,7 +170,7 @@ No paths to report.
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
 ; clock_50mhz            ; -1.631 ; -5.297        ;
-; gen6mhz:inst1|count[2] ; -0.611 ; -48.880       ;
+; gen6mhz:inst1|count[2] ; -0.611 ; -51.324       ;
 +------------------------+--------+---------------+
 
 
@@ -178,106 +179,106 @@ No paths to report.
 +--------+---------------------------------+---------------------------------+------------------------+------------------------+--------------+------------+------------+
 ; Slack  ; From Node                       ; To Node                         ; Launch Clock           ; Latch Clock            ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------------+---------------------------------+------------------------+------------------------+--------------+------------+------------+
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.566 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.605      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.454 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.493      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.362 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.400      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.312 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.351      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.188 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.227      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.178 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.217      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.174 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.001      ; 3.213      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.162 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.200      ;
-; -2.126 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|shz        ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.005      ; 3.169      ;
-; -2.110 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|h_sync     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.005      ; 3.153      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.080 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.118      ;
-; -2.054 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|h_sync     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.005      ; 3.097      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.050 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.088      ;
-; -2.014 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|shz        ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.005      ; 3.057      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.316 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.354      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.284 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.322      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.254 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.292      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.247 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.285      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.246 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.284      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.106 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.144      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.102 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.140      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.095 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.133      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.077 ; vga_controller:inst4|v_count[2] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.115      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
+; -2.068 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 3.106      ;
 +--------+---------------------------------+---------------------------------+------------------------+------------------------+--------------+------------+------------+
 
 
@@ -286,13 +287,13 @@ No paths to report.
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node              ; To Node                ; Launch Clock           ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
-; -0.210 ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 1.248      ;
-; 0.128  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.910      ;
-; 0.130  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.908      ;
+; -0.262 ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 1.300      ;
+; 0.133  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.905      ;
+; 0.136  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.902      ;
 ; 0.307  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[0] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.731      ;
 ; 0.307  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.731      ;
-; 2.946  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.500        ; 2.862      ; 0.731      ;
-; 3.446  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 1.000        ; 2.862      ; 0.731      ;
+; 2.942  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.500        ; 2.858      ; 0.731      ;
+; 3.442  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 1.000        ; 2.858      ; 0.731      ;
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 
 
@@ -301,13 +302,13 @@ No paths to report.
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node              ; To Node                ; Launch Clock           ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
-; -2.694 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.000        ; 2.862      ; 0.731      ;
-; -2.194 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; -0.500       ; 2.862      ; 0.731      ;
+; -2.690 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.000        ; 2.858      ; 0.731      ;
+; -2.190 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; -0.500       ; 2.858      ; 0.731      ;
 ; 0.445  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[0] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.731      ;
-; 0.622  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.908      ;
-; 0.624  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.910      ;
-; 0.962  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 1.248      ;
+; 0.616  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.902      ;
+; 0.619  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.905      ;
+; 1.014  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 1.300      ;
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 
 
@@ -319,103 +320,103 @@ No paths to report.
 ; 0.445 ; divider:inst3|v_count[0]                  ; divider:inst3|v_count[0]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445 ; divider:inst3|v_count[1]                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|state.holds     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; helicopter:inst2|pos:lbl1|position_old[0] ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445 ; helicopter:inst2|pos:lbl1|position_old[1] ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445 ; helicopter:inst2|pos:lbl1|position_old[2] ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; helicopter:inst2|pos:lbl1|position_old[3] ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445 ; helicopter:inst2|pos:lbl1|position_old[4] ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.731      ;
-; 0.621 ; vga_controller:inst4|shz                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.907      ;
-; 0.623 ; divider:inst3|v_count[1]                  ; helicopter:inst2|pos:lbl1|state.holds     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.909      ;
 ; 0.624 ; vga_controller:inst4|shz                  ; divider:inst3|v_count[0]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.910      ;
-; 0.640 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.926      ;
-; 0.648 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.934      ;
-; 0.904 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 1.194      ;
-; 0.966 ; divider:inst3|v_count[0]                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.252      ;
+; 0.624 ; vga_controller:inst4|shz                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.910      ;
+; 0.630 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|state.adds      ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.916      ;
+; 0.644 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.930      ;
+; 0.841 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.127      ;
+; 0.842 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.128      ;
+; 0.842 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.128      ;
+; 0.938 ; divider:inst3|v_count[1]                  ; helicopter:inst2|pos:lbl1|state.adds      ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.224      ;
+; 0.956 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|row[7]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.241      ;
+; 0.960 ; divider:inst3|v_count[0]                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.246      ;
 ; 0.973 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[0]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.259      ;
-; 0.976 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|row[7]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 1.266      ;
-; 0.984 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[0]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.270      ;
-; 0.986 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.272      ;
-; 0.988 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.274      ;
+; 0.973 ; divider:inst3|v_count[1]                  ; helicopter:inst2|pos:lbl1|state.holds     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.259      ;
+; 0.977 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.263      ;
+; 0.985 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.271      ;
+; 0.995 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.281      ;
 ; 0.995 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.281      ;
-; 1.000 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.286      ;
+; 1.001 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.287      ;
 ; 1.005 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.291      ;
-; 1.017 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|row[5]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 1.307      ;
-; 1.022 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|row[6]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 1.312      ;
+; 1.005 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|row[6]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.290      ;
+; 1.007 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|row[5]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.292      ;
 ; 1.025 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.311      ;
-; 1.035 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.321      ;
-; 1.036 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.322      ;
-; 1.037 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.323      ;
+; 1.032 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.318      ;
 ; 1.037 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.323      ;
-; 1.041 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.327      ;
 ; 1.046 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.332      ;
 ; 1.050 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.336      ;
-; 1.157 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|column[7]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 1.448      ;
-; 1.168 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|row[4]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 1.458      ;
-; 1.168 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|column[5]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 1.459      ;
-; 1.174 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|row[8]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 1.464      ;
-; 1.227 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.513      ;
-; 1.239 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.525      ;
-; 1.283 ; helicopter:inst2|pos:lbl1|position_old[1] ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.569      ;
-; 1.303 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|column[6]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 1.594      ;
+; 1.089 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.374      ;
+; 1.135 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|row[4]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.420      ;
+; 1.136 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|row[8]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.421      ;
+; 1.157 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|column[6]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.002     ; 1.441      ;
+; 1.158 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.443      ;
+; 1.188 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|column[7]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.002     ; 1.472      ;
+; 1.191 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.477      ;
+; 1.191 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.477      ;
+; 1.212 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.498      ;
+; 1.213 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.499      ;
+; 1.215 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.501      ;
+; 1.216 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.502      ;
+; 1.226 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.512      ;
+; 1.247 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[0]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.533      ;
+; 1.255 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.541      ;
+; 1.288 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|column[4]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.002     ; 1.572      ;
+; 1.292 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|column[5]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.002     ; 1.576      ;
+; 1.292 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|column[3]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.002     ; 1.576      ;
+; 1.295 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|column[2]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.002     ; 1.579      ;
 ; 1.405 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.691      ;
-; 1.416 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.702      ;
-; 1.418 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.704      ;
+; 1.409 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.695      ;
+; 1.417 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.703      ;
 ; 1.427 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.713      ;
-; 1.432 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.718      ;
+; 1.433 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.719      ;
 ; 1.458 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.744      ;
-; 1.468 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.754      ;
-; 1.469 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.755      ;
-; 1.470 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.756      ;
+; 1.465 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.751      ;
 ; 1.470 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.756      ;
-; 1.474 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.760      ;
 ; 1.479 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.765      ;
 ; 1.483 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.769      ;
 ; 1.485 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.771      ;
-; 1.496 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.782      ;
-; 1.498 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.784      ;
-; 1.507 ; helicopter:inst2|pos:lbl1|position_old[0] ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.793      ;
+; 1.489 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.775      ;
+; 1.497 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.783      ;
 ; 1.507 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.793      ;
-; 1.512 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.798      ;
-; 1.514 ; helicopter:inst2|pos:lbl1|position_old[3] ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.800      ;
-; 1.521 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.807      ;
-; 1.525 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 1.816      ;
-; 1.526 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|column[4]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 1.817      ;
+; 1.513 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.799      ;
+; 1.522 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.808      ;
+; 1.524 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.810      ;
 ; 1.538 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.824      ;
-; 1.548 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.834      ;
-; 1.549 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.834      ;
-; 1.549 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.835      ;
+; 1.545 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.831      ;
 ; 1.550 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.836      ;
 ; 1.559 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.845      ;
 ; 1.565 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.851      ;
-; 1.576 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.862      ;
-; 1.578 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.864      ;
-; 1.582 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.867      ;
+; 1.569 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.855      ;
+; 1.577 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.863      ;
 ; 1.587 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.873      ;
-; 1.592 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.878      ;
-; 1.601 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.887      ;
+; 1.593 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.879      ;
 ; 1.618 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.904      ;
-; 1.629 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.915      ;
+; 1.625 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.911      ;
 ; 1.630 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.916      ;
-; 1.641 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 1.931      ;
+; 1.644 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.930      ;
+; 1.645 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.931      ;
 ; 1.645 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.931      ;
-; 1.648 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.934      ;
+; 1.649 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.935      ;
 ; 1.657 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.943      ;
-; 1.658 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.944      ;
+; 1.657 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.943      ;
+; 1.658 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.944      ;
 ; 1.667 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.953      ;
-; 1.672 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.958      ;
-; 1.681 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.967      ;
+; 1.677 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.963      ;
+; 1.684 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.970      ;
+; 1.687 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.972      ;
+; 1.688 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.974      ;
+; 1.697 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|shz                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; -0.001     ; 1.982      ;
+; 1.705 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.991      ;
 ; 1.710 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.996      ;
-; 1.713 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 1.999      ;
-; 1.722 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.008      ;
+; 1.724 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.010      ;
+; 1.725 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.011      ;
 ; 1.725 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.011      ;
-; 1.728 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.014      ;
-; 1.731 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|shz                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.004      ; 2.021      ;
-; 1.733 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.019      ;
-; 1.737 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.023      ;
-; 1.738 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.024      ;
-; 1.747 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.033      ;
-; 1.750 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.036      ;
-; 1.752 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.038      ;
-; 1.756 ; helicopter:inst2|pos:lbl1|position_old[2] ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.042      ;
-; 1.761 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.047      ;
+; 1.729 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 2.015      ;
 +-------+-------------------------------------------+-------------------------------------------+------------------------+------------------------+--------------+------------+------------+
 
 
@@ -469,6 +470,10 @@ No paths to report.
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; helicopter:inst2|pos:lbl1|state.adds      ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; helicopter:inst2|pos:lbl1|state.holds     ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; helicopter:inst2|pos:lbl1|state.holds     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[2]            ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[2]            ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[3]            ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[3]            ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[4]            ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[4]            ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[5]            ;
@@ -547,10 +552,6 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|position_old[3]|clk            ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|position_old[4]|clk            ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|position_old[4]|clk            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.adds|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.adds|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.holds|clk                ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.holds|clk                ;
 +--------+--------------+----------------+------------------+------------------------+------------+-------------------------------------------+
 
 
@@ -559,8 +560,9 @@ No paths to report.
 +-----------+------------------------+-------+-------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+-------+-------+------------+------------------------+
-; VCC       ; gen6mhz:inst1|count[2] ; 5.893 ; 5.893 ; Rise       ; gen6mhz:inst1|count[2] ;
-; reset     ; gen6mhz:inst1|count[2] ; 2.468 ; 2.468 ; Rise       ; gen6mhz:inst1|count[2] ;
+; button    ; gen6mhz:inst1|count[2] ; 5.602 ; 5.602 ; Rise       ; gen6mhz:inst1|count[2] ;
+; enable    ; gen6mhz:inst1|count[2] ; 0.207 ; 0.207 ; Rise       ; gen6mhz:inst1|count[2] ;
+; reset     ; gen6mhz:inst1|count[2] ; 1.263 ; 1.263 ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+-------+-------+------------+------------------------+
 
 
@@ -569,8 +571,9 @@ No paths to report.
 +-----------+------------------------+--------+--------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+--------+--------+------------+------------------------+
-; VCC       ; gen6mhz:inst1|count[2] ; -4.610 ; -4.610 ; Rise       ; gen6mhz:inst1|count[2] ;
-; reset     ; gen6mhz:inst1|count[2] ; -0.508 ; -0.508 ; Rise       ; gen6mhz:inst1|count[2] ;
+; button    ; gen6mhz:inst1|count[2] ; -4.257 ; -4.257 ; Rise       ; gen6mhz:inst1|count[2] ;
+; enable    ; gen6mhz:inst1|count[2] ; 0.332  ; 0.332  ; Rise       ; gen6mhz:inst1|count[2] ;
+; reset     ; gen6mhz:inst1|count[2] ; 0.261  ; 0.261  ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+--------+--------+------------+------------------------+
 
 
@@ -579,29 +582,29 @@ No paths to report.
 +-----------+------------------------+--------+--------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+--------+--------+------------+------------------------+
-; vga_b[*]  ; gen6mhz:inst1|count[2] ; 11.680 ; 11.680 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[0] ; gen6mhz:inst1|count[2] ; 11.680 ; 11.680 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[1] ; gen6mhz:inst1|count[2] ; 11.636 ; 11.636 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[2] ; gen6mhz:inst1|count[2] ; 11.663 ; 11.663 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[3] ; gen6mhz:inst1|count[2] ; 11.623 ; 11.623 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_hsync ; gen6mhz:inst1|count[2] ; 7.132  ; 7.132  ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_vsync ; gen6mhz:inst1|count[2] ; 7.108  ; 7.108  ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_b[*]  ; gen6mhz:inst1|count[2] ; 15.162 ; 15.162 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[0] ; gen6mhz:inst1|count[2] ; 14.249 ; 14.249 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[1] ; gen6mhz:inst1|count[2] ; 15.162 ; 15.162 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[2] ; gen6mhz:inst1|count[2] ; 14.912 ; 14.912 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[3] ; gen6mhz:inst1|count[2] ; 14.872 ; 14.872 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_hsync ; gen6mhz:inst1|count[2] ; 9.288  ; 9.288  ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_vsync ; gen6mhz:inst1|count[2] ; 9.279  ; 9.279  ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+--------+--------+------------+------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                            ;
-+-----------+------------------------+-------+-------+------------+------------------------+
-; Data Port ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+-----------+------------------------+-------+-------+------------+------------------------+
-; vga_b[*]  ; gen6mhz:inst1|count[2] ; 8.911 ; 8.911 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[0] ; gen6mhz:inst1|count[2] ; 8.968 ; 8.968 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[1] ; gen6mhz:inst1|count[2] ; 8.924 ; 8.924 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[2] ; gen6mhz:inst1|count[2] ; 8.951 ; 8.951 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[3] ; gen6mhz:inst1|count[2] ; 8.911 ; 8.911 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_hsync ; gen6mhz:inst1|count[2] ; 7.132 ; 7.132 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_vsync ; gen6mhz:inst1|count[2] ; 7.108 ; 7.108 ; Rise       ; gen6mhz:inst1|count[2] ;
-+-----------+------------------------+-------+-------+------------+------------------------+
++--------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                              ;
++-----------+------------------------+--------+--------+------------+------------------------+
+; Data Port ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
++-----------+------------------------+--------+--------+------------+------------------------+
+; vga_b[*]  ; gen6mhz:inst1|count[2] ; 10.880 ; 10.880 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[0] ; gen6mhz:inst1|count[2] ; 10.880 ; 10.880 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[1] ; gen6mhz:inst1|count[2] ; 11.793 ; 11.793 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[2] ; gen6mhz:inst1|count[2] ; 11.543 ; 11.543 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[3] ; gen6mhz:inst1|count[2] ; 11.503 ; 11.503 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_hsync ; gen6mhz:inst1|count[2] ; 9.288  ; 9.288  ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_vsync ; gen6mhz:inst1|count[2] ; 9.279  ; 9.279  ; Rise       ; gen6mhz:inst1|count[2] ;
++-----------+------------------------+--------+--------+------------+------------------------+
 
 
 +----------------------------------------------------+
@@ -641,8 +644,8 @@ No paths to report.
 +------------------------+--------+---------------+
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
-; gen6mhz:inst1|count[2] ; -0.435 ; -8.658        ;
-; clock_50mhz            ; 0.524  ; 0.000         ;
+; gen6mhz:inst1|count[2] ; -0.362 ; -7.677        ;
+; clock_50mhz            ; 0.508  ; 0.000         ;
 +------------------------+--------+---------------+
 
 
@@ -651,7 +654,7 @@ No paths to report.
 +------------------------+--------+---------------+
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
-; clock_50mhz            ; -1.721 ; -1.721        ;
+; clock_50mhz            ; -1.720 ; -1.720        ;
 ; gen6mhz:inst1|count[2] ; 0.215  ; 0.000         ;
 +------------------------+--------+---------------+
 
@@ -674,7 +677,7 @@ No paths to report.
 ; Clock                  ; Slack  ; End Point TNS ;
 +------------------------+--------+---------------+
 ; clock_50mhz            ; -1.380 ; -4.380        ;
-; gen6mhz:inst1|count[2] ; -0.500 ; -40.000       ;
+; gen6mhz:inst1|count[2] ; -0.500 ; -42.000       ;
 +------------------------+--------+---------------+
 
 
@@ -683,106 +686,106 @@ No paths to report.
 +--------+---------------------------------+---------------------------------+------------------------+------------------------+--------------+------------+------------+
 ; Slack  ; From Node                       ; To Node                         ; Launch Clock           ; Latch Clock            ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------------+---------------------------------+------------------------+------------------------+--------------+------------+------------+
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.435 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.467      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.417 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.449      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.349 ; vga_controller:inst4|h_count[0] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.381      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.315 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.313 ; vga_controller:inst4|v_count[1] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.345      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.312 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.344      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.307 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.339      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.268 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|h_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.300      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.250 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|h_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.282      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.217 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.249      ;
-; -0.210 ; vga_controller:inst4|h_count[6] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.242      ;
-; -0.210 ; vga_controller:inst4|h_count[6] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.242      ;
-; -0.210 ; vga_controller:inst4|h_count[6] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.242      ;
-; -0.210 ; vga_controller:inst4|h_count[6] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.242      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.362 ; vga_controller:inst4|h_count[5] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.394      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.348 ; vga_controller:inst4|h_count[1] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.380      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.334 ; vga_controller:inst4|h_count[4] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.366      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; vga_controller:inst4|v_count[3] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.347      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.289 ; vga_controller:inst4|v_count[0] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.321      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.285 ; vga_controller:inst4|h_count[3] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.317      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.284 ; vga_controller:inst4|h_count[2] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.316      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.277 ; vga_controller:inst4|v_count[5] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.309      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[5] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[6] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[7] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[8] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[9] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.260 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|v_count[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.292      ;
+; -0.257 ; vga_controller:inst4|v_count[6] ; vga_controller:inst4|row[6]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.289      ;
+; -0.257 ; vga_controller:inst4|v_count[6] ; vga_controller:inst4|row[5]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.289      ;
+; -0.257 ; vga_controller:inst4|v_count[6] ; vga_controller:inst4|row[4]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.289      ;
+; -0.257 ; vga_controller:inst4|v_count[6] ; vga_controller:inst4|row[8]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.289      ;
+; -0.257 ; vga_controller:inst4|v_count[6] ; vga_controller:inst4|row[7]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.289      ;
+; -0.241 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|row[6]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.273      ;
+; -0.241 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|row[5]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.273      ;
+; -0.241 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|row[4]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.273      ;
+; -0.241 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|row[8]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.273      ;
+; -0.241 ; vga_controller:inst4|v_count[7] ; vga_controller:inst4|row[7]     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 1.000        ; 0.000      ; 1.273      ;
 +--------+---------------------------------+---------------------------------+------------------------+------------------------+--------------+------------+------------+
 
 
@@ -791,13 +794,13 @@ No paths to report.
 +-------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 ; Slack ; From Node              ; To Node                ; Launch Clock           ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
-; 0.524 ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.508      ;
-; 0.635 ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.397      ;
-; 0.638 ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.394      ;
+; 0.508 ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.524      ;
+; 0.640 ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.392      ;
+; 0.641 ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.391      ;
 ; 0.665 ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[0] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.367      ;
 ; 0.665 ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 1.000        ; 0.000      ; 0.367      ;
-; 2.101 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.500        ; 1.795      ; 0.367      ;
-; 2.601 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 1.000        ; 1.795      ; 0.367      ;
+; 2.100 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.500        ; 1.794      ; 0.367      ;
+; 2.600 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 1.000        ; 1.794      ; 0.367      ;
 +-------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 
 
@@ -806,13 +809,13 @@ No paths to report.
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node              ; To Node                ; Launch Clock           ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
-; -1.721 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.000        ; 1.795      ; 0.367      ;
-; -1.221 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; -0.500       ; 1.795      ; 0.367      ;
+; -1.720 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; 0.000        ; 1.794      ; 0.367      ;
+; -1.220 ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; clock_50mhz ; -0.500       ; 1.794      ; 0.367      ;
 ; 0.215  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[0] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.367      ;
-; 0.242  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.394      ;
-; 0.245  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.397      ;
-; 0.356  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.508      ;
+; 0.239  ; gen6mhz:inst1|count[1] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.391      ;
+; 0.240  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[1] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.392      ;
+; 0.372  ; gen6mhz:inst1|count[0] ; gen6mhz:inst1|count[2] ; clock_50mhz            ; clock_50mhz ; 0.000        ; 0.000      ; 0.524      ;
 +--------+------------------------+------------------------+------------------------+-------------+--------------+------------+------------+
 
 
@@ -824,103 +827,103 @@ No paths to report.
 ; 0.215 ; divider:inst3|v_count[0]                  ; divider:inst3|v_count[0]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; divider:inst3|v_count[1]                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|state.holds     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; helicopter:inst2|pos:lbl1|position_old[0] ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; helicopter:inst2|pos:lbl1|position_old[1] ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; helicopter:inst2|pos:lbl1|position_old[2] ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; helicopter:inst2|pos:lbl1|position_old[3] ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; helicopter:inst2|pos:lbl1|position_old[4] ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.367      ;
-; 0.241 ; vga_controller:inst4|shz                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.393      ;
-; 0.243 ; divider:inst3|v_count[1]                  ; helicopter:inst2|pos:lbl1|state.holds     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.395      ;
-; 0.245 ; vga_controller:inst4|shz                  ; divider:inst3|v_count[0]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.397      ;
-; 0.249 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.401      ;
-; 0.253 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.405      ;
-; 0.348 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.505      ;
-; 0.358 ; divider:inst3|v_count[0]                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.510      ;
+; 0.244 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|state.adds      ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.396      ;
+; 0.244 ; vga_controller:inst4|shz                  ; divider:inst3|v_count[0]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.396      ;
+; 0.244 ; vga_controller:inst4|shz                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.396      ;
+; 0.251 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.403      ;
+; 0.335 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.487      ;
+; 0.336 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.488      ;
+; 0.337 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.489      ;
+; 0.355 ; divider:inst3|v_count[0]                  ; divider:inst3|v_count[1]                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.507      ;
 ; 0.360 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[0]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.512      ;
-; 0.364 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.516      ;
-; 0.367 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.519      ;
-; 0.368 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[0]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.520      ;
+; 0.362 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.514      ;
+; 0.366 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.518      ;
+; 0.366 ; divider:inst3|v_count[1]                  ; helicopter:inst2|pos:lbl1|state.holds     ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.518      ;
+; 0.367 ; divider:inst3|v_count[1]                  ; helicopter:inst2|pos:lbl1|state.adds      ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.519      ;
+; 0.371 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.523      ;
 ; 0.373 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.525      ;
-; 0.374 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.526      ;
-; 0.376 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.528      ;
+; 0.373 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.525      ;
+; 0.375 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.527      ;
 ; 0.377 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.529      ;
-; 0.383 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.535      ;
-; 0.384 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.536      ;
-; 0.384 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.536      ;
+; 0.380 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.532      ;
 ; 0.385 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.537      ;
-; 0.387 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.539      ;
 ; 0.388 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.540      ;
 ; 0.389 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.541      ;
-; 0.401 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|row[7]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.558      ;
-; 0.402 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|row[5]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.559      ;
-; 0.406 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|row[6]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.563      ;
-; 0.435 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|column[7]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.592      ;
-; 0.443 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|row[4]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.600      ;
-; 0.444 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|row[8]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.601      ;
-; 0.445 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|column[5]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.602      ;
-; 0.451 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.603      ;
-; 0.453 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.605      ;
-; 0.474 ; helicopter:inst2|pos:lbl1|position_old[1] ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.626      ;
+; 0.392 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|row[7]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.544      ;
+; 0.398 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|row[6]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.550      ;
+; 0.399 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|row[5]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.551      ;
+; 0.420 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.572      ;
+; 0.423 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|row[4]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.575      ;
+; 0.425 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|row[8]               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.577      ;
+; 0.437 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|column[6]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.589      ;
+; 0.446 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.598      ;
+; 0.448 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.600      ;
+; 0.451 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.603      ;
+; 0.452 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[2] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.604      ;
+; 0.453 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[0]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.605      ;
+; 0.453 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.605      ;
+; 0.454 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|column[7]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.606      ;
+; 0.454 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.606      ;
+; 0.456 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.608      ;
+; 0.456 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.608      ;
+; 0.459 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.611      ;
 ; 0.498 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.650      ;
-; 0.502 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.654      ;
-; 0.506 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.658      ;
+; 0.500 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.652      ;
+; 0.504 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.656      ;
+; 0.508 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|column[4]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.660      ;
+; 0.508 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|column[2]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.660      ;
+; 0.509 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|column[5]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.661      ;
+; 0.510 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|column[3]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.662      ;
 ; 0.511 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.663      ;
-; 0.512 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.664      ;
+; 0.511 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.663      ;
 ; 0.517 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.669      ;
-; 0.518 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|column[6]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.675      ;
-; 0.523 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.675      ;
-; 0.524 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.676      ;
-; 0.524 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.676      ;
+; 0.520 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.672      ;
 ; 0.525 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.677      ;
-; 0.527 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.679      ;
 ; 0.528 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.680      ;
 ; 0.529 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.681      ;
 ; 0.533 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.685      ;
-; 0.537 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.689      ;
-; 0.541 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.693      ;
+; 0.535 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.687      ;
+; 0.539 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.691      ;
 ; 0.546 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.698      ;
-; 0.547 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.699      ;
-; 0.549 ; helicopter:inst2|pos:lbl1|position_old[0] ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.701      ;
-; 0.552 ; helicopter:inst2|pos:lbl1|position_old[3] ; helicopter:inst2|pos:lbl1|position_old[3] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.704      ;
-; 0.558 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.710      ;
-; 0.559 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.711      ;
-; 0.560 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.712      ;
+; 0.546 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.698      ;
+; 0.555 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.707      ;
+; 0.556 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[0] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.708      ;
+; 0.557 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.709      ;
 ; 0.560 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.712      ;
 ; 0.563 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.715      ;
-; 0.566 ; vga_controller:inst4|h_count[7]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.723      ;
+; 0.568 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.720      ;
 ; 0.568 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.720      ;
-; 0.569 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.721      ;
-; 0.572 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.724      ;
-; 0.574 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|column[4]            ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.731      ;
-; 0.576 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.728      ;
+; 0.570 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.722      ;
+; 0.574 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.726      ;
 ; 0.581 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.733      ;
-; 0.582 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.734      ;
-; 0.590 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.742      ;
-; 0.591 ; helicopter:inst2|pos:lbl1|state.holds     ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.743      ;
-; 0.591 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.743      ;
-; 0.593 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.745      ;
-; 0.595 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.747      ;
+; 0.581 ; vga_controller:inst4|v_count[4]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.733      ;
+; 0.584 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[3]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.736      ;
+; 0.586 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.738      ;
+; 0.590 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.742      ;
+; 0.591 ; vga_controller:inst4|h_count[6]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.743      ;
+; 0.593 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[1]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.745      ;
 ; 0.595 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.747      ;
+; 0.599 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.751      ;
+; 0.603 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.755      ;
 ; 0.603 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.755      ;
-; 0.604 ; vga_controller:inst4|v_count[7]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.756      ;
-; 0.607 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.759      ;
+; 0.605 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.757      ;
+; 0.609 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.761      ;
 ; 0.616 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.768      ;
-; 0.621 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.773      ;
+; 0.619 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.771      ;
+; 0.620 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[1] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.772      ;
+; 0.621 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|shz                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.773      ;
+; 0.621 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.773      ;
 ; 0.623 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.775      ;
-; 0.626 ; vga_controller:inst4|h_count[5]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.778      ;
-; 0.628 ; helicopter:inst2|pos:lbl1|state.adds      ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.780      ;
-; 0.630 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.782      ;
+; 0.625 ; vga_controller:inst4|h_count[3]           ; vga_controller:inst4|h_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.777      ;
+; 0.626 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|shz                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.778      ;
+; 0.628 ; vga_controller:inst4|h_count[0]           ; vga_controller:inst4|h_count[2]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.780      ;
 ; 0.630 ; vga_controller:inst4|v_count[3]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.782      ;
-; 0.638 ; vga_controller:inst4|v_count[9]           ; vga_controller:inst4|shz                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.795      ;
-; 0.638 ; vga_controller:inst4|v_count[0]           ; vga_controller:inst4|v_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.790      ;
-; 0.642 ; vga_controller:inst4|v_count[1]           ; vga_controller:inst4|v_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.794      ;
-; 0.643 ; helicopter:inst2|pos:lbl1|position_old[2] ; helicopter:inst2|pos:lbl1|position_old[4] ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.795      ;
-; 0.645 ; vga_controller:inst4|v_count[8]           ; vga_controller:inst4|shz                  ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.802      ;
-; 0.646 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|disp_ena             ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.803      ;
-; 0.651 ; vga_controller:inst4|v_count[2]           ; vga_controller:inst4|v_count[7]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.803      ;
-; 0.653 ; vga_controller:inst4|h_count[1]           ; vga_controller:inst4|h_count[4]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.805      ;
-; 0.656 ; vga_controller:inst4|h_count[2]           ; vga_controller:inst4|h_count[5]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.808      ;
-; 0.657 ; vga_controller:inst4|v_count[5]           ; vga_controller:inst4|v_count[8]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.809      ;
-; 0.658 ; vga_controller:inst4|v_count[6]           ; vga_controller:inst4|v_count[9]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.810      ;
-; 0.663 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_sync               ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.005      ; 0.820      ;
+; 0.634 ; vga_controller:inst4|h_count[4]           ; vga_controller:inst4|h_count[6]           ; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 0.000        ; 0.000      ; 0.786      ;
 +-------+-------------------------------------------+-------------------------------------------+------------------------+------------------------+--------------+------------+------------+
 
 
@@ -974,6 +977,10 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; helicopter:inst2|pos:lbl1|state.adds      ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; helicopter:inst2|pos:lbl1|state.holds     ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; helicopter:inst2|pos:lbl1|state.holds     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[2]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[2]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[3]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[3]            ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[4]            ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[4]            ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; vga_controller:inst4|column[5]            ;
@@ -1052,21 +1059,18 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|position_old[3]|clk            ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|position_old[4]|clk            ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|position_old[4]|clk            ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.adds|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.adds|clk                 ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.holds|clk                ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gen6mhz:inst1|count[2] ; Rise       ; inst2|lbl1|state.holds|clk                ;
 +--------+--------------+----------------+------------------+------------------------+------------+-------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Setup Times                                                                              ;
-+-----------+------------------------+-------+-------+------------+------------------------+
-; Data Port ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
-+-----------+------------------------+-------+-------+------------+------------------------+
-; VCC       ; gen6mhz:inst1|count[2] ; 2.666 ; 2.666 ; Rise       ; gen6mhz:inst1|count[2] ;
-; reset     ; gen6mhz:inst1|count[2] ; 0.557 ; 0.557 ; Rise       ; gen6mhz:inst1|count[2] ;
-+-----------+------------------------+-------+-------+------------+------------------------+
++--------------------------------------------------------------------------------------------+
+; Setup Times                                                                                ;
++-----------+------------------------+--------+--------+------------+------------------------+
+; Data Port ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
++-----------+------------------------+--------+--------+------------+------------------------+
+; button    ; gen6mhz:inst1|count[2] ; 2.499  ; 2.499  ; Rise       ; gen6mhz:inst1|count[2] ;
+; enable    ; gen6mhz:inst1|count[2] ; -0.337 ; -0.337 ; Rise       ; gen6mhz:inst1|count[2] ;
+; reset     ; gen6mhz:inst1|count[2] ; 0.129  ; 0.129  ; Rise       ; gen6mhz:inst1|count[2] ;
++-----------+------------------------+--------+--------+------------+------------------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -1074,8 +1078,9 @@ No paths to report.
 +-----------+------------------------+--------+--------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+--------+--------+------------+------------------------+
-; VCC       ; gen6mhz:inst1|count[2] ; -2.150 ; -2.150 ; Rise       ; gen6mhz:inst1|count[2] ;
-; reset     ; gen6mhz:inst1|count[2] ; 0.222  ; 0.222  ; Rise       ; gen6mhz:inst1|count[2] ;
+; button    ; gen6mhz:inst1|count[2] ; -1.992 ; -1.992 ; Rise       ; gen6mhz:inst1|count[2] ;
+; enable    ; gen6mhz:inst1|count[2] ; 0.585  ; 0.585  ; Rise       ; gen6mhz:inst1|count[2] ;
+; reset     ; gen6mhz:inst1|count[2] ; 0.542  ; 0.542  ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+--------+--------+------------+------------------------+
 
 
@@ -1084,13 +1089,13 @@ No paths to report.
 +-----------+------------------------+-------+-------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+-------+-------+------------+------------------------+
-; vga_b[*]  ; gen6mhz:inst1|count[2] ; 5.450 ; 5.450 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[0] ; gen6mhz:inst1|count[2] ; 5.450 ; 5.450 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[1] ; gen6mhz:inst1|count[2] ; 5.415 ; 5.415 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[2] ; gen6mhz:inst1|count[2] ; 5.438 ; 5.438 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[3] ; gen6mhz:inst1|count[2] ; 5.398 ; 5.398 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_hsync ; gen6mhz:inst1|count[2] ; 3.815 ; 3.815 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_vsync ; gen6mhz:inst1|count[2] ; 3.790 ; 3.790 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_b[*]  ; gen6mhz:inst1|count[2] ; 6.895 ; 6.895 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[0] ; gen6mhz:inst1|count[2] ; 6.549 ; 6.549 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[1] ; gen6mhz:inst1|count[2] ; 6.895 ; 6.895 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[2] ; gen6mhz:inst1|count[2] ; 6.816 ; 6.816 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[3] ; gen6mhz:inst1|count[2] ; 6.776 ; 6.776 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_hsync ; gen6mhz:inst1|count[2] ; 4.603 ; 4.603 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_vsync ; gen6mhz:inst1|count[2] ; 4.587 ; 4.587 ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+-------+-------+------------+------------------------+
 
 
@@ -1099,13 +1104,13 @@ No paths to report.
 +-----------+------------------------+-------+-------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+-------+-------+------------+------------------------+
-; vga_b[*]  ; gen6mhz:inst1|count[2] ; 4.429 ; 4.429 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[0] ; gen6mhz:inst1|count[2] ; 4.481 ; 4.481 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[1] ; gen6mhz:inst1|count[2] ; 4.446 ; 4.446 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[2] ; gen6mhz:inst1|count[2] ; 4.469 ; 4.469 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[3] ; gen6mhz:inst1|count[2] ; 4.429 ; 4.429 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_hsync ; gen6mhz:inst1|count[2] ; 3.815 ; 3.815 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_vsync ; gen6mhz:inst1|count[2] ; 3.790 ; 3.790 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_b[*]  ; gen6mhz:inst1|count[2] ; 5.337 ; 5.337 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[0] ; gen6mhz:inst1|count[2] ; 5.337 ; 5.337 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[1] ; gen6mhz:inst1|count[2] ; 5.683 ; 5.683 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[2] ; gen6mhz:inst1|count[2] ; 5.604 ; 5.604 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[3] ; gen6mhz:inst1|count[2] ; 5.564 ; 5.564 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_hsync ; gen6mhz:inst1|count[2] ; 4.603 ; 4.603 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_vsync ; gen6mhz:inst1|count[2] ; 4.587 ; 4.587 ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+-------+-------+------------+------------------------+
 
 
@@ -1146,12 +1151,12 @@ No paths to report.
 +-------------------------+---------+--------+----------+---------+---------------------+
 ; Clock                   ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------+---------+--------+----------+---------+---------------------+
-; Worst-case Slack        ; -2.566  ; -2.694 ; N/A      ; N/A     ; -1.631              ;
-;  clock_50mhz            ; -0.210  ; -2.694 ; N/A      ; N/A     ; -1.631              ;
-;  gen6mhz:inst1|count[2] ; -2.566  ; 0.215  ; N/A      ; N/A     ; -0.611              ;
-; Design-wide TNS         ; -77.168 ; -2.694 ; 0.0      ; 0.0     ; -54.177             ;
-;  clock_50mhz            ; -0.210  ; -2.694 ; N/A      ; N/A     ; -5.297              ;
-;  gen6mhz:inst1|count[2] ; -76.958 ; 0.000  ; N/A      ; N/A     ; -48.880             ;
+; Worst-case Slack        ; -2.316  ; -2.690 ; N/A      ; N/A     ; -1.631              ;
+;  clock_50mhz            ; -0.262  ; -2.690 ; N/A      ; N/A     ; -1.631              ;
+;  gen6mhz:inst1|count[2] ; -2.316  ; 0.215  ; N/A      ; N/A     ; -0.611              ;
+; Design-wide TNS         ; -74.564 ; -2.69  ; 0.0      ; 0.0     ; -56.621             ;
+;  clock_50mhz            ; -0.262  ; -2.690 ; N/A      ; N/A     ; -5.297              ;
+;  gen6mhz:inst1|count[2] ; -74.302 ; 0.000  ; N/A      ; N/A     ; -51.324             ;
 +-------------------------+---------+--------+----------+---------+---------------------+
 
 
@@ -1160,8 +1165,9 @@ No paths to report.
 +-----------+------------------------+-------+-------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+-------+-------+------------+------------------------+
-; VCC       ; gen6mhz:inst1|count[2] ; 5.893 ; 5.893 ; Rise       ; gen6mhz:inst1|count[2] ;
-; reset     ; gen6mhz:inst1|count[2] ; 2.468 ; 2.468 ; Rise       ; gen6mhz:inst1|count[2] ;
+; button    ; gen6mhz:inst1|count[2] ; 5.602 ; 5.602 ; Rise       ; gen6mhz:inst1|count[2] ;
+; enable    ; gen6mhz:inst1|count[2] ; 0.207 ; 0.207 ; Rise       ; gen6mhz:inst1|count[2] ;
+; reset     ; gen6mhz:inst1|count[2] ; 1.263 ; 1.263 ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+-------+-------+------------+------------------------+
 
 
@@ -1170,8 +1176,9 @@ No paths to report.
 +-----------+------------------------+--------+--------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+--------+--------+------------+------------------------+
-; VCC       ; gen6mhz:inst1|count[2] ; -2.150 ; -2.150 ; Rise       ; gen6mhz:inst1|count[2] ;
-; reset     ; gen6mhz:inst1|count[2] ; 0.222  ; 0.222  ; Rise       ; gen6mhz:inst1|count[2] ;
+; button    ; gen6mhz:inst1|count[2] ; -1.992 ; -1.992 ; Rise       ; gen6mhz:inst1|count[2] ;
+; enable    ; gen6mhz:inst1|count[2] ; 0.585  ; 0.585  ; Rise       ; gen6mhz:inst1|count[2] ;
+; reset     ; gen6mhz:inst1|count[2] ; 0.542  ; 0.542  ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+--------+--------+------------+------------------------+
 
 
@@ -1180,13 +1187,13 @@ No paths to report.
 +-----------+------------------------+--------+--------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise   ; Fall   ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+--------+--------+------------+------------------------+
-; vga_b[*]  ; gen6mhz:inst1|count[2] ; 11.680 ; 11.680 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[0] ; gen6mhz:inst1|count[2] ; 11.680 ; 11.680 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[1] ; gen6mhz:inst1|count[2] ; 11.636 ; 11.636 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[2] ; gen6mhz:inst1|count[2] ; 11.663 ; 11.663 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[3] ; gen6mhz:inst1|count[2] ; 11.623 ; 11.623 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_hsync ; gen6mhz:inst1|count[2] ; 7.132  ; 7.132  ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_vsync ; gen6mhz:inst1|count[2] ; 7.108  ; 7.108  ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_b[*]  ; gen6mhz:inst1|count[2] ; 15.162 ; 15.162 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[0] ; gen6mhz:inst1|count[2] ; 14.249 ; 14.249 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[1] ; gen6mhz:inst1|count[2] ; 15.162 ; 15.162 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[2] ; gen6mhz:inst1|count[2] ; 14.912 ; 14.912 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[3] ; gen6mhz:inst1|count[2] ; 14.872 ; 14.872 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_hsync ; gen6mhz:inst1|count[2] ; 9.288  ; 9.288  ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_vsync ; gen6mhz:inst1|count[2] ; 9.279  ; 9.279  ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+--------+--------+------------+------------------------+
 
 
@@ -1195,13 +1202,13 @@ No paths to report.
 +-----------+------------------------+-------+-------+------------+------------------------+
 ; Data Port ; Clock Port             ; Rise  ; Fall  ; Clock Edge ; Clock Reference        ;
 +-----------+------------------------+-------+-------+------------+------------------------+
-; vga_b[*]  ; gen6mhz:inst1|count[2] ; 4.429 ; 4.429 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[0] ; gen6mhz:inst1|count[2] ; 4.481 ; 4.481 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[1] ; gen6mhz:inst1|count[2] ; 4.446 ; 4.446 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[2] ; gen6mhz:inst1|count[2] ; 4.469 ; 4.469 ; Rise       ; gen6mhz:inst1|count[2] ;
-;  vga_b[3] ; gen6mhz:inst1|count[2] ; 4.429 ; 4.429 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_hsync ; gen6mhz:inst1|count[2] ; 3.815 ; 3.815 ; Rise       ; gen6mhz:inst1|count[2] ;
-; vga_vsync ; gen6mhz:inst1|count[2] ; 3.790 ; 3.790 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_b[*]  ; gen6mhz:inst1|count[2] ; 5.337 ; 5.337 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[0] ; gen6mhz:inst1|count[2] ; 5.337 ; 5.337 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[1] ; gen6mhz:inst1|count[2] ; 5.683 ; 5.683 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[2] ; gen6mhz:inst1|count[2] ; 5.604 ; 5.604 ; Rise       ; gen6mhz:inst1|count[2] ;
+;  vga_b[3] ; gen6mhz:inst1|count[2] ; 5.564 ; 5.564 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_hsync ; gen6mhz:inst1|count[2] ; 4.603 ; 4.603 ; Rise       ; gen6mhz:inst1|count[2] ;
+; vga_vsync ; gen6mhz:inst1|count[2] ; 4.587 ; 4.587 ; Rise       ; gen6mhz:inst1|count[2] ;
 +-----------+------------------------+-------+-------+------------+------------------------+
 
 
@@ -1244,7 +1251,7 @@ No paths to report.
 +------------------------+------------------------+----------+----------+----------+----------+
 ; clock_50mhz            ; clock_50mhz            ; 5        ; 0        ; 0        ; 0        ;
 ; gen6mhz:inst1|count[2] ; clock_50mhz            ; 1        ; 1        ; 0        ; 0        ;
-; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 479      ; 0        ; 0        ; 0        ;
+; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 480      ; 0        ; 0        ; 0        ;
 +------------------------+------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1256,7 +1263,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------------------+------------------------+----------+----------+----------+----------+
 ; clock_50mhz            ; clock_50mhz            ; 5        ; 0        ; 0        ; 0        ;
 ; gen6mhz:inst1|count[2] ; clock_50mhz            ; 1        ; 1        ; 0        ; 0        ;
-; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 479      ; 0        ; 0        ; 0        ;
+; gen6mhz:inst1|count[2] ; gen6mhz:inst1|count[2] ; 480      ; 0        ; 0        ; 0        ;
 +------------------------+------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1280,10 +1287,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 3     ; 3    ;
-; Unconstrained Input Port Paths  ; 48    ; 48   ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 50    ; 50   ;
 ; Unconstrained Output Ports      ; 14    ; 14   ;
-; Unconstrained Output Port Paths ; 70    ; 70   ;
+; Unconstrained Output Port Paths ; 78    ; 78   ;
 +---------------------------------+-------+------+
 
 
@@ -1293,7 +1300,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Dec 15 09:52:43 2017
+    Info: Processing started: Fri Dec 15 10:40:50 2017
 Info: Command: quartus_sta de1 -c top_de1
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1307,15 +1314,15 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.566
+Info (332146): Worst-case setup slack is -2.316
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -2.566       -76.958 gen6mhz:inst1|count[2] 
-    Info (332119):    -0.210        -0.210 clock_50mhz 
-Info (332146): Worst-case hold slack is -2.694
+    Info (332119):    -2.316       -74.302 gen6mhz:inst1|count[2] 
+    Info (332119):    -0.262        -0.262 clock_50mhz 
+Info (332146): Worst-case hold slack is -2.690
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -2.694        -2.694 clock_50mhz 
+    Info (332119):    -2.690        -2.690 clock_50mhz 
     Info (332119):     0.445         0.000 gen6mhz:inst1|count[2] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -1323,19 +1330,19 @@ Info (332146): Worst-case minimum pulse width slack is -1.631
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):    -1.631        -5.297 clock_50mhz 
-    Info (332119):    -0.611       -48.880 gen6mhz:inst1|count[2] 
+    Info (332119):    -0.611       -51.324 gen6mhz:inst1|count[2] 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.435
+Info (332146): Worst-case setup slack is -0.362
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.435        -8.658 gen6mhz:inst1|count[2] 
-    Info (332119):     0.524         0.000 clock_50mhz 
-Info (332146): Worst-case hold slack is -1.721
+    Info (332119):    -0.362        -7.677 gen6mhz:inst1|count[2] 
+    Info (332119):     0.508         0.000 clock_50mhz 
+Info (332146): Worst-case hold slack is -1.720
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.721        -1.721 clock_50mhz 
+    Info (332119):    -1.720        -1.720 clock_50mhz 
     Info (332119):     0.215         0.000 gen6mhz:inst1|count[2] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -1343,14 +1350,14 @@ Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):    -1.380        -4.380 clock_50mhz 
-    Info (332119):    -0.500       -40.000 gen6mhz:inst1|count[2] 
+    Info (332119):    -0.500       -42.000 gen6mhz:inst1|count[2] 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 317 megabytes
-    Info: Processing ended: Fri Dec 15 09:52:46 2017
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 318 megabytes
+    Info: Processing ended: Fri Dec 15 10:40:52 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

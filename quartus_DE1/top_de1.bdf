@@ -54,9 +54,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -48 424 120 440)
+	(rect -280 392 -112 408)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "VCC" (rect 5 0 28 10)(font "Arial" ))
+	(text "reset" (rect 5 0 30 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -66,13 +66,30 @@ applicable agreement for further details.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "GND" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -336 408 -280 424))
 )
 (pin
 	(input)
-	(rect -280 392 -112 408)
+	(rect 160 384 328 400)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 30 10)(font "Arial" ))
+	(text "button" (rect 5 0 36 10)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 152 416 320 432)
+	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
+	(text "enable" (rect 5 0 37 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -695,14 +712,6 @@ applicable agreement for further details.
 	(pt 504 192)
 )
 (connector
-	(pt 120 432)
-	(pt 496 432)
-)
-(connector
-	(pt 496 432)
-	(pt 496 272)
-)
-(connector
 	(pt 496 272)
 	(pt 504 272)
 )
@@ -721,18 +730,6 @@ applicable agreement for further details.
 (connector
 	(pt 752 160)
 	(pt 752 464)
-)
-(connector
-	(pt 504 240)
-	(pt 480 240)
-)
-(connector
-	(pt 480 192)
-	(pt 480 240)
-)
-(connector
-	(pt 480 240)
-	(pt 480 360)
 )
 (connector
 	(pt 112 464)
@@ -754,9 +751,32 @@ applicable agreement for further details.
 	(pt -64 360)
 	(pt 144 360)
 )
+(connector
+	(pt 480 192)
+	(pt 480 360)
+)
+(connector
+	(pt 320 424)
+	(pt 496 424)
+)
+(connector
+	(pt 496 424)
+	(pt 496 272)
+)
+(connector
+	(pt 504 240)
+	(pt 488 240)
+)
+(connector
+	(pt 488 240)
+	(pt 488 392)
+)
+(connector
+	(pt 488 392)
+	(pt 328 392)
+)
 (junction (pt 32 32))
 (junction (pt 128 32))
 (junction (pt 144 360))
 (junction (pt 752 160))
-(junction (pt 480 240))
 (junction (pt -64 360))
