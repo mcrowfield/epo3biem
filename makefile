@@ -12,8 +12,8 @@ IEEE__std_logic_1164 = $(LIB_IEEE)/_lib.qdb
 STD__textio = $(LIB_STD)/_lib.qdb
 IEEE__numeric_std = $(LIB_IEEE)/_lib.qdb
 WORK__vga_tb_behavioural_cfg = $(LIB_WORK)/_lib.qdb
-WORK__vga_tb__behavioural = $(LIB_WORK)/_lib.qdb
 WORK__vga_tb__synthesised = $(LIB_WORK)/_lib.qdb
+WORK__vga_tb__behavioural = $(LIB_WORK)/_lib.qdb
 WORK__vga_tb = $(LIB_WORK)/_lib.qdb
 WORK__vga_controller_behavior_cfg = $(LIB_WORK)/_lib.qdb
 WORK__vga_controller__behavior = $(LIB_WORK)/_lib.qdb
@@ -24,20 +24,20 @@ WORK__posnew__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__posnew__nextcopter = $(LIB_WORK)/_lib.qdb
 WORK__posnew = $(LIB_WORK)/_lib.qdb
 WORK__pos_statemachine_cfg = $(LIB_WORK)/_lib.qdb
-WORK__pos__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__pos__statemachine = $(LIB_WORK)/_lib.qdb
+WORK__pos__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__pos = $(LIB_WORK)/_lib.qdb
 WORK__helicopter_toplevel_cfg = $(LIB_WORK)/_lib.qdb
-WORK__helicopter__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__helicopter__toplevel = $(LIB_WORK)/_lib.qdb
+WORK__helicopter__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__helicopter = $(LIB_WORK)/_lib.qdb
 WORK__draw_renderer_cfg = $(LIB_WORK)/_lib.qdb
 WORK__draw__renderer = $(LIB_WORK)/_lib.qdb
 WORK__draw__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__draw = $(LIB_WORK)/_lib.qdb
 WORK__divider_behavior_cfg = $(LIB_WORK)/_lib.qdb
-WORK__divider__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__divider__behavior = $(LIB_WORK)/_lib.qdb
+WORK__divider__synthesised = $(LIB_WORK)/_lib.qdb
 WORK__divider = $(LIB_WORK)/_lib.qdb
 VCOM = vcom
 VLOG = vlog
@@ -46,13 +46,13 @@ SCCOM = sccom
 
 whole_library : $(LIB_WORK)/_lib.qdb
 
-$(LIB_WORK)/_lib.qdb : VHDL/divider.vhd \
-		$(IEEE__numeric_std) \
-		$(STD__textio) \
-		$(IEEE__std_logic_1164) VHDL/divider_SYNTH.vhd \
+$(LIB_WORK)/_lib.qdb : VHDL/divider_SYNTH.vhd \
 		$(IEEE__numeric_std) \
 		$(WORK__divider) \
 		$(CELLSLIB__cellslib_decl_pack) \
+		$(STD__textio) \
+		$(IEEE__std_logic_1164) VHDL/divider.vhd \
+		$(IEEE__numeric_std) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164) VHDL/divider_behavior_cfg.vhd \
 		$(WORK__divider__behavior) \
@@ -76,13 +76,13 @@ $(LIB_WORK)/_lib.qdb : VHDL/divider.vhd \
 		$(IEEE__numeric_std) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164) \
-		$(WORK__draw) VHDL/tld-helicopter.vhd \
-		$(IEEE__numeric_std) \
-		$(STD__textio) \
-		$(IEEE__std_logic_1164) VHDL/helicopter_SYNTH.vhd \
+		$(WORK__draw) VHDL/helicopter_SYNTH.vhd \
 		$(IEEE__numeric_std) \
 		$(WORK__helicopter) \
 		$(CELLSLIB__cellslib_decl_pack) \
+		$(STD__textio) \
+		$(IEEE__std_logic_1164) VHDL/tld-helicopter.vhd \
+		$(IEEE__numeric_std) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164) VHDL/helicopter_toplevel_cfg.vhd \
 		$(WORK__draw) \
@@ -95,13 +95,13 @@ $(LIB_WORK)/_lib.qdb : VHDL/divider.vhd \
 		$(IEEE__numeric_std) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164) \
-		$(WORK__helicopter) VHDL/pos.vhd \
-		$(IEEE__numeric_std) \
-		$(STD__textio) \
-		$(IEEE__std_logic_1164) VHDL/pos_SYNTH.vhd \
+		$(WORK__helicopter) VHDL/pos_SYNTH.vhd \
 		$(IEEE__numeric_std) \
 		$(WORK__pos) \
 		$(CELLSLIB__cellslib_decl_pack) \
+		$(STD__textio) \
+		$(IEEE__std_logic_1164) VHDL/pos.vhd \
+		$(IEEE__numeric_std) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164) VHDL/pos_statemachine_cfg.vhd \
 		$(WORK__pos__statemachine) \
@@ -134,13 +134,13 @@ $(LIB_WORK)/_lib.qdb : VHDL/divider.vhd \
 		$(IEEE__numeric_std) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164) \
-		$(WORK__vga_controller) VHDL/vga_tb_SYNTH.vhd \
+		$(WORK__vga_controller) VHDL/tb_divider.vhd \
+		$(IEEE__numeric_std) \
+		$(STD__textio) \
+		$(IEEE__std_logic_1164) VHDL/vga_tb_SYNTH.vhd \
 		$(IEEE__numeric_std) \
 		$(WORK__vga_tb) \
 		$(CELLSLIB__cellslib_decl_pack) \
-		$(STD__textio) \
-		$(IEEE__std_logic_1164) VHDL/tb_divider.vhd \
-		$(IEEE__numeric_std) \
 		$(STD__textio) \
 		$(IEEE__std_logic_1164) VHDL/vga_tb_behavioural_cfg.vhd \
 		$(WORK__helicopter) \
@@ -155,9 +155,9 @@ $(LIB_WORK)/_lib.qdb : VHDL/divider.vhd \
 		$(IEEE__std_logic_1164) \
 		$(WORK__vga_tb)
 	$(VCOM) -quiet -nologo -2008 -lower \
-		 -explicit -work work VHDL/divider.vhd
-	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/divider_SYNTH.vhd
+	$(VCOM) -quiet -nologo -2008 -lower \
+		 -explicit -work work VHDL/divider.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/divider_behavior_cfg.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
@@ -169,15 +169,15 @@ $(LIB_WORK)/_lib.qdb : VHDL/divider.vhd \
 	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/draw_renderer_cfg.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
-		 -explicit -work work VHDL/tld-helicopter.vhd
-	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/helicopter_SYNTH.vhd
+	$(VCOM) -quiet -nologo -2008 -lower \
+		 -explicit -work work VHDL/tld-helicopter.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/helicopter_toplevel_cfg.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
-		 -explicit -work work VHDL/pos.vhd
-	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/pos_SYNTH.vhd
+	$(VCOM) -quiet -nologo -2008 -lower \
+		 -explicit -work work VHDL/pos.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/pos_statemachine_cfg.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
@@ -193,9 +193,9 @@ $(LIB_WORK)/_lib.qdb : VHDL/divider.vhd \
 	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/vga_controller_behavior_cfg.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
-		 -explicit -work work VHDL/vga_tb_SYNTH.vhd
-	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/tb_divider.vhd
+	$(VCOM) -quiet -nologo -2008 -lower \
+		 -explicit -work work VHDL/vga_tb_SYNTH.vhd
 	$(VCOM) -quiet -nologo -2008 -lower \
 		 -explicit -work work VHDL/vga_tb_behavioural_cfg.vhd
 
