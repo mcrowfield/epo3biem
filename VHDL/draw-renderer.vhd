@@ -42,6 +42,6 @@ logiclout <= (l and not x_input(1) and x_input(2) and x_input(0)) or (l and not 
 logicmout <= m;
 Logicnout <= (n and x_input(2));
 
-blue_output <= (logickout or logiclout or logicmout or logicnout) and (not x_input(5) and not x_input(4) and x_input(3));
+blue_output <= (logickout or logiclout or logicmout or logicnout) and (not x_input(6) and not x_input(5) and not x_input(4) and x_input(3));
 end renderer;
 
