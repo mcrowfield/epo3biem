@@ -3,28 +3,45 @@ use IEEE.std_logic_1164.ALL;
 use IEEE.numeric_std.all;
 
 architecture renderer of draw is
-signal addout : unsigned(4 downto 0); 
-signal compout, compplus1out, orout, logicout : std_logic;
+signal addoutone, addouttwo, addoutthree : unsigned(4 downto 0); 
+signal k, l, m, n, logickout, logiclout, logicmout, logicnout : std_logic;
 begin
-process(position, addout) is
+process(position, addoutone, addouttwo, addoutthree) is
 begin
 	if(position = y_input) then
-		compout <= '1';
+		k <= '1';
 	else 
-		compout <= '0';
+		k <= '0';
 	end if;
 
-	if(std_logic_vector(addout) = y_input) then
-		compplus1out <= '1';
+	if(std_logic_vector(addoutone) = y_input) then
+		l <= '1';
 	else
-		compplus1out <= '0';
+		l <= '0';
+	end if;
+		
+	if(std_logic_vector(addouttwo) = y_input) then
+		m <= '1';
+	else
+		m <= '0';
+	end if;
+		
+	if(std_logic_vector(addoutthree) = y_input) then
+		n <= '1';
+	else
+		n <= '0';
 	end if;
 end process;
+		
+addoutone <= unsigned(position) + 1;
+addouttwo <= unsigned(position) +2;
+addoutthree <= unsigned(position) +3;		
+	
+logickout <= (k and (x_input(1) and x_input(0))) or (k and x_input(2));
+logiclout <= (l and not x_input(1) and x_input(2) and x_input(0)) or (l and not x_input(1) and not x_input(2) and not x_input(0));
+logicmout <= m;
+Logicnout <= (n and x_input(2));
 
-addout <= unsigned(position) + 1;
-orout <= compout or compplus1out;
-blue_output <= logicout and orout;
-logicout <=  (not x_input(3) and not x_input(2) and x_input(1) and not x_input(0)) or ((not x_input(3) and not x_input(2) and not x_input(1) and x_input(0)) and compout);   
-
+blue_output <= logickout or logiclout or logicmout or logicnout;
 end renderer;
 
