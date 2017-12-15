@@ -6,8 +6,8 @@ entity helicopter is
   port (
         clk     : in std_logic;
         reset   : in std_logic;
-        x_input : in std_logic_vector (5 downto 0);
-        y_input : in std_logic_vector (4 downto 0);
+        x_input : in std_logic_vector (6 downto 0);
+        y_input : in std_logic_vector (5 downto 0);
         button  : in std_logic;
         count   : in std_logic;
         enable  : in std_logic;
@@ -41,8 +41,8 @@ architecture toplevel of helicopter is
   component draw is 
     port
       (
-      x_input : in std_logic_vector (5 downto 0);
-      y_input : in std_logic_vector (4 downto 0);
+      x_input : in std_logic_vector (6 downto 0);
+      y_input : in std_logic_vector (5 downto 0);
       position : in std_logic_vector (4 downto 0);
       blue_output : out std_logic
       );
@@ -65,7 +65,7 @@ architecture toplevel of helicopter is
                        position_old
                      );
                      
-    lbl2: draw port map (x_input(5 downto 0),
+    lbl2: draw port map (x_input,
                        y_input,
                        position_old,
                        blue
