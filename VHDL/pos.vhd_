@@ -9,8 +9,8 @@ entity pos is
       reset : in std_logic;
       enable : in std_logic;
       count : in std_logic;
-      position_new : in std_logic_vector (5 downto 0);
-      position_old : out std_logic_vector (5 downto 0)
+      position_new : in std_logic_vector (4 downto 0);
+      position_old : out std_logic_vector (4 downto 0)
       );
 end pos;
 
@@ -39,7 +39,7 @@ process is
 		wait until clk'event and clk='1';
 		case state is
 			when resets =>
-				position_old <= "100000";
+				position_old <= "10000";
 			when holds =>
 			when adds =>
 				position_old <= position_new;
@@ -58,7 +58,4 @@ process is
         end if;
       end process;  
     end statemachine;
-
-
-
 
