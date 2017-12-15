@@ -46,8 +46,8 @@ BEGIN
   
   END PROCESS;
 
-  xv   <= xvt(7 downto 2);
-  yv   <= yvt(8 downto 4);
+  xv   <= xvt(7 downto 1);
+  yv   <= yvt(8 downto 3);
 
 
   PROCESS(clk) 
