@@ -1,0 +1,299 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 depo3nogeens
+Edivider
+Z1 w1513323822
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 d/epo3nogeens
+Z6 8VHDL/divider.vhd
+Z7 FVHDL/divider.vhd
+l0
+L9
+V<aR0cRlP13iAJLgmCg[NM3
+!s100 id1DGbF`6cHOZEGMomQbQ0
+Z8 OL;C;10.5b;63
+33
+Z9 !s110 1513325773
+!i10b 1
+Z10 !s108 1513325773.000000
+Z11 !s90 -2008|-lower|-explicit|-work|work|VHDL/divider.vhd|-quiet|-nologo|
+Z12 !s107 VHDL/divider.vhd|
+!i113 0
+Z13 o-quiet -nologo -2008 -lower -explicit -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+DEx4 work 7 divider 0 22 <aR0cRlP13iAJLgmCg[NM3
+R2
+R3
+R4
+l34
+L28
+VJh3W8PRUe?1j2az>>=ZKE2
+!s100 8M5O:LCdz7d[0IWSR8>ii3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Edraw
+Z15 w1513325645
+R2
+R3
+R4
+R0
+8VHDL/draw.vhd
+FVHDL/draw.vhd
+l0
+L5
+VSlF?[G5WAo1==?m8f>Cmk3
+!s100 EC]f0oLLd2[LdWkZXQ3^A2
+R8
+33
+!s110 1513325790
+!i10b 1
+!s108 1513325790.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/draw.vhd|-quiet|-nologo|
+!s107 VHDL/draw.vhd|
+!i113 0
+R13
+R14
+Arenderer
+DEx4 work 4 draw 0 22 SlF?[G5WAo1==?m8f>Cmk3
+R2
+R3
+R4
+8VHDL/draw-renderer.vhd
+FVHDL/draw-renderer.vhd
+l8
+L5
+V[AJ1dB3MiG64M2h?2OjGG3
+!s100 0J6dcL]jFL4koG[7541IY3
+R8
+33
+!s110 1513325796
+!i10b 1
+!s108 1513325796.000000
+!s90 -2008|-lower|-explicit|-work|work|VHDL/draw-renderer.vhd|-quiet|-nologo|
+!s107 VHDL/draw-renderer.vhd|
+!i113 0
+R13
+R14
+Ehelicopter
+R1
+R2
+R3
+R4
+R5
+Z16 8VHDL/tld-helicopter.vhd
+Z17 FVHDL/tld-helicopter.vhd
+l0
+L5
+VMS[9d4[nU;99VZ3bi^Sgo2
+!s100 hzCJ^8MgOFhX@1bM1=]Y13
+R8
+33
+Z18 !s110 1513325764
+!i10b 1
+Z19 !s108 1513325763.000000
+Z20 !s90 -2008|-lower|-explicit|-work|work|VHDL/tld-helicopter.vhd|-quiet|-nologo|
+Z21 !s107 VHDL/tld-helicopter.vhd|
+!i113 0
+R13
+R14
+Atoplevel
+R2
+R3
+R4
+DEx4 work 10 helicopter 0 22 MS[9d4[nU;99VZ3bi^Sgo2
+l53
+L18
+VBz<1R0zJY=VODJ<gUdgiP3
+!s100 N];U[dc3;cz2<SAZ2lBT41
+R8
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R13
+R14
+Epos
+R1
+R2
+R3
+R4
+R5
+Z22 8VHDL/pos.vhd
+Z23 FVHDL/pos.vhd
+l0
+L5
+V`fjH36<lU5d;8J3S:zWRm3
+!s100 KURMzmA1VLVRmNf^Jz1R@2
+R8
+33
+Z24 !s110 1513325811
+!i10b 1
+Z25 !s108 1513325810.000000
+Z26 !s90 -2008|-lower|-explicit|-work|work|VHDL/pos.vhd|-quiet|-nologo|
+Z27 !s107 VHDL/pos.vhd|
+!i113 0
+R13
+R14
+Astatemachine
+R2
+R3
+R4
+DEx4 work 3 pos 0 22 `fjH36<lU5d;8J3S:zWRm3
+l20
+L17
+Vf=^6[on4JTV9N8G6hb>9[1
+!s100 S=7[?l`a`X25XMH?QX>@j3
+R8
+33
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R13
+R14
+Eposnew
+R1
+R2
+R3
+R4
+R5
+Z28 8VHDL/pos+.vhd
+Z29 FVHDL/pos+.vhd
+l0
+L5
+V9`]bMIblG0l]9M^LgodQm0
+!s100 :JI4k^M8z6EFoZW>kB?Pa3
+R8
+33
+Z30 !s110 1513325804
+!i10b 1
+Z31 !s108 1513325804.000000
+Z32 !s90 -2008|-lower|-explicit|-work|work|VHDL/pos+.vhd|-quiet|-nologo|
+Z33 !s107 VHDL/pos+.vhd|
+!i113 0
+R13
+R14
+Anextcopter
+R2
+R3
+R4
+DEx4 work 6 posnew 0 22 9`]bMIblG0l]9M^LgodQm0
+l15
+L13
+VY[UBIACTZO7jmci6m99:<0
+!s100 =4:<f]z[WD40bfn:eW^JI0
+R8
+33
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 0
+R13
+R14
+Evga_controller
+R1
+R2
+R3
+R4
+Z34 d/epo3nogeens
+Z35 8VHDL/vga_controller.vhd
+Z36 FVHDL/vga_controller.vhd
+l0
+L34
+V2bGo?boo=km[V3`RYzVcN0
+!s100 mV76[M@IoLXE=LGEGLB0i2
+R8
+33
+Z37 !s110 1513325828
+!i10b 1
+Z38 !s108 1513325827.000000
+Z39 !s90 -2008|-lower|-explicit|-work|work|VHDL/vga_controller.vhd|-quiet|-nologo|
+Z40 !s107 VHDL/vga_controller.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R2
+R3
+R4
+DEx4 work 14 vga_controller 0 22 2bGo?boo=km[V3`RYzVcN0
+l62
+L57
+VFW@jj5TSKfz:;oT]ahW0_0
+!s100 F=SBNiV<6T8dZcB8zldLC0
+R8
+33
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 0
+R13
+R14
+Evga_tb
+R1
+R2
+R3
+R4
+R5
+Z41 8VHDL/tb_divider.vhd
+Z42 FVHDL/tb_divider.vhd
+l0
+L14
+V[zQENhIkBi?oAd@>MNF401
+!s100 nA5i<QBiBGS2:eS8>6z`g2
+R8
+33
+Z43 !s110 1513325819
+!i10b 1
+Z44 !s108 1513325819.000000
+Z45 !s90 -2008|-lower|-explicit|-work|work|VHDL/tb_divider.vhd|-quiet|-nologo|
+Z46 !s107 VHDL/tb_divider.vhd|
+!i113 0
+R13
+R14
+Abehavioural
+R2
+R3
+R4
+DEx4 work 6 vga_tb 0 22 [zQENhIkBi?oAd@>MNF401
+l66
+L17
+V;InLEznTEBA9YoJfP?kDb2
+!s100 m5HoTbnlP@Fno1KLSa3WJ3
+R8
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 0
+R13
+R14

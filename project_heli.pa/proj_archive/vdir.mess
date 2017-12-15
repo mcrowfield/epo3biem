@@ -1,0 +1,483 @@
+Library vendor : Model Technology
+Maximum unnamed designs : 3
+OPTIMIZED DESIGN _opt
+    Compile time: Fri Dec  8 10:05:39 2017
+    Version string: 6IP21alMBd0Fz71mJES<63
+    Top-level model: work vga_tb_behavioural_cfg 1
+    Compile options: -quiet -auto_acc_if_foreign -work work
+    Compile defaults: CvgOpt=0
+    Short name: @_opt
+    Opcode format: 10.5b; VCOM/VLOG SE-64 Object version 63
+    Source directory: project_heli
+ENTITY divider
+    Source modified time: Fri Dec  8 10:19:25 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /project_heli
+    HDL source file: VHDL/divider.vhd
+    Source file: VHDL/divider.vhd
+    Start location: VHDL/divider.vhd:9
+    Version string: <aR0cRlP13iAJLgmCg[NM3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:47:42 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behavior
+    Depends on: E work divider <aR0cRlP13iAJLgmCg[NM3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Start location: VHDL/divider.vhd:28
+    Version string: Jh3W8PRUe?1j2az>>=ZKE2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:47:42 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+    Source file: VHDL/divider.vhd
+    Source modified time: Fri Dec  8 10:19:25 2017
+    HDL source file: VHDL/divider.vhd
+VHDL CONFIGURATION divider_behavior_cfg
+    Configuration applies to entity: divider
+    Block configuration applies to architecture: behavior
+    Depends on: A work divider behavior Jh3W8PRUe?1j2az>>=ZKE2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work divider <aR0cRlP13iAJLgmCg[NM3
+    Source modified time: Tue Nov 28 11:26:39 2017
+    Source directory: /project_heli
+    HDL source file: VHDL/divider_behavior_cfg.vhd
+    Source file: VHDL/divider_behavior_cfg.vhd
+    Start location: VHDL/divider_behavior_cfg.vhd:1
+    Version string: b4SCz:ePeE>cTa_TUgSWm3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:47:45 2017
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY draw
+    Source modified time: Tue Nov 28 10:51:31 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /project_heli
+    HDL source file: VHDL/draw.vhd
+    Source file: VHDL/draw.vhd
+    Start location: VHDL/draw.vhd:5
+    Version string: SlF?[G5WAo1==?m8f>Cmk3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:16 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY synthesised
+    Source modified time: Tue Nov 28 10:58:15 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work draw SlF?[G5WAo1==?m8f>Cmk3
+    Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/draw_SYNTH.vhd
+    Source file: VHDL/draw_SYNTH.vhd
+    Start location: VHDL/draw_SYNTH.vhd:7
+    Version string: ?79bG`TSh^h0m_8DdAmW@3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:16 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+  ARCHITECTURE BODY renderer
+    Source modified time: Fri Dec  8 09:59:27 2017
+    Depends on: E work draw SlF?[G5WAo1==?m8f>Cmk3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/draw-renderer.vhd
+    Source file: VHDL/draw-renderer.vhd
+    Start location: VHDL/draw-renderer.vhd:5
+    Version string: [AJ1dB3MiG64M2h?2OjGG3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:16 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+VHDL CONFIGURATION draw_renderer_cfg
+    Configuration applies to entity: draw
+    Block configuration applies to architecture: renderer
+    Depends on: A work draw renderer [AJ1dB3MiG64M2h?2OjGG3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work draw SlF?[G5WAo1==?m8f>Cmk3
+    Source modified time: Tue Nov 28 10:49:35 2017
+    Source directory: /project_heli
+    HDL source file: VHDL/draw_renderer_cfg.vhd
+    Source file: VHDL/draw_renderer_cfg.vhd
+    Start location: VHDL/draw_renderer_cfg.vhd:1
+    Version string: E0hMRLEdRhWJD0CT6?C7=0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:16 2017
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY helicopter
+    Source modified time: Thu Dec  7 12:52:08 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /project_heli
+    HDL source file: VHDL/tld-helicopter.vhd
+    Source file: VHDL/tld-helicopter.vhd
+    Start location: VHDL/tld-helicopter.vhd:5
+    Version string: MS[9d4[nU;99VZ3bi^Sgo2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:16 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY synthesised
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work helicopter MS[9d4[nU;99VZ3bi^Sgo2
+    Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/helicopter_SYNTH.vhd
+    Source file: VHDL/helicopter_SYNTH.vhd
+    Start location: VHDL/helicopter_SYNTH.vhd:7
+    Version string: g9cI?LikUA<;2U=Ld4[4h0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:16 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+    Source modified time: Thu Dec  7 12:52:08 2017
+  ARCHITECTURE BODY toplevel
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work helicopter MS[9d4[nU;99VZ3bi^Sgo2
+    Start location: VHDL/tld-helicopter.vhd:18
+    Version string: Bz<1R0zJY=VODJ<gUdgiP3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:16 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+    Source file: VHDL/tld-helicopter.vhd
+    Source modified time: Thu Dec  7 12:52:08 2017
+    HDL source file: VHDL/tld-helicopter.vhd
+VHDL CONFIGURATION helicopter_toplevel_cfg
+    Configuration applies to entity: helicopter
+    Block configuration applies to architecture: toplevel
+    Depends on: E work draw SlF?[G5WAo1==?m8f>Cmk3
+    Depends on: E work pos `fjH36<lU5d;8J3S:zWRm3
+    Depends on: E work posnew 9`]bMIblG0l]9M^LgodQm0
+    Depends on: C work draw_renderer_cfg E0hMRLEdRhWJD0CT6?C7=0
+    Depends on: C work pos_statemachine_cfg e>;iUK^AMNId[clWRUi`>2
+    Depends on: C work posnew_nextcopter_cfg 6Di`XBbm4bfAVFU36C7[G0
+    Depends on: A work helicopter toplevel Bz<1R0zJY=VODJ<gUdgiP3
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work helicopter MS[9d4[nU;99VZ3bi^Sgo2
+    Source modified time: Tue Nov 28 10:49:55 2017
+    Source directory: /project_heli
+    HDL source file: VHDL/helicopter_toplevel_cfg.vhd
+    Source file: VHDL/helicopter_toplevel_cfg.vhd
+    Start location: VHDL/helicopter_toplevel_cfg.vhd:1
+    Version string: E]PgKnC<4UGWke1]V4XLS1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:17 2017
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY pos
+    Source modified time: Fri Dec  8 11:59:55 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /home/vschonk/Downloads/project_heli
+    HDL source file: VHDL/pos.vhd
+    Source file: VHDL/pos.vhd
+    Start location: VHDL/pos.vhd:5
+    Version string: `fjH36<lU5d;8J3S:zWRm3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 11:59:58 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY statemachine
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work pos `fjH36<lU5d;8J3S:zWRm3
+    Start location: VHDL/pos.vhd:17
+    Version string: f=^6[on4JTV9N8G6hb>9[1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 11:59:58 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /home/vschonk/Downloads/project_heli
+    Source file: VHDL/pos.vhd
+    Source modified time: Fri Dec  8 11:59:55 2017
+    HDL source file: VHDL/pos.vhd
+  ARCHITECTURE BODY synthesised
+    Source modified time: Tue Nov 28 11:35:11 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work pos `fjH36<lU5d;8J3S:zWRm3
+    Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/pos_SYNTH.vhd
+    Source file: VHDL/pos_SYNTH.vhd
+    Start location: VHDL/pos_SYNTH.vhd:7
+    Version string: W`QdQ3?Lmai]i<Gol9R=D3
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:17 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+VHDL CONFIGURATION pos_statemachine_cfg
+    Configuration applies to entity: pos
+    Block configuration applies to architecture: statemachine
+    Depends on: A work pos statemachine f=^6[on4JTV9N8G6hb>9[1
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work pos `fjH36<lU5d;8J3S:zWRm3
+    Source modified time: Tue Nov 28 10:49:43 2017
+    Source directory: /project_heli
+    HDL source file: VHDL/pos_statemachine_cfg.vhd
+    Source file: VHDL/pos_statemachine_cfg.vhd
+    Start location: VHDL/pos_statemachine_cfg.vhd:1
+    Version string: e>;iUK^AMNId[clWRUi`>2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:17 2017
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY posnew
+    Source modified time: Tue Nov 28 11:03:35 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /project_heli
+    HDL source file: VHDL/pos+.vhd
+    Source file: VHDL/pos+.vhd
+    Start location: VHDL/pos+.vhd:5
+    Version string: 9`]bMIblG0l]9M^LgodQm0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:17 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY synthesised
+    Source modified time: Fri Dec  8 09:14:12 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: E work posnew 9`]bMIblG0l]9M^LgodQm0
+    Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    HDL source file: VHDL/posnew_SYNTH.vhd
+    Source file: VHDL/posnew_SYNTH.vhd
+    Start location: VHDL/posnew_SYNTH.vhd:7
+    Version string: Y00a>KX@db=<?SZWzYk8<1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:18 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+  ARCHITECTURE BODY nextcopter
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work posnew 9`]bMIblG0l]9M^LgodQm0
+    Start location: VHDL/pos+.vhd:13
+    Version string: Y[UBIACTZO7jmci6m99:<0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:17 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+    Source file: VHDL/pos+.vhd
+    Source modified time: Tue Nov 28 11:03:35 2017
+    HDL source file: VHDL/pos+.vhd
+VHDL CONFIGURATION posnew_nextcopter_cfg
+    Configuration applies to entity: posnew
+    Block configuration applies to architecture: nextcopter
+    Depends on: A work posnew nextcopter Y[UBIACTZO7jmci6m99:<0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work posnew 9`]bMIblG0l]9M^LgodQm0
+    Source modified time: Tue Nov 28 10:49:49 2017
+    Source directory: /project_heli
+    HDL source file: VHDL/posnew_nextcopter_cfg.vhd
+    Source file: VHDL/posnew_nextcopter_cfg.vhd
+    Start location: VHDL/posnew_nextcopter_cfg.vhd:1
+    Version string: 6Di`XBbm4bfAVFU36C7[G0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:18 2017
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY vga_controller
+    Source modified time: Fri Dec  8 09:48:55 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /project_heli
+    HDL source file: VHDL/vga_controller.vhd
+    Source file: VHDL/vga_controller.vhd
+    Start location: VHDL/vga_controller.vhd:34
+    Version string: 2bGo?boo=km[V3`RYzVcN0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:18 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behavior
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
+    Start location: VHDL/vga_controller.vhd:57
+    Version string: FW@jj5TSKfz:;oT]ahW0_0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:18 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+    Source file: VHDL/vga_controller.vhd
+    Source modified time: Fri Dec  8 09:48:55 2017
+    HDL source file: VHDL/vga_controller.vhd
+VHDL CONFIGURATION vga_controller_behavior_cfg
+    Configuration applies to entity: vga_controller
+    Block configuration applies to architecture: behavior
+    Depends on: A work vga_controller behavior FW@jj5TSKfz:;oT]ahW0_0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
+    Source modified time: Fri Nov 24 11:39:09 2017
+    Source directory: /project_heli
+    HDL source file: VHDL/vga_controller_behavior_cfg.vhd
+    Source file: VHDL/vga_controller_behavior_cfg.vhd
+    Start location: VHDL/vga_controller_behavior_cfg.vhd:1
+    Version string: aLBW1>6>XOJA_=27Q6Dh11
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:02:18 2017
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+ENTITY vga_tb
+    Source modified time: Fri Dec  8 10:05:14 2017
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Source directory: /project_heli
+    HDL source file: VHDL/tb_divider.vhd
+    Source file: VHDL/tb_divider.vhd
+    Start location: VHDL/tb_divider.vhd:14
+    Version string: [zQENhIkBi?oAd@>MNF401
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:47:54 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behavioural
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_tb [zQENhIkBi?oAd@>MNF401
+    Start location: VHDL/tb_divider.vhd:17
+    Version string: ;InLEznTEBA9YoJfP?kDb2
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:47:54 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /project_heli
+    Source file: VHDL/tb_divider.vhd
+    Source modified time: Fri Dec  8 10:05:14 2017
+    HDL source file: VHDL/tb_divider.vhd
+VHDL CONFIGURATION vga_tb_behavioural_cfg
+    Configuration applies to entity: vga_tb
+    Block configuration applies to architecture: behavioural
+    Depends on: E work helicopter MS[9d4[nU;99VZ3bi^Sgo2
+    Depends on: E work divider <aR0cRlP13iAJLgmCg[NM3
+    Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
+    Depends on: C work divider_behavior_cfg b4SCz:ePeE>cTa_TUgSWm3
+    Depends on: C work vga_controller_behavior_cfg aLBW1>6>XOJA_=27Q6Dh11
+    Depends on: A work vga_tb behavioural ;InLEznTEBA9YoJfP?kDb2
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_tb [zQENhIkBi?oAd@>MNF401
+    Source modified time: Tue Nov 28 11:43:21 2017
+    Source directory: /project_heli
+    HDL source file: VHDL/vga_tb_behavioural_cfg.vhd
+    Source file: VHDL/vga_tb_behavioural_cfg.vhd
+    Start location: VHDL/vga_tb_behavioural_cfg.vhd:1
+    Version string: 7A9D@[OfEHWV`7ZZ:FUk23
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec  8 10:47:56 2017
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
