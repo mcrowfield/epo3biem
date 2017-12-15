@@ -20,9 +20,9 @@ architecture toplevel of helicopter is
   component posnew is
     port
       (
-      position_old : in std_logic_vector (5 downto 0);
+      position_old : in std_logic_vector (4 downto 0);
       button       : in std_logic;
-      position_new : out std_logic_vector (5 downto 0)
+      position_new : out std_logic_vector (4 downto 0)
       );
   end component posnew;
   
@@ -33,8 +33,8 @@ architecture toplevel of helicopter is
       reset : in std_logic;
       enable : in std_logic;
       count : in std_logic;
-      position_new : in std_logic_vector (5 downto 0);
-      position_old : out std_logic_vector (5 downto 0)
+      position_new : in std_logic_vector (4 downto 0);
+      position_old : out std_logic_vector (4 downto 0)
       );
   end component pos;
   
@@ -43,12 +43,12 @@ architecture toplevel of helicopter is
       (
       x_input : in std_logic_vector (6 downto 0);
       y_input : in std_logic_vector (5 downto 0);
-      position : in std_logic_vector (5 downto 0);
+      position : in std_logic_vector (4 downto 0);
       blue_output : out std_logic
       );
   end component draw; 
   
-  signal position_new, position_old: std_logic_vector (5 downto 0);
+  signal position_new, position_old: std_logic_vector (4 downto 0);
   
   begin
     
@@ -71,9 +71,6 @@ architecture toplevel of helicopter is
                        blue
                      );
 end architecture toplevel;
-
-
-
 
 
 

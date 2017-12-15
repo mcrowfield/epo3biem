@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.ALL;
 use IEEE.numeric_std.all;
 
 architecture renderer of draw is
-signal addoutone, addouttwo, addoutthree : unsigned(5 downto 0); 
+signal addoutone, addouttwo, addoutthree : unsigned(4 downto 0); 
 signal k, l, m, n, logickout, logiclout, logicmout, logicnout : std_logic;
 begin
 process(position, addoutone, addouttwo, addoutthree) is
@@ -44,7 +44,4 @@ Logicnout <= (n and x_input(2));
 
 blue_output <= (logickout or logiclout or logicmout or logicnout) and (not x_input(6) and not x_input(5) and not x_input(4) and x_input(3));
 end renderer;
-
-
-
 
