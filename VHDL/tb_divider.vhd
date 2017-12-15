@@ -36,8 +36,8 @@ component divider IS
 	reset	 :  IN   STD_LOGIC;
 	clk      :  IN   STD_LOGIC;
 	shz	 	 :  IN   STD_LOGIC;
-    xv	     :  OUT	 STD_LOGIC_VECTOR(5 downto 0);
-    yv       :  OUT	 STD_LOGIC_VECTOR(4 downto 0);
+    xv	     :  OUT	 STD_LOGIC_VECTOR(6 downto 0);
+    yv       :  OUT	 STD_LOGIC_VECTOR(5 downto 0);
     tick     :  OUT  STD_LOGIC);
 end component divider;
 
@@ -45,8 +45,8 @@ component helicopter is
   port (
         clk     : in std_logic;
         reset   : in std_logic;
-        x_input : in std_logic_vector (5 downto 0);
-        y_input : in std_logic_vector (4 downto 0);
+        x_input : in std_logic_vector (6 downto 0);
+        y_input : in std_logic_vector (5 downto 0);
         button  : in std_logic;
         count   : in std_logic;
         enable  : in std_logic;
@@ -57,9 +57,9 @@ end component helicopter;
 
 signal clk, reset, disp_ena, hsync, vsync, shz, tick, button, enable, blue_out: STD_LOGIC;
 signal x:  STD_LOGIC_VECTOR(7 downto 0);
-signal xv: STD_LOGIC_VECTOR(5 downto 0);
+signal xv: STD_LOGIC_VECTOR(6 downto 0);
 signal y:  STD_LOGIC_VECTOR(9 downto 0);
-signal yv: STD_LOGIC_VECTOR(4 downto 0);
+signal yv: STD_LOGIC_VECTOR(5 downto 0);
 signal v_count :  UNSIGNED(1 downto 0);
 
 
