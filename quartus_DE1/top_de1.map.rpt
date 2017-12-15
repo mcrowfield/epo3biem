@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_de1
-Fri Dec  8 10:39:13 2017
+Fri Dec 15 09:52:27 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec  8 10:39:13 2017            ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 15 09:52:27 2017            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; top_de1                                          ;
 ; Top-level Entity Name              ; top_de1                                          ;
@@ -54,7 +54,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 85                                               ;
 ;     Dedicated logic registers      ; 43                                               ;
 ; Total registers                    ; 43                                               ;
-; Total pins                         ; 17                                               ;
+; Total pins                         ; 18                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
@@ -164,22 +164,22 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
-; ../VHDL/vga_controller.vhd       ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/VHDL/vga_controller.vhd       ;         ;
-; ../VHDL/tld-helicopter.vhd       ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/VHDL/tld-helicopter.vhd       ;         ;
-; ../VHDL/pos.vhd                  ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/VHDL/pos.vhd                  ;         ;
-; ../VHDL/pos+.vhd                 ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/VHDL/pos+.vhd                 ;         ;
-; ../VHDL/draw.vhd                 ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/VHDL/draw.vhd                 ;         ;
-; ../VHDL/draw-renderer.vhd        ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/VHDL/draw-renderer.vhd        ;         ;
-; ../VHDL/divider.vhd              ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/VHDL/divider.vhd              ;         ;
-; top_de1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; /home/vschonk/Downloads/project_heli/quartus_DE1/top_de1.bdf       ;         ;
-; pre_vga_dac_4.vhd                ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/quartus_DE1/pre_vga_dac_4.vhd ;         ;
-; gen6mhz.vhd                      ; yes             ; User VHDL File                     ; /home/vschonk/Downloads/project_heli/quartus_DE1/gen6mhz.vhd       ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
+; ../VHDL/vga_controller.vhd       ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/VHDL/vga_controller.vhd       ;         ;
+; ../VHDL/tld-helicopter.vhd       ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/VHDL/tld-helicopter.vhd       ;         ;
+; ../VHDL/pos.vhd                  ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/VHDL/pos.vhd                  ;         ;
+; ../VHDL/pos+.vhd                 ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/VHDL/pos+.vhd                 ;         ;
+; ../VHDL/draw.vhd                 ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/VHDL/draw.vhd                 ;         ;
+; ../VHDL/draw-renderer.vhd        ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/VHDL/draw-renderer.vhd        ;         ;
+; ../VHDL/divider.vhd              ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/VHDL/divider.vhd              ;         ;
+; top_de1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; /home/michaelkraaije/epo3git/epo3biem/quartus_DE1/top_de1.bdf       ;         ;
+; pre_vga_dac_4.vhd                ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/quartus_DE1/pre_vga_dac_4.vhd ;         ;
+; gen6mhz.vhd                      ; yes             ; User VHDL File                     ; /home/michaelkraaije/epo3git/epo3biem/quartus_DE1/gen6mhz.vhd       ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------+
@@ -203,12 +203,12 @@ applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 43                     ;
 ;     -- I/O registers                        ; 0                      ;
 ;                                             ;                        ;
-; I/O pins                                    ; 17                     ;
+; I/O pins                                    ; 18                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                      ;
 ; Maximum fan-out node                        ; gen6mhz:inst1|count[2] ;
 ; Maximum fan-out                             ; 41                     ;
 ; Total fan-out                               ; 375                    ;
-; Average fan-out                             ; 2.59                   ;
+; Average fan-out                             ; 2.57                   ;
 +---------------------------------------------+------------------------+
 
 
@@ -217,7 +217,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
-; |top_de1                   ; 85 (0)            ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |top_de1                              ; work         ;
+; |top_de1                   ; 85 (0)            ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |top_de1                              ; work         ;
 ;    |divider:inst3|         ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|divider:inst3                ; work         ;
 ;    |gen6mhz:inst1|         ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|gen6mhz:inst1                ; work         ;
 ;    |helicopter:inst2|      ; 34 (0)            ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_de1|helicopter:inst2             ; work         ;
@@ -313,26 +313,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Dec  8 10:39:08 2017
+    Info: Processing started: Fri Dec 15 09:52:21 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de1 -c top_de1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/vschonk/Downloads/project_heli/VHDL/vga_controller.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/vga_controller.vhd
     Info (12022): Found design unit 1: vga_controller-behavior
     Info (12023): Found entity 1: vga_controller
-Info (12021): Found 2 design units, including 1 entities, in source file /home/vschonk/Downloads/project_heli/VHDL/tld-helicopter.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/tld-helicopter.vhd
     Info (12022): Found design unit 1: helicopter-toplevel
     Info (12023): Found entity 1: helicopter
-Info (12021): Found 2 design units, including 1 entities, in source file /home/vschonk/Downloads/project_heli/VHDL/pos.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/pos.vhd
     Info (12022): Found design unit 1: pos-statemachine
     Info (12023): Found entity 1: pos
-Info (12021): Found 2 design units, including 1 entities, in source file /home/vschonk/Downloads/project_heli/VHDL/pos+.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/pos+.vhd
     Info (12022): Found design unit 1: posnew-nextcopter
     Info (12023): Found entity 1: posnew
-Info (12021): Found 1 design units, including 1 entities, in source file /home/vschonk/Downloads/project_heli/VHDL/draw.vhd
+Info (12021): Found 1 design units, including 1 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/draw.vhd
     Info (12023): Found entity 1: draw
-Info (12021): Found 1 design units, including 0 entities, in source file /home/vschonk/Downloads/project_heli/VHDL/draw-renderer.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/draw-renderer.vhd
     Info (12022): Found design unit 1: draw-renderer
-Info (12021): Found 2 design units, including 1 entities, in source file /home/vschonk/Downloads/project_heli/VHDL/divider.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/michaelkraaije/epo3git/epo3biem/VHDL/divider.vhd
     Info (12022): Found design unit 1: divider-behavior
     Info (12023): Found entity 1: divider
 Info (12021): Found 1 design units, including 1 entities, in source file top_de1.bdf
@@ -357,13 +357,13 @@ Info (12128): Elaborating entity "divider" for hierarchy "divider:inst3"
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 85 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 364 megabytes
-    Info: Processing ended: Fri Dec  8 10:39:14 2017
+    Info: Peak virtual memory: 369 megabytes
+    Info: Processing ended: Fri Dec 15 09:52:27 2017
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:02
 

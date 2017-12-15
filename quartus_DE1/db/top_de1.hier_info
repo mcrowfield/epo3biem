@@ -1,17 +1,17 @@
 |top_de1
 vga_hsync <= vga_controller:inst4.h_sync
 clock_50mhz => gen6mhz:inst1.clk50mhz
-GND => vga_controller:inst4.reset
-GND => pre_vga_dac_4:inst.r
-GND => pre_vga_dac_4:inst.g
-GND => helicopter:inst2.reset
-GND => helicopter:inst2.button
-GND => divider:inst3.reset
+reset => vga_controller:inst4.reset
+reset => helicopter:inst2.reset
+reset => helicopter:inst2.button
+reset => divider:inst3.reset
 vga_vsync <= vga_controller:inst4.v_sync
 vga_b[0] <= pre_vga_dac_4:inst.vga_b[0]
 vga_b[1] <= pre_vga_dac_4:inst.vga_b[1]
 vga_b[2] <= pre_vga_dac_4:inst.vga_b[2]
 vga_b[3] <= pre_vga_dac_4:inst.vga_b[3]
+GND => pre_vga_dac_4:inst.r
+GND => pre_vga_dac_4:inst.g
 VCC => helicopter:inst2.enable
 vga_g[0] <= pre_vga_dac_4:inst.vga_g[0]
 vga_g[1] <= pre_vga_dac_4:inst.vga_g[1]
