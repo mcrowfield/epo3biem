@@ -1,0 +1,15 @@
+------ opening nelsis ------
+------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
+------ opening seadif ------
+------ checking your circuit 'posnew' ------
+------ reading nelsis circuit-cell 'posnew' ------
+------ writing nelsis 'posnew' as sdfcir 'posnew(posnew(test)) ------
+------ input check seems good enough: calling placer ------
+calling program: madonna -l test -f posnew -c posnew -o Tmp_Cell_ -ex posnew
+------ madonna successful ------
+------ calling router ------
+calling program: trout -l test -f posnew -c posnew -o Tmp_Cell_ -d Tmp_Cell_
+------ routing successful ------
+------ converting result back into nelsis as cell 'Tmpnoname6895' ------
+calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpnoname6895
+------ sea: task completed ------

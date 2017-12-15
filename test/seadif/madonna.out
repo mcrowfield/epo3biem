@@ -1,0 +1,73 @@
+
+Madonna version 3.4 (compiled Tue, 01 Nov 2016 14:38:16 on linux-2.6-i686)
+
+reading circuit "posnew(posnew(test))" ...done
+
+Kissing madonna hello...
+
+Reading image description file "/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif"...
+
+
+------ net distribution (total #nets = 39):
+        0..1     2     3     4     5     6     7 8..10 11..20  >20
+
+           0    24     7     2     2     2     0     0     0     2
+
+------ partitioning 31 cells into (hor x vert) = (6 x 2) partitions
+
+------ requested grid points = (48, 56)
+
+------ cost@start = 262, cost@end = 185, moves = 31
+------ cost@start = 185, cost@end = 180, moves = 34
+------ cost@start = 180, cost@end = 180, moves = 28
+------ 29 nets have to be routed on a 11 x 3 global grid
+     + routing net n8 (12 terminals):  weight = 2200
+     + routing net n9 (12 terminals):  weight = 2200
+     + routing net button (2 terminals):  weight = 200
+     + routing net n11 (5 terminals):  weight = 804
+     + routing net position_old_4_0_0 (2 terminals):  weight = 208
+     + routing net r61_n24 (2 terminals):  weight = 200
+     + routing net r61_n26 (2 terminals):  weight = 200
+     + routing net r61_n6 (2 terminals):  weight = 204
+     + routing net position_old_4_0_1 (3 terminals):  weight = 402
+     + routing net r61_n25 (2 terminals):  weight = 200
+     + routing net r61_n23 (2 terminals):  weight = 208
+     + routing net r61_n20 (2 terminals):  weight = 206
+     + routing net r61_n4 (3 terminals):  weight = 400
+     + routing net r61_n5 (3 terminals):  weight = 400
+     + routing net position_old_4_0_2 (2 terminals):  weight = 200
+     + routing net r61_n18 (2 terminals):  weight = 200
+     + routing net r61_n16 (2 terminals):  weight = 208
+     + routing net position_old_4_0_3 (3 terminals):  weight = 406
+     + routing net r61_n17 (2 terminals):  weight = 200
+     + routing net r61_n15 (2 terminals):  weight = 200
+     + routing net r61_n13 (2 terminals):  weight = 206
+     + routing net r61_n14 (2 terminals):  weight = 204
+     + routing net r61_n8 (2 terminals):  weight = 206
+     + routing net r61_n3 (2 terminals):  weight = 200
+     + routing net r61_n9 (2 terminals):  weight = 200
+     + routing net r61_n11 (2 terminals):  weight = 202
+     + routing net r61_n2 (2 terminals):  weight = 204
+     + routing net r61_n12 (2 terminals):  weight = 200
+     + routing net r61_n10 (2 terminals):  weight = 200
+
+------ Routed 29 nets, total weight = 11268
+
+
+
+------ Detailed placement of (Tmp_Cell_(posnew(posnew(test))))...
+------ Reading input data
+------ Creating temporary data structures
+------ Placement plane size : [48:56]
+------ Doing placement 
+------ Compacting  
+
+         2  column[s] deleted.
+
+         Magnification coefficient obtained :0.721316
+
+------ Writing created layout to database
+Kissing madonna good bye...
+
+Madonna took 0.0 seconds of your cpu
+terminate

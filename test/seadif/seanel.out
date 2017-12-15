@@ -1,0 +1,6 @@
+------ opening nelsis ------
+------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
+------ opening seadif ------
+------ reading sdf laycell 'Tmp_Cell_(posnew(posnew(test)))': OK ------
+------ writing sdflay 'Tmp_Cell_(posnew(posnew(test)))' into nelsis 'Tmpnoname6895' ------
+------ nelsea: task completed ------
