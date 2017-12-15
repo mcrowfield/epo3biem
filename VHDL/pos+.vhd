@@ -17,9 +17,9 @@ begin
 
     begin
       if (button = '1') then
-        newposition <= unsigned(position_old) - 1;
+        newposition <= unsigned(position_old) - 2;
       else
-        newposition <= unsigned(position_old) + 2;
+        newposition <= unsigned(position_old) + 3;
       end if;
   end process;
 position_new <= std_logic_vector(newposition);
