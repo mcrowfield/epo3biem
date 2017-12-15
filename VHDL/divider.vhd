@@ -65,7 +65,7 @@ BEGIN
 	END IF;
   END PROCESS;
 
-  tick <= v_count(1);
+  tick <= (v_count(1) AND shz);
   
 
 END behavior;
