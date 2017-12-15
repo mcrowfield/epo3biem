@@ -261,14 +261,14 @@ ENTITY pos
     Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Source directory: epo3biem
+    Source directory: /epo3biem
     HDL source file: VHDL/pos_SYNTH.vhd
     Source file: VHDL/pos_SYNTH.vhd
     Start location: VHDL/pos_SYNTH.vhd:7
     Version string: f]SZ9hSj6baBCczNcz;PB0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Fri Dec 15 11:27:37 2017
+    Compile time: Fri Dec 15 11:27:55 2017
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
@@ -460,7 +460,7 @@ VHDL CONFIGURATION vga_controller_behavior_cfg
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY vga_tb
-    Source modified time: Fri Dec 15 09:19:39 2017
+    Source modified time: Fri Dec 15 11:25:23 2017
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -471,31 +471,12 @@ ENTITY vga_tb
     Version string: [zQENhIkBi?oAd@>MNF401
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Fri Dec 15 11:24:06 2017
+    Compile time: Fri Dec 15 11:28:28 2017
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
-  ARCHITECTURE BODY behavioural
-    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
-    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work vga_tb [zQENhIkBi?oAd@>MNF401
-    Start location: VHDL/tb_divider.vhd:17
-    Version string: ;InLEznTEBA9YoJfP?kDb2
-    Opcode format: 10.5b; VCOM SE-64 Object version 63
-    VHDL language standard: 3 (VHDL-2008)
-    Compile time: Fri Dec 15 11:24:06 2017
-    Debug Symbol file exists
-    Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
-    Compile defaults: Explicit=1 CvgOpt=0
-    Source directory: /epo3biem
-    Source file: VHDL/tb_divider.vhd
-    Source modified time: Fri Dec 15 09:19:39 2017
-    HDL source file: VHDL/tb_divider.vhd
   ARCHITECTURE BODY synthesised
-    Source modified time: Fri Dec 15 09:44:56 2017
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: E work vga_tb [zQENhIkBi?oAd@>MNF401
     Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
@@ -507,12 +488,31 @@ ENTITY vga_tb
     Version string: 4<UV8KFJD`mSC>A4<Kk4o3
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Fri Dec 15 11:13:05 2017
+    Compile time: Fri Dec 15 11:28:30 2017
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /epo3biem
+    Source modified time: Fri Dec 15 11:25:23 2017
+  ARCHITECTURE BODY behavioural
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_tb [zQENhIkBi?oAd@>MNF401
+    Start location: VHDL/tb_divider.vhd:17
+    Version string: J6G:d9nLl62Oi]zPQ96XV1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Fri Dec 15 11:28:28 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /epo3biem
+    Source file: VHDL/tb_divider.vhd
+    Source modified time: Fri Dec 15 11:25:23 2017
+    HDL source file: VHDL/tb_divider.vhd
 VHDL CONFIGURATION vga_tb_behavioural_cfg
     Configuration applies to entity: vga_tb
     Block configuration applies to architecture: behavioural

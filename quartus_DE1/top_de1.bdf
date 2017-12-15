@@ -56,7 +56,7 @@ applicable agreement for further details.
 	(input)
 	(rect -280 392 -112 408)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 30 10)(font "Arial" ))
+	(text "reset" (rect 5 0 29 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -73,7 +73,7 @@ applicable agreement for further details.
 	(input)
 	(rect 160 384 328 400)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "button" (rect 5 0 36 10)(font "Arial" ))
+	(text "button" (rect 5 0 35 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -84,12 +84,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 104 400 160 416))
 )
 (pin
 	(input)
 	(rect 152 416 320 432)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "enable" (rect 5 0 37 10)(font "Arial" ))
+	(text "enable" (rect 5 0 36 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -100,6 +101,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 96 432 152 448))
 )
 (pin
 	(output)
@@ -508,6 +510,31 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 216 -592 400 -456))
 )
+(symbol
+	(rect 360 376 408 408)
+	(text "NOT" (rect 1 0 21 9)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 21 26 31)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 18)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 18)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 18)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt -192 32)
 	(pt -144 32)
@@ -772,8 +799,12 @@ applicable agreement for further details.
 	(pt 488 392)
 )
 (connector
-	(pt 488 392)
 	(pt 328 392)
+	(pt 360 392)
+)
+(connector
+	(pt 408 392)
+	(pt 488 392)
 )
 (junction (pt 32 32))
 (junction (pt 128 32))
