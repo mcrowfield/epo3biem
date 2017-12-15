@@ -65,7 +65,7 @@ architecture toplevel of helicopter is
                        position_old
                      );
                      
-    lbl2: draw port map (x_input(5 downto 2),
+    lbl2: draw port map (x_input(5 downto 0),
                        y_input,
                        position_old,
                        blue
