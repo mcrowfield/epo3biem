@@ -4,9 +4,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
 
 ------ reading placement 'Tmp_Cell_(vga_controller(vga_controller(test8)))'
+=======
+------ reading placement 'Tmp_Cell_(posnew(posnew(test)))'
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 ------ reading placement 'Tmp_Cell_(posnew(posnew(test)))'
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -68,6 +72,7 @@ No. of transistors (total / used):    318/270 = 84.91 %
 CPU-time consumption:                 0.00 sec.
 Elapsed time during routing:          0.00 sec. (100.00 % of cpu)
 ------ Verifying Connectivity ------
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 WARNING: 17 out of the 186 nets are not properly connected.
@@ -206,11 +211,16 @@ terminate
 =======
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 ------ No unconnect nor short-circuits ------
 ------ Writing 'Tmp_Cell_(posnew(posnew(test)))'
 ------ Trout: task completed on Tue Dec 19 09:58:23 2017
 terminate
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
