@@ -1,0 +1,22 @@
+This is the file 'seadif/trout.error' which was created by
+the program 'trout' on Tue Dec 19 09:56:05 2017
+Trout was verifying the netlist description of
+your circuit circuit 'posnew' with the current layout in seadali.
+The following nets in the layout are not according to
+the netlist description of circuit 'posnew'. They are also
+marked in the layout.
+------------------------- list of errors -------------------------
+##### suspected short-circuit no. 1:
+  > net 'r61_n7' (1 terms, e.g. terminal  'Y')
+  > net 'position_new_5_0_2' (2 terms, e.g. terminal 'Y')
+  > net 'position_new_5_0_0' (2 terms, e.g. terminal 'position_new_5_0_0')
+
+WARNING: 1 short-circuit(s) were detected among the 43 nets.
+         These nets were separatedly specified in the circuit
+         but are connected in the layout.  This may occur because of
+         feed-throughs in sub-cells and it doesn't necessarily
+         imply an error.
+         In the layout each short-circuit is indicated by a marker
+         which indicates a position on the pattern: <=-SHORT_<no>
+------------------------------------------------------------------
+lock

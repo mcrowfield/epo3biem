@@ -1,3 +1,2 @@
-File /home/vschonk/Downloads/epo3git/epo3biem/SLS/pos.sls:
-Parsing network: pos
-Warning: network pos, unconnected terminal reset
+File /home/michaelkraaije/epo3git/epo3biem/SLS/posnew.sls:
+Parsing network: posnew

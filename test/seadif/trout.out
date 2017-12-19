@@ -4,136 +4,60 @@
 ------ reading placement 'Tmp_Cell_(posnew(posnew(test)))'
 ------ building data structure
 ------ making grid
------- routing started Fri Dec 15 09:36:40 2017
-39 nets have to be routed.
-Routing net(1) 'position_new_4_0_0' (2/2): .b OK!
-Routing net(2) 'position_new_4_0_3' (2/2): .b OK!
-Routing net(3) 'r61_n3' (2/2): . OK!
-Routing net(4) 'r61_n17' (2/2): . OK!
-Routing net(5) 'position_new_4_0_1' (2/2): .b OK!
-Routing net(6) 'position_new_4_0_2' (2/2): .b OK!
-Routing net(7) 'position_old_4_0_4' (2/2): .b OK!
-Routing net(8) 'position_new_4_0_4' (2/2): .b OK!
-Routing net(9) 'r61_n10' (2/2): . OK!
-Routing net(10) 'r61_n7' (2/2): . OK!
-Routing net(11) 'r61_n12' (2/2): . OK!
-Routing net(12) 'r61_n22' (2/2): . OK!
-Routing net(13) 'r61_n21' (2/2): . OK!
+------ routing started Tue Dec 19 09:58:23 2017
+43 nets have to be routed.
+Routing net(1) 'r61_n25' (2/2): . OK!
+Routing net(2) 'r61_n4' (2/2): . OK!
+Routing net(3) 'r61_n21' (2/2): . OK!
+Routing net(4) 'r61_n3' (2/2): . OK!
+Routing net(5) 'r61_n15' (2/2): . OK!
+Routing net(6) 'r61_n17' (2/2): . OK!
+Routing net(7) 'r61_n20' (2/2): . OK!
+Routing net(8) 'r61_n22' (2/2): . OK!
+Routing net(9) 'r61_n11' (2/2): . OK!
+Routing net(10) 'r61_n16' (2/2): . OK!
+Routing net(11) 'r61_n23' (3/3): .. OK!
+Routing net(12) 'r61_n13' (2/2): . OK!
+Routing net(13) 'position_new_5_0_0' (2/2): .b OK!
 Routing net(14) 'r61_n19' (2/2): . OK!
-Routing net(15) 'r61_n15' (2/2): . OK!
-Routing net(16) 'r61_n26' (2/2): . OK!
-Routing net(17) 'r61_n6' (3/3): .. OK!
-Routing net(18) 'r61_n4' (5/5): .... OK!
-Routing net(19) 'r61_n24' (3/3): .. OK!
-Routing net(20) 'r61_n25' (2/2): . OK!
-Routing net(21) 'r61_n8' (2/2): . OK!
-Routing net(22) 'r61_n18' (2/2): . OK!
-Routing net(23) 'r61_n9' (2/2): x FAILED
-Routing net(24) 'r61_n11' (2/2): . OK!
-Routing net(25) 'r61_n2' (2/2): . OK!
-Routing net(26) 'r61_n23' (2/2): . OK!
-Routing net(27) 'r61_n16' (2/2): . OK!
-Routing net(28) 'r61_n13' (3/3): .. OK!
-Routing net(29) 'position_old_4_0_0' (4/4): ...b OK!
-Routing net(30) 'r61_n5' (3/3): .. OK!
-Routing net(31) 'button' (6/6): .....b OK!
-Routing net(32) 'position_old_4_0_1' (5/5): ....b OK!
-Routing net(33) 'position_old_4_0_2' (3/3): .xb FAILED
-Routing net(34) 'n11' (6/6): ..... OK!
-Routing net(35) 'position_old_4_0_3' (4/4): ...b OK!
-Routing net(36) 'n8' (32/32): ...............................b OK!
-Routing net(37) 'r61_n20' (3/3): xxR>. FAILED
-Routing net(38) 'r61_n14' (3/3): .. OK!
-Routing net(39) 'n9' (32/32): ...............................b OK!
------ Don't worry, I'm trying again -----
-Routing net(1) 'r61_n9' (2/2): . OK!
-Routing net(2) 'position_old_4_0_2' (3/3): ..b OK!
-Routing net(3) 'r61_n20' (3/3): .. OK!
-Routing net(4) 'position_new_4_0_0' (2/2): .b OK!
-Routing net(5) 'r61_n3' (2/2): . OK!
-Routing net(6) 'position_new_4_0_3' (2/2): .b OK!
-Routing net(7) 'r61_n17' (2/2): . OK!
-Routing net(8) 'position_new_4_0_4' (2/2): .b OK!
-Routing net(9) 'position_old_4_0_4' (2/2): .b OK!
-Routing net(10) 'position_new_4_0_2' (2/2): .b OK!
-Routing net(11) 'position_new_4_0_1' (2/2): .b OK!
-Routing net(12) 'r61_n10' (2/2): . OK!
-Routing net(13) 'r61_n7' (2/2): . OK!
-Routing net(14) 'r61_n12' (2/2): . OK!
-Routing net(15) 'r61_n22' (2/2): . OK!
-Routing net(16) 'r61_n15' (2/2): . OK!
-Routing net(17) 'r61_n19' (2/2): . OK!
-Routing net(18) 'r61_n21' (2/2): . OK!
-Routing net(19) 'r61_n26' (2/2): . OK!
-Routing net(20) 'r61_n6' (3/3): .. OK!
-Routing net(21) 'r61_n4' (5/5): .... OK!
-Routing net(22) 'r61_n25' (2/2): . OK!
-Routing net(23) 'r61_n24' (3/3): xxR>x FAILED
-Routing net(24) 'r61_n8' (2/2): . OK!
-Routing net(25) 'r61_n18' (2/2): . OK!
-Routing net(26) 'r61_n11' (2/2): . OK!
-Routing net(27) 'r61_n2' (2/2): x FAILED
-Routing net(28) 'r61_n23' (2/2): . OK!
-Routing net(29) 'r61_n13' (3/3): .. OK!
-Routing net(30) 'r61_n16' (2/2): x FAILED
-Routing net(31) 'r61_n5' (3/3): .. OK!
-Routing net(32) 'position_old_4_0_0' (4/4): ...b OK!
-Routing net(33) 'button' (6/6): ..x..b FAILED
-Routing net(34) 'position_old_4_0_3' (4/4): ..xb FAILED
-Routing net(35) 'n11' (6/6): ....x FAILED
-Routing net(36) 'position_old_4_0_1' (5/5): ...xb FAILED
-Routing net(37) 'n8' (32/32): ...............................b OK!
-Routing net(38) 'r61_n14' (3/3): .. OK!
-Routing net(39) 'n9' (32/32): ...............................b OK!
------ Don't worry, I'm trying again -----
-Routing net(1) 'r61_n24' (3/3): .. OK!
-Routing net(2) 'r61_n9' (2/2): . OK!
-Routing net(3) 'r61_n2' (2/2): . OK!
-Routing net(4) 'r61_n16' (2/2): . OK!
-Routing net(5) 'button' (6/6): .....b OK!
-Routing net(6) 'position_old_4_0_2' (3/3): ..b OK!
-Routing net(7) 'n11' (6/6): ..... OK!
-Routing net(8) 'position_old_4_0_3' (4/4): ...b OK!
-Routing net(9) 'position_old_4_0_1' (5/5): ....b OK!
-Routing net(10) 'r61_n20' (3/3): .. OK!
-Routing net(11) 'position_new_4_0_0' (2/2): .b OK!
-Routing net(12) 'position_new_4_0_3' (2/2): .b OK!
-Routing net(13) 'r61_n3' (2/2): . OK!
-Routing net(14) 'r61_n17' (2/2): . OK!
-Routing net(15) 'position_new_4_0_1' (2/2): .b OK!
-Routing net(16) 'position_new_4_0_2' (2/2): .b OK!
-Routing net(17) 'position_old_4_0_4' (2/2): .b OK!
-Routing net(18) 'position_new_4_0_4' (2/2): .b OK!
-Routing net(19) 'r61_n10' (2/2): . OK!
-Routing net(20) 'r61_n7' (2/2): . OK!
-Routing net(21) 'r61_n12' (2/2): . OK!
-Routing net(22) 'r61_n22' (2/2): . OK!
-Routing net(23) 'r61_n21' (2/2): . OK!
-Routing net(24) 'r61_n19' (2/2): . OK!
-Routing net(25) 'r61_n15' (2/2): . OK!
-Routing net(26) 'r61_n26' (2/2): . OK!
-Routing net(27) 'r61_n6' (3/3): .. OK!
-Routing net(28) 'r61_n4' (5/5): .... OK!
-Routing net(29) 'r61_n25' (2/2): . OK!
-Routing net(30) 'r61_n8' (2/2): . OK!
-Routing net(31) 'r61_n18' (2/2): . OK!
-Routing net(32) 'r61_n11' (2/2): . OK!
-Routing net(33) 'r61_n23' (2/2): . OK!
-Routing net(34) 'r61_n13' (3/3): .. OK!
-Routing net(35) 'position_old_4_0_0' (4/4): ...b OK!
-Routing net(36) 'r61_n5' (3/3): .. OK!
-Routing net(37) 'n8' (32/32): ...............................b OK!
-Routing net(38) 'r61_n14' (3/3): .. OK!
-Routing net(39) 'n9' (32/32): ...............................b OK!
+Routing net(15) 'position_new_5_0_5' (2/2): .b OK!
+Routing net(16) 'position_new_5_0_1' (2/2): .b OK!
+Routing net(17) 'position_new_5_0_2' (2/2): .b OK!
+Routing net(18) 'position_new_5_0_3' (2/2): .b OK!
+Routing net(19) 'position_new_5_0_4' (2/2): .b OK!
+Routing net(20) 'position_old_5_0_5' (2/2): .b OK!
+Routing net(21) 'position_old_5_0_2' (3/3): ..b OK!
+Routing net(22) 'r61_n7' (3/3): .. OK!
+Routing net(23) 'r61_n24' (2/2): . OK!
+Routing net(24) 'r61_n28' (2/2): . OK!
+Routing net(25) 'r61_n14' (2/2): . OK!
+Routing net(26) 'r61_n9' (2/2): . OK!
+Routing net(27) 'r61_n26' (3/3): .. OK!
+Routing net(28) 'r61_n5' (3/3): .. OK!
+Routing net(29) 'r61_n12' (4/4): ... OK!
+Routing net(30) 'r61_n18' (4/4): ... OK!
+Routing net(31) 'r61_n8' (2/2): . OK!
+Routing net(32) 'position_old_5_0_3' (4/4): ...b OK!
+Routing net(33) 'r61_n6' (3/3): .. OK!
+Routing net(34) 'position_old_5_0_0' (3/3): ..b OK!
+Routing net(35) 'position_old_5_0_4' (4/4): ...b OK!
+Routing net(36) 'r61_n10' (2/2): . OK!
+Routing net(37) 'r61_n2' (2/2): . OK!
+Routing net(38) 'r61_n27' (2/2): . OK!
+Routing net(39) 'n11' (7/7): ...... OK!
+Routing net(40) 'button' (7/7): ......b OK!
+Routing net(41) 'position_old_5_0_1' (3/3): ..b OK!
+Routing net(42) 'n8' (35/35): ..................................b OK!
+Routing net(43) 'n9' (35/35): ..................................b OK!
 READY
 ----- Some interesting statistics ------
-Total number of nets:                 39 (100% completion)
-Total length of routed wires:         1988 grids = 17.494 mm
-No. of transistors (total / used):    360/254 = 70.56 %
-CPU-time consumption:                 0.02 sec.
-Elapsed time during routing:          0.02 sec. (100.00 % of cpu)
+Total number of nets:                 43 (100% completion)
+Total length of routed wires:         1390 grids = 12.232 mm
+No. of transistors (total / used):    318/270 = 84.91 %
+CPU-time consumption:                 0.00 sec.
+Elapsed time during routing:          0.00 sec. (100.00 % of cpu)
 ------ Verifying Connectivity ------
 ------ No unconnect nor short-circuits ------
 ------ Writing 'Tmp_Cell_(posnew(posnew(test)))'
------- Trout: task completed on Fri Dec 15 09:36:40 2017
+------ Trout: task completed on Tue Dec 19 09:58:23 2017
 terminate
