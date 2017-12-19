@@ -18,6 +18,7 @@ ENTITY divider
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 <<<<<<< HEAD
+<<<<<<< HEAD
   ARCHITECTURE BODY synthesised
 <<<<<<< HEAD
     Source modified time: Tue Dec 19 11:58:07 2017
@@ -27,10 +28,14 @@ ENTITY divider
 =======
   ARCHITECTURE BODY behavior
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+  ARCHITECTURE BODY behavior
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Depends on: E work divider >e8VHi9NoWU9GKck>TFSg3
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Source directory: epo3biem
@@ -57,10 +62,18 @@ ENTITY divider
     VHDL language standard: 3 (VHDL-2008)
     Compile time: Tue Dec 19 09:04:08 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+    Start location: VHDL/divider.vhd:28
+    Version string: I]m5EfYB3Vg44hGb;DYYP0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Dec 19 09:04:08 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -70,11 +83,16 @@ ENTITY divider
   ARCHITECTURE BODY behavior
     Depends on: E work divider >e8VHi9NoWU9GKck>TFSg3
 =======
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Source directory: /epo3biem
     Source file: VHDL/divider.vhd
     Source modified time: Fri Dec 15 11:36:09 2017
     HDL source file: VHDL/divider.vhd
   ARCHITECTURE BODY synthesised
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: E work divider >e8VHi9NoWU9GKck>TFSg3
@@ -362,10 +380,14 @@ ENTITY posnew
 <<<<<<< HEAD
   ARCHITECTURE BODY synthesised
 <<<<<<< HEAD
+<<<<<<< HEAD
     Source modified time: Tue Dec 19 09:30:22 2017
 =======
   ARCHITECTURE BODY nextcopter
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Source modified time: Tue Dec 19 09:12:40 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Source modified time: Tue Dec 19 09:12:40 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -374,6 +396,10 @@ ENTITY posnew
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    Source directory: epo3biem
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Source directory: epo3biem
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -383,6 +409,7 @@ ENTITY posnew
     Version string: MmTc__FN8LTkDgHiRCmnG0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
+<<<<<<< HEAD
 <<<<<<< HEAD
     Compile time: Tue Dec 19 11:43:10 2017
 =======
@@ -396,13 +423,19 @@ ENTITY posnew
 =======
     Compile time: Tue Dec 19 09:12:42 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+    Compile time: Tue Dec 19 09:12:42 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 <<<<<<< HEAD
+<<<<<<< HEAD
     Source directory: /epo3biem
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
   ARCHITECTURE BODY nextcopter
@@ -453,10 +486,14 @@ VHDL CONFIGURATION posnew_nextcopter_cfg
 ENTITY vga_controller
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Source modified time: Tue Dec 19 11:40:59 2017
 =======
     Source modified time: Tue Dec 19 10:10:58 2017
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Source modified time: Fri Dec 15 11:36:09 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Source modified time: Fri Dec 15 11:36:09 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -472,6 +509,7 @@ ENTITY vga_controller
     VHDL language standard: 3 (VHDL-2008)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Compile time: Tue Dec 19 11:49:16 2017
 =======
     Compile time: Tue Dec 19 10:17:41 2017
@@ -479,10 +517,14 @@ ENTITY vga_controller
 =======
     Compile time: Tue Dec 19 09:04:11 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+    Compile time: Tue Dec 19 09:04:11 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+<<<<<<< HEAD
 <<<<<<< HEAD
   ARCHITECTURE BODY synthesised
 <<<<<<< HEAD
@@ -522,10 +564,23 @@ ENTITY vga_controller
     VHDL language standard: 3 (VHDL-2008)
     Compile time: Tue Dec 19 09:04:11 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+  ARCHITECTURE BODY behavior
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
+    Start location: VHDL/vga_controller.vhd:57
+    Version string: FW@jj5TSKfz:;oT]ahW0_0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Dec 19 09:04:11 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -534,17 +589,23 @@ ENTITY vga_controller
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
   ARCHITECTURE BODY behavior
 =======
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Source directory: /epo3biem
     Source file: VHDL/vga_controller.vhd
     Source modified time: Fri Dec 15 11:36:09 2017
     HDL source file: VHDL/vga_controller.vhd
   ARCHITECTURE BODY synthesised
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
     Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+<<<<<<< HEAD
 <<<<<<< HEAD
     Depends on: E work vga_controller A?e0hdmdk[zJ4WabNC`]J0
     Start location: VHDL/vga_controller.vhd:64
@@ -568,11 +629,21 @@ ENTITY vga_controller
     VHDL language standard: 3 (VHDL-2008)
     Compile time: Tue Dec 19 09:04:11 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+    HDL source file: VHDL/vga_controller_SYNTH.vhd
+    Source file: VHDL/vga_controller_SYNTH.vhd
+    Start location: VHDL/vga_controller_SYNTH.vhd:7
+    Version string: 1@]7A6DiaCJiic9b:dLEj0
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Dec 19 09:04:11 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /epo3biem
+<<<<<<< HEAD
 <<<<<<< HEAD
     Source file: VHDL/vga_controller.vhd
 <<<<<<< HEAD
@@ -610,6 +681,18 @@ VHDL CONFIGURATION vga_controller_behavior_cfg
     Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
     Source modified time: Fri Dec 15 11:36:09 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+    Source modified time: Fri Dec 15 11:36:09 2017
+VHDL CONFIGURATION vga_controller_behavior_cfg
+    Configuration applies to entity: vga_controller
+    Block configuration applies to architecture: behavior
+    Depends on: A work vga_controller behavior FW@jj5TSKfz:;oT]ahW0_0
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
+    Source modified time: Fri Dec 15 11:36:09 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
     Source directory: /epo3biem
     HDL source file: VHDL/vga_controller_behavior_cfg.vhd
     Source file: VHDL/vga_controller_behavior_cfg.vhd
@@ -619,10 +702,14 @@ VHDL CONFIGURATION vga_controller_behavior_cfg
     VHDL language standard: 3 (VHDL-2008)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Compile time: Tue Dec 19 11:49:17 2017
 =======
     Compile time: Tue Dec 19 10:17:41 2017
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Compile time: Tue Dec 19 09:04:12 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Compile time: Tue Dec 19 09:04:12 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -632,10 +719,14 @@ VHDL CONFIGURATION vga_controller_behavior_cfg
 ENTITY vga_tb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Source modified time: Tue Dec 19 09:23:29 2017
 =======
     Source modified time: Tue Dec 19 10:10:58 2017
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Source modified time: Fri Dec 15 11:36:09 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Source modified time: Fri Dec 15 11:36:09 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -651,10 +742,14 @@ ENTITY vga_tb
     VHDL language standard: 3 (VHDL-2008)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Compile time: Tue Dec 19 11:49:55 2017
 =======
     Compile time: Tue Dec 19 10:17:42 2017
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Compile time: Tue Dec 19 09:04:12 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Compile time: Tue Dec 19 09:04:12 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -675,6 +770,7 @@ ENTITY vga_tb
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
 <<<<<<< HEAD
+<<<<<<< HEAD
     Compile time: Tue Dec 19 11:49:55 2017
 =======
     HDL source file: VHDL/vga_tb_SYNTH.vhd
@@ -685,6 +781,9 @@ ENTITY vga_tb
     VHDL language standard: 3 (VHDL-2008)
     Compile time: Tue Dec 19 10:17:42 2017
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Compile time: Tue Dec 19 09:04:12 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Compile time: Tue Dec 19 09:04:12 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -712,10 +811,14 @@ ENTITY vga_tb
     VHDL language standard: 3 (VHDL-2008)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Compile time: Tue Dec 19 11:36:46 2017
 =======
     Compile time: Tue Dec 19 10:17:42 2017
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Compile time: Tue Dec 19 09:04:12 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Compile time: Tue Dec 19 09:04:12 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -726,12 +829,16 @@ ENTITY vga_tb
     Source directory: /epo3biem
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Source modified time: Tue Dec 19 09:23:29 2017
 =======
     Source file: VHDL/tb_divider.vhd
     Source modified time: Tue Dec 19 10:10:58 2017
     HDL source file: VHDL/tb_divider.vhd
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Source modified time: Fri Dec 15 11:36:09 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Source modified time: Fri Dec 15 11:36:09 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -759,10 +866,14 @@ VHDL CONFIGURATION vga_tb_behavioural_cfg
     VHDL language standard: 3 (VHDL-2008)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Compile time: Tue Dec 19 11:49:56 2017
 =======
     Compile time: Tue Dec 19 10:17:42 2017
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+    Compile time: Tue Dec 19 09:04:12 2017
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
     Compile time: Tue Dec 19 09:04:12 2017
 >>>>>>> parent of c7e97f1... vga_controller less registers

@@ -10,6 +10,7 @@ L	Error_Marker_	32648	1
 F	divider	32791	1
 C	divider	33043	1
 <<<<<<< HEAD
+<<<<<<< HEAD
 L	Tmp_Cell_	45540	0
 =======
 F	posnew	373	1
@@ -23,6 +24,8 @@ C	divider	34486	1
 L	Tmp_Cell_	46983	1
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
 =======
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 L	Tmp_Cell_	45540	1
 =======
 L	Tmp_Cell_	13601	0
@@ -30,4 +33,7 @@ F	Error_Marker_	31541	1
 C	Error_Marker_	31703	1
 L	Error_Marker_	31839	0
 >>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers

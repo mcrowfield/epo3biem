@@ -2,6 +2,7 @@
 #@ # Running dc_shell Version L-2016.03-SP2 for linux64 -- May 30, 2016
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #@ # Date:   Tue Dec 19 11:58:03 2017
 #@ # Run by: mapostma@tud208883
 =======
@@ -12,6 +13,8 @@
 <<<<<<< HEAD
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 #@ # Date:   Tue Dec 19 09:12:34 2017
 #@ # Run by: michaelk@tud208898
 =======
@@ -19,8 +22,11 @@
 #@ # Run by: vschonk@ce-epo3.ewi.tudelft.nl
 >>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 #@ 
@@ -5457,6 +5463,7 @@ source /data/public/common/software/synopsys/L-2016.03-SP2/admin/setup/.synopsys
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 source -echo -verbose {/home/mapostma/Documents/EPO3 Github/epo3biem/synthesize.tcl}
 #@ # -- Starting source /home/mapostma/Documents/EPO3 Github/epo3biem/synthesize.tcl
 =======
@@ -5468,6 +5475,10 @@ source -echo -verbose /home/jrkoning/epo3git/epo3biem/plot.tcl
 source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
+#@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
@@ -5499,6 +5510,7 @@ source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ write_file -f ddc posnew -output ./ADB/posnew.ddc
 #@ write_file -f vhdl posnew -output ./VHDL/posnew_SYNTH.vhd
 #@ quit
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5536,6 +5548,8 @@ change_selection
 =======
 =======
 =======
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 source -echo -verbose /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
 #@ # -- Starting source /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
 
@@ -5543,6 +5557,9 @@ source -echo -verbose /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
 #@ set designer vschonk
 #@ set company TU-Delft
 #@ start_gui
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 #@ # -- Starting source /data/public/common/software/synopsys/L-2016.03-SP2/auxx/tcllib/lib/itk4.0.1/itk.tcl
 
@@ -41914,7 +41931,10 @@ change_selection [get_s helicopter]
 quit
 >>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
