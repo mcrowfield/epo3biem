@@ -1,14 +1,5 @@
 Library vendor : Model Technology
 Maximum unnamed designs : 3
-OPTIMIZED DESIGN _opt
-    Compile time: Fri Dec 15 10:54:28 2017
-    Version string: WiP:O[C:kVVlB^z?V]=HZ3
-    Top-level model: work vga_tb_behavioural_cfg 1
-    Compile options: -quiet -auto_acc_if_foreign -work work
-    Compile defaults: CvgOpt=0
-    Short name: @_opt
-    Opcode format: 10.5b; VCOM/VLOG SE-64 Object version 63
-    Source directory: epo3nogeens
 ENTITY divider
     Source modified time: Fri Dec 15 11:16:42 2017
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
@@ -261,7 +252,6 @@ ENTITY pos
     Depends on: P cellslib cellslib_decl_pack C_V`I?bM<:>X]9]N228Sm1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Source directory: /epo3biem
     HDL source file: VHDL/pos_SYNTH.vhd
     Source file: VHDL/pos_SYNTH.vhd
     Start location: VHDL/pos_SYNTH.vhd:7
@@ -273,6 +263,7 @@ ENTITY pos
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /epo3biem
   ARCHITECTURE BODY statemachine
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
@@ -386,7 +377,7 @@ VHDL CONFIGURATION posnew_nextcopter_cfg
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
 ENTITY vga_controller
-    Source modified time: Fri Dec 15 09:19:39 2017
+    Source modified time: Tue Dec 19 09:15:56 2017
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
     Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
     Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
@@ -394,14 +385,32 @@ ENTITY vga_controller
     HDL source file: VHDL/vga_controller.vhd
     Source file: VHDL/vga_controller.vhd
     Start location: VHDL/vga_controller.vhd:34
-    Version string: 2bGo?boo=km[V3`RYzVcN0
+    Version string: A?e0hdmdk[zJ4WabNC`]J0
     Opcode format: 10.5b; VCOM SE-64 Object version 63
     VHDL language standard: 3 (VHDL-2008)
-    Compile time: Fri Dec 15 11:13:04 2017
+    Compile time: Tue Dec 19 09:16:03 2017
     Debug Symbol file exists
     Compiled in vopt flow
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
+  ARCHITECTURE BODY behavior
+    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
+    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
+    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
+    Depends on: E work vga_controller A?e0hdmdk[zJ4WabNC`]J0
+    Start location: VHDL/vga_controller.vhd:64
+    Version string: nk`V>M[BY:C_cUD0i[o`D1
+    Opcode format: 10.5b; VCOM SE-64 Object version 63
+    VHDL language standard: 3 (VHDL-2008)
+    Compile time: Tue Dec 19 09:16:03 2017
+    Debug Symbol file exists
+    Compiled in vopt flow
+    Compile options: -quiet -nologo -2008 -lower -explicit -work work
+    Compile defaults: Explicit=1 CvgOpt=0
+    Source directory: /epo3biem
+    Source file: VHDL/vga_controller.vhd
+    Source modified time: Tue Dec 19 09:15:56 2017
+    HDL source file: VHDL/vga_controller.vhd
   ARCHITECTURE BODY synthesised
     Source modified time: Fri Dec 15 09:44:56 2017
     Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
@@ -421,24 +430,6 @@ ENTITY vga_controller
     Compile options: -quiet -nologo -2008 -lower -explicit -work work
     Compile defaults: Explicit=1 CvgOpt=0
     Source directory: /epo3biem
-  ARCHITECTURE BODY behavior
-    Depends on: P ieee numeric_std :ASDNFgHXf_ih3J@9F3Ze1
-    Depends on: P std textio zE1`LPoLg^DX3Oz^4Fj1K3
-    Depends on: P ieee std_logic_1164 eNV`TJ_GofJTzYa?f<@Oe1
-    Depends on: E work vga_controller 2bGo?boo=km[V3`RYzVcN0
-    Start location: VHDL/vga_controller.vhd:57
-    Version string: FW@jj5TSKfz:;oT]ahW0_0
-    Opcode format: 10.5b; VCOM SE-64 Object version 63
-    VHDL language standard: 3 (VHDL-2008)
-    Compile time: Fri Dec 15 11:13:04 2017
-    Debug Symbol file exists
-    Compiled in vopt flow
-    Compile options: -quiet -nologo -2008 -lower -explicit -work work
-    Compile defaults: Explicit=1 CvgOpt=0
-    Source directory: /epo3biem
-    Source file: VHDL/vga_controller.vhd
-    Source modified time: Fri Dec 15 09:19:39 2017
-    HDL source file: VHDL/vga_controller.vhd
 VHDL CONFIGURATION vga_controller_behavior_cfg
     Configuration applies to entity: vga_controller
     Block configuration applies to architecture: behavior
