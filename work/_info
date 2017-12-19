@@ -7,85 +7,46 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 depo3nogeens
-T_opt
-!s110 1513680100
-VOB9JRblkNC3IK4[M2c@BV2
-04 22 0 work vga_tb_behavioural_cfg 1
-=1-64006a425131-5a38ece4-46625-3077
-Z1 o-quiet -auto_acc_if_foreign -work work
-Z2 tCvgOpt 0
-n@_opt
-Z3 OL;O;10.5b;63
-R0
-T_opt1
-!s110 1513680563
-V6Ui7DJPZ^WjD9V@MnB6AF1
-04 27 0 work vga_controller_behavior_cfg 1
-=1-64006a425131-5a38eeb3-7d832-320c
-R1
-R2
-n@_opt1
-R3
-R0
+depo3nogeens
 Edivider
-Z4 w1513334169
-Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z8 d/epo3biem
-Z9 8VHDL/divider.vhd
-Z10 FVHDL/divider.vhd
+Z0 w1513334169
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/epo3biem
+Z5 8VHDL/divider.vhd
+Z6 FVHDL/divider.vhd
 l0
 L9
 V>e8VHi9NoWU9GKck>TFSg3
 !s100 R4JcUDW<dk<6;BP?EIngA2
-Z11 OL;C;10.5b;63
+Z7 OL;C;10.5b;63
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z12 !s110 1513670648
+=======
+Z8 !s110 1513670648
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-Z13 !s108 1513670648.000000
-Z14 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/divider.vhd|
-Z15 !s107 VHDL/divider.vhd|
+Z9 !s108 1513670648.000000
+Z10 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/divider.vhd|
+Z11 !s107 VHDL/divider.vhd|
 !i113 0
-Z16 o-quiet -nologo -2008 -lower -explicit -work work
-Z17 tExplicit 1 CvgOpt 0
-Asynthesised
-w1513681087
-R5
-Z18 DEx4 work 7 divider 0 22 >e8VHi9NoWU9GKck>TFSg3
-Z19 DPx8 cellslib 18 cellslib_decl_pack 0 22 C_V`I?bM<:>X]9]N228Sm1
-R6
-R7
-depo3biem
-Z20 8VHDL/divider_SYNTH.vhd
-Z21 FVHDL/divider_SYNTH.vhd
-l28
-L7
-VA3DmeeK9MKS5l7PiCF;en1
-!s100 <U8oEN=9jgdfidaLFID@51
-R11
-33
-!s110 1513681090
-!i10b 1
-!s108 1513681089.000000
-!s90 -2008|-lower|-explicit|-work|work|VHDL/divider_SYNTH.vhd|-quiet|-nologo|
-!s107 VHDL/divider_SYNTH.vhd|
-!i113 0
-R16
-R17
+Z12 o-quiet -nologo -2008 -lower -explicit -work work
+Z13 tExplicit 1 CvgOpt 0
 Abehavior
-R18
-R5
-R6
-R7
+Z14 DEx4 work 7 divider 0 22 >e8VHi9NoWU9GKck>TFSg3
+R1
+R2
+R3
 l34
 L28
 VI]m5EfYB3Vg44hGb;DYYP0
 !s100 UVD:8EgzC8ea@imm9E^:L1
-R11
+R7
 33
+<<<<<<< HEAD
 =======
 Z8 !s110 1513675056
 !i10b 1
@@ -117,8 +78,17 @@ R9
 !i113 0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
 R12
+=======
+R8
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
+R9
+R10
+R11
+!i113 0
+R12
 R13
+<<<<<<< HEAD
 <<<<<<< HEAD
 R14
 R15
@@ -132,72 +102,101 @@ l34
 L28
 VI]m5EfYB3Vg44hGb;DYYP0
 !s100 UVD:8EgzC8ea@imm9E^:L1
+=======
+Asynthesised
+R1
+R14
+Z15 DPx8 cellslib 18 cellslib_decl_pack 0 22 C_V`I?bM<:>X]9]N228Sm1
+R2
+R3
+8VHDL/divider_SYNTH.vhd
+FVHDL/divider_SYNTH.vhd
+l28
+L7
+VL3nTnjMI2ozCOX:z]ZRSL3
+!s100 KR@33R;5LoB:Xe8n18`dK0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R7
 33
 R8
 !i10b 1
+<<<<<<< HEAD
 R9
 R10
 R11
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+!s108 1513670647.000000
+!s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/divider_SYNTH.vhd|
+!s107 VHDL/divider_SYNTH.vhd|
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i113 0
-R16
-R17
+R12
+R13
 Cdivider_behavior_cfg
 edivider
-Z22 abehavior
+Z16 abehavior
 DAx4 work 7 divider 8 behavior 22 I]m5EfYB3Vg44hGb;DYYP0
-R5
-R6
-R7
-R18
+R1
+R2
+R3
+R14
+R0
 R4
-R8
 8VHDL/divider_behavior_cfg.vhd
 FVHDL/divider_behavior_cfg.vhd
 l0
 L1
 Vb4SCz:ePeE>cTa_TUgSWm3
 !s100 dG6Tfc[A5X_DM0dZeOS__3
-R11
+R7
 33
+<<<<<<< HEAD
 <<<<<<< HEAD
 R12
 =======
 Z17 !s110 1513675057
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R8
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 0
-R13
+R9
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/divider_behavior_cfg.vhd|
 !s107 VHDL/divider_behavior_cfg.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Edraw
+R0
+R1
+R2
+R3
 R4
-R5
-R6
-R7
-R8
 8VHDL/draw.vhd
 FVHDL/draw.vhd
 l0
 L5
 VZ]j2`:UiD`lFm5nB?^T[61
 !s100 YF1LGk?I=glLZ390^0Ykz3
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 R12
+=======
+R8
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-R13
+R9
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/draw.vhd|
 !s107 VHDL/draw.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Arenderer
 w1513336694
+<<<<<<< HEAD
 Z23 DEx4 work 4 draw 0 22 Z]j2`:UiD`lFm5nB?^T[61
 R5
 R6
@@ -241,43 +240,54 @@ R1
 R2
 R3
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z17 DEx4 work 4 draw 0 22 Z]j2`:UiD`lFm5nB?^T[61
+R1
+R2
+R3
+>>>>>>> parent of c7e97f1... vga_controller less registers
 8VHDL/draw-renderer.vhd
 FVHDL/draw-renderer.vhd
 l8
 L5
 V^S[DlmaG;eM551k2j95aU2
 !s100 efdl;@mV>9C7E4kj7kbJa2
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z24 !s110 1513670649
+=======
+Z18 !s110 1513670649
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-Z25 !s108 1513670649.000000
+Z19 !s108 1513670649.000000
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/draw-renderer.vhd|
 !s107 VHDL/draw-renderer.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Asynthesised
-R5
-R23
-R19
-R6
-R7
+R1
+R17
+R15
+R2
+R3
 8VHDL/draw_SYNTH.vhd
 FVHDL/draw_SYNTH.vhd
 l41
 L7
 VYQaKcogQ?b3M4F;ki[gKO3
 !s100 A7>cbhAIDEg]@h@n^HlRj0
-R11
+R7
 33
-R24
+R18
 !i10b 1
-R13
+R9
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/draw_SYNTH.vhd|
 !s107 VHDL/draw_SYNTH.vhd|
 !i113 0
+<<<<<<< HEAD
 R16
 R17
 =======
@@ -290,10 +300,15 @@ R18
 R12
 R13
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R12
+R13
+>>>>>>> parent of c7e97f1... vga_controller less registers
 Cdraw_renderer_cfg
 edraw
 arenderer
 DAx4 work 4 draw 8 renderer 22 ^S[DlmaG;eM551k2j95aU2
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R6
@@ -306,16 +321,23 @@ R3
 R20
 R0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R1
+R2
+R3
+R17
+R0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R4
-R8
 8VHDL/draw_renderer_cfg.vhd
 FVHDL/draw_renderer_cfg.vhd
 l0
 L1
 VE0hMRLEdRhWJD0CT6?C7=0
 !s100 k6U7VHP3@2E24=`oNWZ?]3
-R11
+R7
 33
+<<<<<<< HEAD
 <<<<<<< HEAD
 R24
 !i10b 0
@@ -325,13 +347,23 @@ Z21 !s110 1513675058
 !i10b 0
 R18
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R18
+!i10b 0
+R19
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/draw_renderer_cfg.vhd|
 !s107 VHDL/draw_renderer_cfg.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Ehelicopter
+R0
+R1
+R2
+R3
 R4
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R6
@@ -343,57 +375,65 @@ Z27 FVHDL/tld-helicopter.vhd
 Z22 8VHDL/tld-helicopter.vhd
 Z23 FVHDL/tld-helicopter.vhd
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z20 8VHDL/tld-helicopter.vhd
+Z21 FVHDL/tld-helicopter.vhd
+>>>>>>> parent of c7e97f1... vga_controller less registers
 l0
 L5
 VmkWa_lG[]m0KzJfQ0LZ<>0
 !s100 4ZO2zImTF4=DMLgH`NZd80
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 R24
+=======
+R18
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-R25
-Z28 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/tld-helicopter.vhd|
-Z29 !s107 VHDL/tld-helicopter.vhd|
+R19
+Z22 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/tld-helicopter.vhd|
+Z23 !s107 VHDL/tld-helicopter.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Atoplevel
-R5
-R6
-R7
-Z30 DEx4 work 10 helicopter 0 22 mkWa_lG[]m0KzJfQ0LZ<>0
+R1
+R2
+R3
+Z24 DEx4 work 10 helicopter 0 22 mkWa_lG[]m0KzJfQ0LZ<>0
 l53
 L18
 Vk[1X<Q]hGzWW<L]7QC0Y93
 !s100 GH<P7HP;0HO=mcCDMSZZ63
-R11
-33
-R24
-!i10b 1
-R25
-R28
-R29
-!i113 0
-R16
-R17
-Asynthesised
-R5
-R30
-R19
-R6
 R7
+33
+R18
+!i10b 1
+R19
+R22
+R23
+!i113 0
+R12
+R13
+Asynthesised
+R1
+R24
+R15
+R2
+R3
 8VHDL/helicopter_SYNTH.vhd
 FVHDL/helicopter_SYNTH.vhd
 l30
 L7
 VBcJ;S[24b8iZ8TSc1XLcF1
 !s100 dH6oOb81ZGXZe3MZnXVa@1
-R11
+R7
 33
-R24
+R18
 !i10b 1
-R25
+R19
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/helicopter_SYNTH.vhd|
 !s107 VHDL/helicopter_SYNTH.vhd|
 =======
@@ -446,11 +486,12 @@ R25
 R26
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
 !i113 0
-R16
-R17
+R12
+R13
 Chelicopter_toplevel_cfg
 ehelicopter
 atoplevel
+<<<<<<< HEAD
 <<<<<<< HEAD
 R23
 Z31 DEx4 work 3 pos 0 22 Pe]z]fmUmTAL9KDKJfW;K1
@@ -460,10 +501,16 @@ R20
 Z28 DEx4 work 3 pos 0 22 Pe]z]fmUmTAL9KDKJfW;K1
 Z29 DEx4 work 6 posnew 0 22 TC6V1TdE^z1RG1=jS8cTB0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R17
+Z25 DEx4 work 3 pos 0 22 Pe]z]fmUmTAL9KDKJfW;K1
+Z26 DEx4 work 6 posnew 0 22 TC6V1TdE^z1RG1=jS8cTB0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 DCx4 work 17 draw_renderer_cfg 0 22 E0hMRLEdRhWJD0CT6?C7=0
 DCx4 work 20 pos_statemachine_cfg 0 22 e>;iUK^AMNId[clWRUi`>2
 DCx4 work 21 posnew_nextcopter_cfg 0 22 6Di`XBbm4bfAVFU36C7[G0
 DAx4 work 10 helicopter 8 toplevel 22 k[1X<Q]hGzWW<L]7QC0Y93
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R6
@@ -476,16 +523,23 @@ R3
 R27
 R0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R1
+R2
+R3
+R24
+R0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R4
-R8
 8VHDL/helicopter_toplevel_cfg.vhd
 FVHDL/helicopter_toplevel_cfg.vhd
 l0
 L1
 VE]PgKnC<4UGWke1]V4XLS1
 !s100 <ahO`bFMGAfWNf7`lnJNO2
-R11
+R7
 33
+<<<<<<< HEAD
 <<<<<<< HEAD
 Z33 !s110 1513670650
 !i10b 0
@@ -495,13 +549,23 @@ Z30 !s110 1513675059
 !i10b 0
 R24
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z27 !s110 1513670650
+!i10b 0
+R19
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/helicopter_toplevel_cfg.vhd|
 !s107 VHDL/helicopter_toplevel_cfg.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Epos
+R0
+R1
+R2
+R3
 R4
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R6
@@ -513,34 +577,43 @@ Z35 FVHDL/pos.vhd
 Z31 8VHDL/pos.vhd
 Z32 FVHDL/pos.vhd
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z28 8VHDL/pos.vhd
+Z29 FVHDL/pos.vhd
+>>>>>>> parent of c7e97f1... vga_controller less registers
 l0
 L5
 VPe]z]fmUmTAL9KDKJfW;K1
 !s100 >mj97l;3SJjc1YR6N^_:P2
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 R33
+=======
+R27
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-Z36 !s108 1513670650.000000
-Z37 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/pos.vhd|
-Z38 !s107 VHDL/pos.vhd|
+Z30 !s108 1513670650.000000
+Z31 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/pos.vhd|
+Z32 !s107 VHDL/pos.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Astatemachine
-R5
-R6
-R7
-R31
+R1
+R2
+R3
+R25
 l20
 L17
 V4d^QR3@YAYQB7CnR[heW30
 !s100 b3nXQjK@T;5EL_dDi3oe:1
-R11
+R7
 33
-R33
+R27
 !i10b 1
+<<<<<<< HEAD
 R36
 R37
 R38
@@ -551,10 +624,16 @@ Z33 !s108 1513675059.000000
 Z34 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/pos.vhd|
 Z35 !s107 VHDL/pos.vhd|
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R30
+R31
+R32
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i113 0
-R16
-R17
+R12
+R13
 Asynthesised
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R31
@@ -568,21 +647,33 @@ R15
 R2
 R3
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R1
+R25
+R15
+R2
+R3
+>>>>>>> parent of c7e97f1... vga_controller less registers
 8VHDL/pos_SYNTH.vhd
 FVHDL/pos_SYNTH.vhd
 l43
 L7
 Vf]SZ9hSj6baBCczNcz;PB0
 !s100 `LUHLXiGJFzQUAAmc6^2E3
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 R33
+=======
+R27
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-R36
+R30
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/pos_SYNTH.vhd|
 !s107 VHDL/pos_SYNTH.vhd|
 !i113 0
+<<<<<<< HEAD
 R16
 R17
 =======
@@ -614,10 +705,15 @@ R35
 R12
 R13
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R12
+R13
+>>>>>>> parent of c7e97f1... vga_controller less registers
 Cpos_statemachine_cfg
 epos
 astatemachine
 DAx4 work 3 pos 12 statemachine 22 4d^QR3@YAYQB7CnR[heW30
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R6
@@ -630,16 +726,23 @@ R3
 R28
 R0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R1
+R2
+R3
+R25
+R0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R4
-R8
 8VHDL/pos_statemachine_cfg.vhd
 FVHDL/pos_statemachine_cfg.vhd
 l0
 L1
 Ve>;iUK^AMNId[clWRUi`>2
 !s100 WR1h;12`4flVKRFPF`T823
-R11
+R7
 33
+<<<<<<< HEAD
 <<<<<<< HEAD
 R33
 !i10b 0
@@ -649,12 +752,18 @@ R30
 !i10b 0
 R33
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R27
+!i10b 0
+R30
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/pos_statemachine_cfg.vhd|
 !s107 VHDL/pos_statemachine_cfg.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Eposnew
+<<<<<<< HEAD
 <<<<<<< HEAD
 Z39 w1513335163
 R5
@@ -665,65 +774,80 @@ Z40 8VHDL/pos+.vhd
 Z41 FVHDL/pos+.vhd
 =======
 Z36 w1513335163
+=======
+Z33 w1513335163
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R1
 R2
 R3
 R4
+<<<<<<< HEAD
 Z37 8VHDL/pos+.vhd
 Z38 FVHDL/pos+.vhd
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z34 8VHDL/pos+.vhd
+Z35 FVHDL/pos+.vhd
+>>>>>>> parent of c7e97f1... vga_controller less registers
 l0
 L5
 VTC6V1TdE^z1RG1=jS8cTB0
 !s100 lnkO[G4SGRS:5IB]<;F5a1
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 R33
+=======
+R27
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-R36
-Z42 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/pos+.vhd|
-Z43 !s107 VHDL/pos+.vhd|
+R30
+Z36 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/pos+.vhd|
+Z37 !s107 VHDL/pos+.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Asynthesised
-w1513672222
-R5
-R32
-R19
-R6
-R7
-8VHDL/posnew_SYNTH.vhd
-FVHDL/posnew_SYNTH.vhd
+w1513671160
+R1
+R26
+R15
+R2
+R3
+depo3biem
+Z38 8VHDL/posnew_SYNTH.vhd
+Z39 FVHDL/posnew_SYNTH.vhd
 l30
 L7
 VMmTc__FN8LTkDgHiRCmnG0
 !s100 WHKRCY6oh]AIIISbKgSN03
-R11
+R7
 33
-!s110 1513680190
+!s110 1513671162
 !i10b 1
-!s108 1513680190.000000
+!s108 1513671162.000000
 !s90 -2008|-lower|-explicit|-work|work|VHDL/posnew_SYNTH.vhd|-quiet|-nologo|
 !s107 VHDL/posnew_SYNTH.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Anextcopter
-R5
-R6
-R7
-R32
+R1
+R2
+R3
+R26
 l15
 L13
 VEJ`k>a9aXWojbfUeE;4j52
 !s100 [m9KG?4]eL]74<dhYaPIg3
-R11
+R7
 33
-R33
+R27
 !i10b 1
+R30
 R36
+<<<<<<< HEAD
 R42
 R43
 =======
@@ -775,13 +899,17 @@ R40
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/posnew_SYNTH.vhd|
 !s107 VHDL/posnew_SYNTH.vhd|
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R37
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i113 0
-R16
-R17
+R12
+R13
 Cposnew_nextcopter_cfg
 eposnew
 anextcopter
 DAx4 work 6 posnew 10 nextcopter 22 EJ`k>a9aXWojbfUeE;4j52
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R6
@@ -794,16 +922,23 @@ R3
 R29
 R0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R1
+R2
+R3
+R26
+R0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R4
-R8
 8VHDL/posnew_nextcopter_cfg.vhd
 FVHDL/posnew_nextcopter_cfg.vhd
 l0
 L1
 V6Di`XBbm4bfAVFU36C7[G0
 !s100 cM_nSJYR3gQT;24f50ZY10
-R11
+R7
 33
+<<<<<<< HEAD
 <<<<<<< HEAD
 !s110 1513670651
 !i10b 0
@@ -813,12 +948,18 @@ Z43 !s110 1513675061
 !i10b 0
 R40
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z40 !s110 1513670651
+!i10b 0
+Z41 !s108 1513670651.000000
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/posnew_nextcopter_cfg.vhd|
 !s107 VHDL/posnew_nextcopter_cfg.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Evga_controller
+<<<<<<< HEAD
 <<<<<<< HEAD
 Z44 w1513680059
 R5
@@ -829,10 +970,14 @@ Z45 8VHDL/vga_controller.vhd
 Z46 FVHDL/vga_controller.vhd
 =======
 R19
+=======
+R0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R1
 R2
 R3
 R4
+<<<<<<< HEAD
 Z44 8VHDL/vga_controller.vhd
 Z45 FVHDL/vga_controller.vhd
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
@@ -842,9 +987,19 @@ VA?e0hdmdk[zJ4WabNC`]J0
 !s100 <jOo?m]:D=<nmD]NGlBV42
 <<<<<<< HEAD
 R11
+=======
+Z42 8VHDL/vga_controller.vhd
+Z43 FVHDL/vga_controller.vhd
+l0
+L34
+V2bGo?boo=km[V3`RYzVcN0
+!s100 mV76[M@IoLXE=LGEGLB0i2
+R7
+>>>>>>> parent of c7e97f1... vga_controller less registers
 33
-Z47 !s110 1513680556
+R40
 !i10b 1
+<<<<<<< HEAD
 Z48 !s108 1513680555.000000
 Z49 !s90 -2008|-lower|-explicit|-work|work|VHDL/vga_controller.vhd|-quiet|-nologo|
 Z50 !s107 VHDL/vga_controller.vhd|
@@ -886,34 +1041,58 @@ R11
 33
 <<<<<<< HEAD
 !s110 1513680848
+=======
+R41
+Z44 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller.vhd|
+Z45 !s107 VHDL/vga_controller.vhd|
+!i113 0
+R12
+R13
+Abehavior
+R1
+R2
+R3
+Z46 DEx4 work 14 vga_controller 0 22 2bGo?boo=km[V3`RYzVcN0
+l62
+L57
+VFW@jj5TSKfz:;oT]ahW0_0
+!s100 F=SBNiV<6T8dZcB8zldLC0
+R7
+33
+R40
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-!s108 1513680848.000000
-!s90 -2008|-lower|-explicit|-work|work|VHDL/vga_controller_SYNTH.vhd|-quiet|-nologo|
+R41
+R44
+R45
+!i113 0
+R12
+R13
+Asynthesised
+R1
+R46
+R15
+R2
+R3
+8VHDL/vga_controller_SYNTH.vhd
+FVHDL/vga_controller_SYNTH.vhd
+l66
+L7
+V1@]7A6DiaCJiic9b:dLEj0
+!s100 7l^LoY]iZUn;PPEV5;9Nz1
+R7
+33
+R40
+!i10b 1
+R41
+!s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller_SYNTH.vhd|
 !s107 VHDL/vga_controller_SYNTH.vhd|
 !i113 0
-R16
-R17
-Abehavior
-R5
-R6
-R7
-R51
-l70
-L64
-V60Q0FUfKQ4cc>`j:1ggEn2
-!s100 nUaPmDMzYaSQ?eU05IM>L1
-R11
-33
-R47
-!i10b 1
-R48
-R49
-R50
-!i113 0
-R16
-R17
+R12
+R13
 Cvga_controller_behavior_cfg
 evga_controller
+<<<<<<< HEAD
 R22
 DAx4 work 14 vga_controller 8 behavior 22 60Q0FUfKQ4cc>`j:1ggEn2
 R5
@@ -961,14 +1140,25 @@ R49
 R0
 R4
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R16
+DAx4 work 14 vga_controller 8 behavior 22 FW@jj5TSKfz:;oT]ahW0_0
+R1
+R2
+R3
+R46
+R0
+R4
+>>>>>>> parent of c7e97f1... vga_controller less registers
 8VHDL/vga_controller_behavior_cfg.vhd
 FVHDL/vga_controller_behavior_cfg.vhd
 l0
 L1
 VaLBW1>6>XOJA_=27Q6Dh11
 !s100 naen`dloE7YMO]:DHY:511
-R11
+R7
 33
+<<<<<<< HEAD
 <<<<<<< HEAD
 !s110 1513680557
 !i10b 0
@@ -980,11 +1170,18 @@ R43
 R46
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller_behavior_cfg.vhd|
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z47 !s110 1513670652
+!i10b 0
+R41
+!s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_controller_behavior_cfg.vhd|
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !s107 VHDL/vga_controller_behavior_cfg.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Evga_tb
+<<<<<<< HEAD
 <<<<<<< HEAD
 Z52 w1513671809
 R5
@@ -995,41 +1192,54 @@ Z53 8VHDL/tb_divider.vhd
 Z54 FVHDL/tb_divider.vhd
 =======
 R19
+=======
+R0
+>>>>>>> parent of c7e97f1... vga_controller less registers
 R1
 R2
 R3
 R4
+<<<<<<< HEAD
 Z50 8VHDL/tb_divider.vhd
 Z51 FVHDL/tb_divider.vhd
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+Z48 8VHDL/tb_divider.vhd
+Z49 FVHDL/tb_divider.vhd
+>>>>>>> parent of c7e97f1... vga_controller less registers
 l0
 L14
 V[zQENhIkBi?oAd@>MNF401
 !s100 nA5i<QBiBGS2:eS8>6z`g2
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z55 !s110 1513680595
+=======
+R47
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-Z56 !s108 1513680595.000000
-Z57 !s90 -2008|-lower|-explicit|-work|work|VHDL/tb_divider.vhd|-quiet|-nologo|
-Z58 !s107 VHDL/tb_divider.vhd|
+Z50 !s108 1513670652.000000
+Z51 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/tb_divider.vhd|
+Z52 !s107 VHDL/tb_divider.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Abehavioural
-R5
-R6
-R7
-Z59 DEx4 work 6 vga_tb 0 22 [zQENhIkBi?oAd@>MNF401
-l74
+R1
+R2
+R3
+Z53 DEx4 work 6 vga_tb 0 22 [zQENhIkBi?oAd@>MNF401
+l66
 L17
-V7eOFm3I`mY=UIWVU9B_K33
-!s100 HAD^TRkLO6ABMRF2K>fzB3
-R11
+VJ6G:d9nLl62Oi]zPQ96XV1
+!s100 10f6HE?DYld`d]IH>XlH[1
+R7
 33
-R55
+R47
 !i10b 1
+<<<<<<< HEAD
 R56
 R57
 R58
@@ -1040,10 +1250,16 @@ Z53 !s108 1513675062.000000
 Z54 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/tb_divider.vhd|
 Z55 !s107 VHDL/tb_divider.vhd|
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R50
+R51
+R52
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i113 0
-R16
-R17
+R12
+R13
 Asynthesised
+<<<<<<< HEAD
 <<<<<<< HEAD
 R5
 R59
@@ -1057,26 +1273,38 @@ R15
 R2
 R3
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R1
+R53
+R15
+R2
+R3
+>>>>>>> parent of c7e97f1... vga_controller less registers
 8VHDL/vga_tb_SYNTH.vhd
 FVHDL/vga_tb_SYNTH.vhd
 l35
 L7
 V4<UV8KFJD`mSC>A4<Kk4o3
 !s100 o:3hM9m5j8dZc48DanfkL2
-R11
+R7
 33
 <<<<<<< HEAD
+<<<<<<< HEAD
 !s110 1513679806
+=======
+R47
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !i10b 1
-!s108 1513679806.000000
-!s90 -2008|-lower|-explicit|-work|work|VHDL/vga_tb_SYNTH.vhd|-quiet|-nologo|
+R50
+!s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_tb_SYNTH.vhd|
 !s107 VHDL/vga_tb_SYNTH.vhd|
 !i113 0
-R16
-R17
+R12
+R13
 Cvga_tb_behavioural_cfg
 evga_tb
 abehavioural
+<<<<<<< HEAD
 R30
 R18
 R51
@@ -1134,14 +1362,30 @@ R56
 R0
 R4
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R24
+R14
+R46
+DCx4 work 23 helicopter_toplevel_cfg 0 22 E]PgKnC<4UGWke1]V4XLS1
+DCx4 work 20 divider_behavior_cfg 0 22 b4SCz:ePeE>cTa_TUgSWm3
+DCx4 work 27 vga_controller_behavior_cfg 0 22 aLBW1>6>XOJA_=27Q6Dh11
+DAx4 work 6 vga_tb 11 behavioural 22 J6G:d9nLl62Oi]zPQ96XV1
+R1
+R2
+R3
+R53
+R0
+R4
+>>>>>>> parent of c7e97f1... vga_controller less registers
 8VHDL/vga_tb_behavioural_cfg.vhd
 FVHDL/vga_tb_behavioural_cfg.vhd
 l0
 L1
 VPLJQ>7h<=P`mhg:MCUmc;2
 !s100 :hXZ;nGa;BOIe6hzQ@ONR0
-R11
+R7
 33
+<<<<<<< HEAD
 <<<<<<< HEAD
 !s110 1513680596
 !i10b 0
@@ -1153,7 +1397,13 @@ R52
 R53
 !s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_tb_behavioural_cfg.vhd|
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+R47
+!i10b 0
+R50
+!s90 -quiet|-nologo|-2008|-lower|-explicit|-work|work|VHDL/vga_tb_behavioural_cfg.vhd|
+>>>>>>> parent of c7e97f1... vga_controller less registers
 !s107 VHDL/vga_tb_behavioural_cfg.vhd|
 !i113 0
-R16
-R17
+R12
+R13

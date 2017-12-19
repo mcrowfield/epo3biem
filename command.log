@@ -1,6 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version L-2016.03-SP2 for linux64 -- May 30, 2016
 <<<<<<< HEAD
+<<<<<<< HEAD
 #@ # Date:   Tue Dec 19 11:58:03 2017
 #@ # Run by: mapostma@tud208883
 =======
@@ -9,14 +10,19 @@
 #@ # Run by: jrkoning@ce-epo3.ewi.tudelft.nl
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 #@ # Date:   Tue Dec 19 09:12:34 2017
 #@ # Run by: michaelk@tud208898
 =======
 #@ # Date:   Tue Dec 19 09:03:11 2017
 #@ # Run by: vschonk@ce-epo3.ewi.tudelft.nl
 >>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
+<<<<<<< HEAD
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 #@ 
 
 source /data/public/common/software/synopsys/L-2016.03-SP2/admin/setup/.synopsys_dc.setup
@@ -5450,6 +5456,7 @@ source /data/public/common/software/synopsys/L-2016.03-SP2/admin/setup/.synopsys
 #@ # -- End source /data/public/common/software/synopsys/L-2016.03-SP2/admin/setup/.synopsys_dc.setup
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 source -echo -verbose {/home/mapostma/Documents/EPO3 Github/epo3biem/synthesize.tcl}
 #@ # -- Starting source /home/mapostma/Documents/EPO3 Github/epo3biem/synthesize.tcl
 =======
@@ -5461,9 +5468,13 @@ source -echo -verbose /home/jrkoning/epo3git/epo3biem/plot.tcl
 source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
+#@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
+>>>>>>> parent of c7e97f1... vga_controller less registers
 
 #@ #*********************************************************
-#@ #  synthesize script for cell: divider                    *
+#@ #  synthesize script for cell: posnew                     *
 #@ #*********************************************************
 #@ set hdlin_vhdl_93 false
 #@ set hdlin_ff_always_async_set_reset true
@@ -5471,12 +5482,12 @@ source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ set vhdlout_architecture_name "synthesised"
 #@ set vhdlout_use_packages {"ieee.std_logic_1164" "CellsLib.CellsLib_DECL_PACK"}
 #@ set company "ontwerp_practicum"
-#@ set designer "mapostma"
+#@ set designer "michaelkraaije"
 #@ set target_library  {"/data/public/common/software/opprog/synth_libs/g_digilib5_99.db"}
-#@ set link_library [list "*" "./ADB/draw.ddc" "./ADB/helicopter.ddc" "./ADB/pos.ddc" "./ADB/posnew.ddc" "./ADB/vga_controller.ddc" "./ADB/vga_tb.ddc" "/data/public/common/software/opprog/synth_libs/g_digilib5_99.db" "/data/public/common/software/opprog/synth_libs/g_analib8_00.db" "/data/public/common/software/opprog/synth_libs/buffers.db"]
+#@ set link_library [list "*" "./ADB/divider.ddc" "./ADB/draw.ddc" "./ADB/helicopter.ddc" "./ADB/pos.ddc" "./ADB/vga_controller.ddc" "./ADB/vga_tb.ddc" "/data/public/common/software/opprog/synth_libs/g_digilib5_99.db" "/data/public/common/software/opprog/synth_libs/g_analib8_00.db" "/data/public/common/software/opprog/synth_libs/buffers.db"]
 #@ define_design_lib MY_LIB -path ./syn_work
 #@ define_design_lib CELLSLIB -path /data/public/common/software/opprog/synth_libs/CellsLib
-#@ read_file -format vhdl -work MY_LIB {VHDL/divider.vhd }
+#@ read_file -format vhdl -work MY_LIB {VHDL/pos+.vhd }
 #@ set_dont_touch {g_analib8_00/*}
 #@ # set_max_fanout 1.8 all_inputs() 
 #@ # set_max_area 1000 
@@ -5485,9 +5496,10 @@ source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ ungroup -all -flat
 #@ report_area
 #@ report_fsm
-#@ write_file -f ddc divider -output ./ADB/divider.ddc
-#@ write_file -f vhdl divider -output ./VHDL/divider_SYNTH.vhd
+#@ write_file -f ddc posnew -output ./ADB/posnew.ddc
+#@ write_file -f vhdl posnew -output ./VHDL/posnew_SYNTH.vhd
 #@ quit
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -5522,6 +5534,16 @@ change_selection [get_s U54]
 change_selection [get_s U29]
 change_selection 
 =======
+=======
+=======
+source -echo -verbose /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
+#@ # -- Starting source /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
+
+#@ read_file -f ddc ./ADB/helicopter.ddc
+#@ set designer vschonk
+#@ set company TU-Delft
+#@ start_gui
+>>>>>>> parent of c7e97f1... vga_controller less registers
 #@ # -- Starting source /data/public/common/software/synopsys/L-2016.03-SP2/auxx/tcllib/lib/itk4.0.1/itk.tcl
 
 #@ #
@@ -41891,5 +41913,8 @@ change_selection
 change_selection [get_s helicopter]
 quit
 >>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
+<<<<<<< HEAD
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers

@@ -2,6 +2,7 @@
 Madonna version 3.4 (compiled Tue, 01 Nov 2016 14:38:16 on linux-2.6-i686)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
 
 reading circuit "divider(divider(test10))" ...done
@@ -10,12 +11,16 @@ WARNING: Seadif file "/home/jrkoning/epo3git/epo3biem/test/seadif/sealib2.sdf" i
 
 reading circuit "pos(pos(test2))" ...done
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+reading circuit "posnew(posnew(test))" ...done
+>>>>>>> parent of c7e97f1... vga_controller less registers
 
 Kissing madonna hello...
 
 Reading image description file "/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif"...
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ------ net distribution (total #nets = 45):
 =======
@@ -89,12 +94,61 @@ Reading image description file "/data/public/common/software/nelsis/20161101_32/
 
 
 ------ Detailed placement of (Tmp_Cell_(divider(divider(test10))))...
+=======
+------ net distribution (total #nets = 43):
+        0..1     2     3     4     5     6     7 8..10 11..20  >20
+
+           0    27     8     4     0     0     2     0     0     2
+
+------ partitioning 34 cells into (hor x vert) = (7 x 2) partitions
+
+------ requested grid points = (49, 56)
+
+------ cost@start = 247, cost@end = 200, moves = 51
+------ cost@start = 200, cost@end = 198, moves = 32
+------ 28 nets have to be routed on a 13 x 3 global grid
+     + routing net n8 (14 terminals):  weight = 2600
+     + routing net n9 (14 terminals):  weight = 2600
+     + routing net button (4 terminals):  weight = 602
+     + routing net n11 (5 terminals):  weight = 810
+     + routing net r61_n26 (2 terminals):  weight = 200
+     + routing net r61_n7 (2 terminals):  weight = 204
+     + routing net position_old_5_0_1 (2 terminals):  weight = 200
+     + routing net r61_n27 (2 terminals):  weight = 200
+     + routing net r61_n23 (2 terminals):  weight = 200
+     + routing net r61_n5 (3 terminals):  weight = 312
+     + routing net r61_n24 (2 terminals):  weight = 200
+     + routing net r61_n6 (3 terminals):  weight = 410
+     + routing net position_old_5_0_2 (2 terminals):  weight = 200
+     + routing net r61_n20 (2 terminals):  weight = 200
+     + routing net r61_n22 (2 terminals):  weight = 200
+     + routing net r61_n21 (2 terminals):  weight = 206
+     + routing net r61_n18 (3 terminals):  weight = 410
+     + routing net position_old_5_0_3 (3 terminals):  weight = 408
+     + routing net r61_n19 (2 terminals):  weight = 202
+     + routing net r61_n4 (2 terminals):  weight = 200
+     + routing net r61_n15 (2 terminals):  weight = 206
+     + routing net r61_n16 (2 terminals):  weight = 200
+     + routing net r61_n3 (2 terminals):  weight = 206
+     + routing net r61_n12 (3 terminals):  weight = 400
+     + routing net position_old_5_0_4 (2 terminals):  weight = 200
+     + routing net r61_n13 (2 terminals):  weight = 200
+     + routing net r61_n10 (2 terminals):  weight = 204
+     + routing net r61_n9 (2 terminals):  weight = 204
+
+------ Routed 28 nets, total weight = 12384
+
+
+
+------ Detailed placement of (Tmp_Cell_(posnew(posnew(test))))...
+>>>>>>> parent of c7e97f1... vga_controller less registers
 ------ Reading input data
 ------ Creating temporary data structures
------- Placement plane size : [42:56]
+------ Placement plane size : [49:56]
 ------ Doing placement 
 ------ Compacting  
 
+<<<<<<< HEAD
 <<<<<<< HEAD
          2  column[s] deleted.
 
@@ -103,6 +157,9 @@ Reading image description file "/data/public/common/software/nelsis/20161101_32/
          Magnification coefficient obtained :0.738889
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+         Magnification coefficient obtained :0.738889
+>>>>>>> parent of c7e97f1... vga_controller less registers
 
 ------ Writing created layout to database
 Kissing madonna good bye...

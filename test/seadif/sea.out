@@ -2,39 +2,44 @@
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
 ------ opening seadif ------
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
 
+=======
+------ checking your circuit 'posnew' ------
+------ circuit 'posnew' is still up-to-date ------
+------ checking match with placement layout 'Tmpposnew4795' ------
+------ reading nelsis layout-cell 'Tmpposnew4795' ------
+------ writing nelsis 'Tmpposnew4795' as sdflay 'Tmp_Cell_(posnew(posnew(test)))' ------
+------ input seems good enough: calling router ------
+calling program: trout -l test -f posnew -c posnew -o Tmp_Cell_ -e Tmp_Cell_
+------ routing successful ------
+------ converting result back into nelsis as cell 'Tmpposnew4795' ------
+calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpposnew4795
+------ sea: task completed ------
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 Warning: A new sealib will be generated: 'test2'
          This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test3'
-         This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test4'
-         This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test5'
-         This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test6'
-         This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test7'
-         This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test8'
-         This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test9'
-         This indicates most likeley that the project was renamed.
-Warning: A new sealib will be generated: 'test10'
-         This indicates most likeley that the project was renamed.
------- checking your circuit 'divider' ------
------- reading nelsis circuit-cell 'divider' ------
-WARNING: Zero terminal net: 'tick_port' (cell 'divider')
------- writing nelsis 'divider' as sdfcir 'divider(divider(test10)) ------
------- input check seems good enough: calling placer ------
-calling program: madonna -l test10 -f divider -c divider -o Tmp_Cell_ -ex divider
------- madonna successful ------
------- converting result back into nelsis as cell 'Tmpnoname13661' ------
-calling program: nelsea -rLH -f divider -c divider -l Tmp_Cell_ Tmpnoname13661
-ERROR: reverse conversion of placed/routed cell
-       from seadif back to nelsis failed
-       Exit status: 9
+------ checking your circuit 'helicopter' ------
+------ reading nelsis circuit-cell 'posnew' ------
+------ reading nelsis circuit-cell 'pos' ------
+WARNING: Zero terminal net: 'position_old_5_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_4_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_3_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_2_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_1_port' (cell 'pos')
+WARNING: many (6) useless nets were removed (printed only 5)
+------ reading nelsis circuit-cell 'draw' ------
+------ reading nelsis circuit-cell 'helicopter' ------
+------ reading nelsis layout-cell 'posnew' ------
+ERROR: Your son-circuit 'pos' has no corresponding layout
+ERROR: Your son-circuit 'draw' has no corresponding layout
+ERROR: 2 error(s) have occurred during checking the 3
+       son-cells of your nelsis circuit cell 'helicopter'.
+       Please check the consistency of your cell.
 lock
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 WARNING: Seadif file "/home/jrkoning/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
@@ -67,3 +72,6 @@ calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpposnew7760
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 ------ sea: task completed ------
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
+>>>>>>> parent of c7e97f1... vga_controller less registers

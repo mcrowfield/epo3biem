@@ -2,6 +2,7 @@
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
 ------ opening seadif ------
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
 
 Warning: A new sealib will be generated: 'test2'
@@ -44,3 +45,8 @@ WARNING: Seadif file "/home/michaelkraaije/epo3git/epo3biem/test/seadif/sealib2.
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 ------ nelsea: task completed ------
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+------ reading sdf laycell 'Tmp_Cell_(posnew(posnew(test)))': OK ------
+------ writing sdflay 'Tmp_Cell_(posnew(posnew(test)))' into nelsis 'Tmpposnew4795' ------
+------ nelsea: task completed ------
+>>>>>>> parent of c7e97f1... vga_controller less registers

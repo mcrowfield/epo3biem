@@ -1,3 +1,7 @@
-File /home/mapostma/Documents/EPO3:
-"/home/mapostma/Documents/EPO3", line 1: syntax error
-Cannot open Github/epo3biem/SLS/divider.sls
+<<<<<<< HEAD
+File /home/michaelkraaije/epo3git/epo3biem/SLS/posnew.sls:
+Parsing network: posnew
+=======
+File /home/vschonk/Downloads/epo3git/epo3biem/SLS/helicopter.sls:
+Parsing network: helicopter
+>>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed

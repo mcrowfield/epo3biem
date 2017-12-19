@@ -66,7 +66,6 @@ ARCHITECTURE behavior OF vga_controller IS
   CONSTANT  v_period  :  INTEGER := v_pulse + v_bp + v_pixels + v_fp;  --total number of rows in column
   SIGNAL 	h_count	  :  UNSIGNED(7 downto 0); -- For 200 pixels (800 / 4 due to lower pixel clock)
   SIGNAL	v_count	  :	 UNSIGNED(9 downto 0); -- For 525 lines
-  SIGNAL 	disp_ena_t:  STD_LOGIC;
 BEGIN
   
   PROCESS
@@ -79,7 +78,9 @@ BEGIN
       v_count <= "0000000000"; --reset vertical counter
       h_sync <= NOT h_pol;  --deassert horizontal sync
       v_sync <= NOT v_pol;  --deassert vertical sync
-      disp_ena_t <= '0';      --disable display
+      disp_ena <= '0';      --disable display
+      column <= "00000000"; --reset column pixel coordinate
+      row <= "0000000000";  --reset row pixel coordinate
 	  shz <= '0';
       
     ELSE
@@ -112,12 +113,21 @@ BEGIN
       ELSE
         v_sync <= v_pol;        --assert vertical sync pulse
       END IF;
+      
+      --set pixel coordinates
+      IF(h_count < h_pixels) THEN  --horiztonal display time
+        column <= std_logic_vector(h_count);         --set horiztonal pixel coordinate
+      END IF;
+	  ----- REDUCE ROW SIZE LATER -----
+      IF(v_count < v_pixels) THEN  --vertical display time
+        row <= std_logic_vector(v_count);            --set vertical pixel coordinate
+      END IF;
 
       --set display enable output
       IF(h_count < h_pixels AND v_count < v_pixels) THEN  --display time
-        disp_ena_t <= '1';                                  --enable display
+        disp_ena <= '1';                                  --enable display
       ELSE                                                --blanking time
-        disp_ena_t <= '0';                                  --disable display
+        disp_ena <= '0';                                  --disable display
       END IF;
 
     END IF;
@@ -126,22 +136,6 @@ BEGIN
   red_o <= (red OR RGB(2));
   green_o <= (green OR RGB(1));
   blue_o <= (blue OR RGB(0));
-
-  column <= std_logic_vector(h_count);
-  row <= std_logic_vector(v_count);
-
---  PROCESS(h_count, v_count, disp_ena_t)
---	BEGIN
---    IF(disp_ena_t = '1') THEN
---      column <= std_logic_vector(h_count);
---	  row <= std_logic_vector(v_count);
---	ELSE 
---	  column <= "00000000";
---	  row <= "0000000000";
---    END IF;
---  END PROCESS;
-
-  disp_ena <= disp_ena_t;
 
 END behavior;
 
