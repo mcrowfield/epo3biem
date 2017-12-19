@@ -1,0 +1,339 @@
+>>>>>> trout: Automatic Router for Sea-of-Gates           <<<<<<
+>>>>>> (c) 1995 Patrick Groeneveld, Delft Univ. of Techn. <<<<<<
+------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif'
+<<<<<<< HEAD
+WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+------ reading placement 'Tmp_Cell_(vga_controller(vga_controller(test8)))'
+------ building data structure
+------ making grid
+------ routing started Tue Dec 19 11:54:34 2017
+186 nets have to be routed.
+Routing net(1) 'n207' (2/2): . OK!
+Routing net(2) 'n244' (2/2): . OK!
+Routing net(3) 'n226' (2/2): . OK!
+Routing net(4) 'shz' (2/2): .b OK!
+Routing net(5) 'h_sync' (2/2): .b OK!
+Routing net(6) 'v_sync' (2/2): .b OK!
+Routing net(7) 'disp_ena' (2/2): .b OK!
+Routing net(8) 'n187' (2/2): . OK!
+Routing net(9) 'n137' (2/2): . OK!
+Routing net(10) 'n197' (2/2): . OK!
+Routing net(11) 'column_7_0_5' (3/3): ..b OK!
+Routing net(12) 'row_9_0_4' (3/3): ..b OK!
+Routing net(13) 'n175' (2/2): . OK!
+Routing net(14) 'n192' (2/2): . OK!
+Routing net(15) 'n203' (2/2): . OK!
+Routing net(16) 'n248' (2/2): . OK!
+Routing net(17) 'n176' (2/2): . OK!
+Routing net(18) 'n201' (2/2): . OK!
+Routing net(19) 'n133' (2/2): . OK!
+Routing net(20) 'n130' (2/2): . OK!
+Routing net(21) 'n124' (2/2): . OK!
+Routing net(22) 'n120' (2/2): . OK!
+Routing net(23) 'n131' (2/2): . OK!
+Routing net(24) 'n210' (2/2): . OK!
+Routing net(25) 'n213' (2/2): . OK!
+Routing net(26) 'n251' (2/2): . OK!
+Routing net(27) 'column_7_0_1' (3/3): ..b OK!
+Routing net(28) 'n150' (2/2): . OK!
+Routing net(29) 'n119' (2/2): . OK!
+Routing net(30) 'row_9_0_7' (3/3): ..b OK!
+Routing net(31) 'n144' (2/2): . OK!
+Routing net(32) 'n214' (2/2): . OK!
+Routing net(33) 'n227' (2/2): . OK!
+Routing net(34) 'n200' (2/2): . OK!
+Routing net(35) 'n202' (3/3): .. OK!
+Routing net(36) 'n123' (2/2): . OK!
+Routing net(37) 'n162' (2/2): . OK!
+Routing net(38) 'n234' (3/3): .. OK!
+Routing net(39) 'n184' (3/3): .. OK!
+Routing net(40) 'column_7_0_2' (3/3): ..b OK!
+Routing net(41) 'n139' (2/2): . OK!
+Routing net(42) 'n189' (2/2): . OK!
+Routing net(43) 'n140' (2/2): . OK!
+Routing net(44) 'n134' (2/2): . OK!
+Routing net(45) 'column_7_0_4' (3/3): ..b OK!
+Routing net(46) 'row_9_0_5' (3/3): ..b OK!
+Routing net(47) 'row_9_0_1' (3/3): ..b OK!
+Routing net(48) 'n145' (2/2): . OK!
+Routing net(49) 'column_7_0_0' (3/3): ..b OK!
+Routing net(50) 'n238' (2/2): . OK!
+Routing net(51) 'n185' (2/2): . OK!
+Routing net(52) 'n225' (2/2): . OK!
+Routing net(53) 'n125' (2/2): . OK!
+Routing net(54) 'n182' (2/2): . OK!
+Routing net(55) 'n193' (2/2): . OK!
+Routing net(56) 'N46' (2/2): . OK!
+Routing net(57) 'n231' (2/2): . OK!
+Routing net(58) 'n129' (2/2): . OK!
+Routing net(59) 'n126' (2/2): . OK!
+Routing net(60) 'n195' (2/2): . OK!
+Routing net(61) 'n132' (2/2): . OK!
+Routing net(62) 'n167' (2/2): . OK!
+Routing net(63) 'n188' (2/2): . OK!
+Routing net(64) 'n181' (2/2): . OK!
+Routing net(65) 'n165' (2/2): . OK!
+Routing net(66) 'n237' (2/2): . OK!
+Routing net(67) 'row_9_0_9' (3/3): ..b OK!
+Routing net(68) 'n170' (2/2): . OK!
+Routing net(69) 'column_7_0_7' (3/3): ..b OK!
+Routing net(70) 'row_9_0_3' (3/3): ..b OK!
+Routing net(71) 'n211' (2/2): . OK!
+Routing net(72) 'n223' (2/2): . OK!
+Routing net(73) 'n245' (3/3): .. OK!
+Routing net(74) 'n143' (2/2): . OK!
+Routing net(75) 'n221' (2/2): . OK!
+Routing net(76) 'n230' (2/2): . OK!
+Routing net(77) 'n250' (2/2): . OK!
+Routing net(78) 'row_9_0_0' (3/3): ..b OK!
+Routing net(79) 'n147' (2/2): . OK!
+Routing net(80) 'n222' (3/3): .. OK!
+Routing net(81) 'n243' (3/3): .. OK!
+Routing net(82) 'n236' (3/3): .. OK!
+Routing net(83) 'n141' (2/2): . OK!
+Routing net(84) 'n136' (2/2): . OK!
+Routing net(85) 'n122' (2/2): . OK!
+Routing net(86) 'n215' (3/3): .. OK!
+Routing net(87) 'N41' (2/2): . OK!
+Routing net(88) 'column_7_0_6' (3/3): ..b OK!
+Routing net(89) 'N43' (2/2): . OK!
+Routing net(90) 'n212' (3/3): .. OK!
+Routing net(91) 'row_9_0_6' (3/3): ..b OK!
+Routing net(92) 'N42' (2/2): . OK!
+Routing net(93) 'n216' (3/3): .. OK!
+Routing net(94) 'n138' (2/2): . OK!
+Routing net(95) 'n168' (2/2): . OK!
+Routing net(96) 'n205' (2/2): . OK!
+Routing net(97) 'n128' (2/2): . OK!
+Routing net(98) 'n208' (2/2): . OK!
+Routing net(99) 'n142' (2/2): . OK!
+Routing net(100) 'n171' (3/3): .. OK!
+Routing net(101) 'v_count_8_port' (7/7): ...... OK!
+Routing net(102) 'n235' (3/3): .. OK!
+Routing net(103) 'v_count_0_port' (6/6): ..... OK!
+Routing net(104) 'v_count_7_port' (5/5): .... OK!
+Routing net(105) 'n135' (2/2): . OK!
+Routing net(106) 'n155' (4/4): ... OK!
+Routing net(107) 'n228' (2/2): . OK!
+Routing net(108) 'column_7_0_3' (3/3): ..b OK!
+Routing net(109) 'n169' (2/2): . OK!
+Routing net(110) 'N39' (2/2): . OK!
+Routing net(111) 'n152' (2/2): . OK!
+Routing net(112) 'n166' (2/2): . OK!
+Routing net(113) 'n209' (3/3): .. OK!
+Routing net(114) 'N44' (2/2): . OK!
+Routing net(115) 'n219' (2/2): . OK!
+Routing net(116) 'N38' (2/2): . OK!
+Routing net(117) 'n177' (2/2): . OK!
+Routing net(118) 'n233' (3/3): .. OK!
+Routing net(119) 'n191' (3/3): .. OK!
+Routing net(120) 'n172' (3/3): .. OK!
+Routing net(121) 'n241' (4/4): ... OK!
+Routing net(122) 'n229' (2/2): . OK!
+Routing net(123) 'n239' (4/4): ... OK!
+Routing net(124) 'row_9_0_8' (3/3): ..b OK!
+Routing net(125) 'n148' (2/2): . OK!
+Routing net(126) 'n253' (2/2): . OK!
+Routing net(127) 'n190' (4/4): ... OK!
+Routing net(128) 'n206' (3/3): .. OK!
+Routing net(129) 'n146' (2/2): . OK!
+Routing net(130) 'N40' (2/2): . OK!
+Routing net(131) 'n217' (4/4): ... OK!
+Routing net(132) 'v_count_1_port' (6/6): ..... OK!
+Routing net(133) 'n252' (2/2): . OK!
+Routing net(134) 'n218' (3/3): .. OK!
+Routing net(135) 'n127' (2/2): . OK!
+Routing net(136) 'n232' (2/2): . OK!
+Routing net(137) 'row_9_0_2' (3/3): ..b OK!
+Routing net(138) 'h_count_4_port' (5/5): .... OK!
+Routing net(139) 'n196' (2/2): . OK!
+Routing net(140) 'h_count_2_port' (5/5): .x.. FAILED
+Routing net(141) 'N45' (2/2): . OK!
+Routing net(142) 'n164' (2/2): . OK!
+Routing net(143) 'h_count_7_port' (5/5): .... OK!
+Routing net(144) 'n194' (3/3): .. OK!
+Routing net(145) 'n159' (2/2): . OK!
+Routing net(146) 'n198' (3/3): .. OK!
+Routing net(147) 'n247' (3/3): .. OK!
+Routing net(148) 'n249' (2/2): . OK!
+Routing net(149) 'n179' (4/4): ... OK!
+Routing net(150) 'h_count_5_port' (6/6): ..... OK!
+Routing net(151) 'n121' (2/2): x FAILED
+Routing net(152) 'n204' (2/2): . OK!
+Routing net(153) 'n242' (2/2): . OK!
+Routing net(154) 'v_count_6_port' (6/6): ..... OK!
+Routing net(155) 'n149' (2/2): . OK!
+Routing net(156) 'n154' (5/5): .... OK!
+Routing net(157) 'n224' (2/2): . OK!
+Routing net(158) 'h_count_3_port' (5/5): .... OK!
+Routing net(159) 'n161' (2/2): . OK!
+Routing net(160) 'n199' (2/2): . OK!
+Routing net(161) 'n240' (3/3): .. OK!
+Routing net(162) 'n220' (3/3): .x FAILED
+Routing net(163) 'n158' (3/3): .. OK!
+Routing net(164) 'v_count_5_port' (6/6): ..... OK!
+Routing net(165) 'n157' (2/2): . OK!
+Routing net(166) 'n180' (8/8): ....... OK!
+Routing net(167) 'n183' (7/7): ..x... FAILED
+Routing net(168) 'n246' (3/3): .. OK!
+Routing net(169) 'v_count_2_port' (5/5): .... OK!
+Routing net(170) 'v_count_3_port' (6/6): xxxxxR>.... FAILED
+Routing net(171) 'v_count_4_port' (6/6): ..xx.R>. FAILED
+Routing net(172) 'h_count_0_port' (6/6): ..x.. FAILED
+Routing net(173) 'n163' (3/3): .x FAILED
+Routing net(174) 'n173' (6/6): ...xxR>. FAILED
+Routing net(175) 'h_count_1_port' (5/5): xxxxR>xxx FAILED
+Routing net(176) 'n160' (3/3): .. OK!
+Routing net(177) 'n178' (7/7): ..xxx.R>.. FAILED
+Routing net(178) 'n174' (9/9): ........ OK!
+Routing net(179) 'v_count_9_port' (5/5): xxxxR>xxx FAILED
+Routing net(180) 'h_count_6_port' (6/6): xxxxxR>xxxx FAILED
+Routing net(181) 'n186' (11/11): .x.xx.xxx.R>.x..x FAILED
+Routing net(182) 'reset' (41/41): xx.xx....xxx.x.x..x....xxx...xxxxx...xxxR>.....xx..xx.xxx.xxxxb FAILED
+Routing net(183) 'vdd' :  (Power special)
+Routing net(184) 'pixel_clk' (41/41): xx.xxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxR>x.xx....xx.xx..xxxxxxxx.xxx.xxxxxxxxxb FAILED
+Routing net(185) 'n156' (14/14): xxxxxxxxxxxxxR>xxxxxxxxxxxx FAILED
+Routing net(186) 'vss' :  (Power special)
+READY
+----- Some interesting statistics ------
+Number of nets successfully routed:   169 out of 186 (90.86%)
+Total length of routed wires:         24998 grids = 219.982 mm
+No. of transistors (total / used):    4272/2742 = 64.19 %
+CPU-time consumption:                 0.40 sec.
+Elapsed time during routing:          0.39 sec. (102.56 % of cpu)
+WARNING:                              INCOMPLETE ROUTING!
+------ Verifying Connectivity ------
+WARNING: 17 out of the 186 nets are not properly connected.
+------ Writing 'Tmp_Cell_(vga_controller(vga_controller(test8)))'
+------ Trout: task completed on Tue Dec 19 11:54:34 2017
+=======
+<<<<<<< HEAD
+WARNING: Seadif file "/home/jrkoning/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+------ reading placement 'Tmp_Cell_(pos(pos(test2)))'
+------ building data structure
+------ making grid
+------ routing started Tue Dec 19 11:38:07 2017
+45 nets have to be routed.
+Routing net(1) 'n29' (2/2): . OK!
+Routing net(2) 'n32' (2/2): . OK!
+Routing net(3) 'n34' (2/2): . OK!
+Routing net(4) 'n36' (2/2): . OK!
+Routing net(5) 'n38' (2/2): . OK!
+Routing net(6) 'next_state_0_port' (2/2): . OK!
+Routing net(7) 'n25' (2/2): . OK!
+Routing net(8) 'n27' (2/2): . OK!
+Routing net(9) 'n41' (2/2): . OK!
+Routing net(10) 'n28' (2/2): . OK!
+Routing net(11) 'n30' (2/2): . OK!
+Routing net(12) 'n33' (2/2): . OK!
+Routing net(13) 'n35' (2/2): . OK!
+Routing net(14) 'n37' (2/2): . OK!
+Routing net(15) 'n39' (2/2): . OK!
+Routing net(16) 'clk' (9/9): ........b OK!
+Routing net(17) 'n40' (2/2): . OK!
+Routing net(18) 'n20' (2/2): . OK!
+Routing net(19) 'n21' (2/2): . OK!
+Routing net(20) 'n22' (2/2): . OK!
+Routing net(21) 'n23' (2/2): . OK!
+Routing net(22) 'n24' (2/2): . OK!
+Routing net(23) 'n19' (2/2): . OK!
+Routing net(24) 'position_new_5_0_0' (2/2): .b OK!
+Routing net(25) 'position_new_5_0_1' (2/2): .b OK!
+Routing net(26) 'position_new_5_0_2' (2/2): .b OK!
+Routing net(27) 'position_new_5_0_3' (2/2): .b OK!
+Routing net(28) 'position_new_5_0_4' (2/2): .b OK!
+Routing net(29) 'position_new_5_0_5' (2/2): .b OK!
+Routing net(30) 'position_old_5_0_1' (3/3): ..b OK!
+Routing net(31) 'position_old_5_0_4' (3/3): ..b OK!
+Routing net(32) 'position_old_5_0_3' (3/3): ..b OK!
+Routing net(33) 'position_old_5_0_2' (3/3): ..b OK!
+Routing net(34) 'position_old_5_0_0' (3/3): ..b OK!
+Routing net(35) 'enable' (3/3): ..b OK!
+Routing net(36) 'state_1_port' (3/3): .. OK!
+Routing net(37) 'position_old_5_0_5' (3/3): ..b OK!
+Routing net(38) 'n42' (2/2): . OK!
+Routing net(39) 'n26' (4/4): ... OK!
+Routing net(40) 'n31' (7/7): ...... OK!
+Routing net(41) 'count' (3/3): ..b OK!
+Routing net(42) 'vdd' :  (Power special)
+Routing net(43) 'state_0_port' (10/10): ......... OK!
+Routing net(44) 'next_state_1_port' (2/2): . OK!
+Routing net(45) 'vss' :  (Power special)
+READY
+----- Some interesting statistics ------
+Total number of nets:                 45 (100% completion)
+Total length of routed wires:         2023 grids = 17.802 mm
+No. of transistors (total / used):    5220/446 = 8.54 %
+CPU-time consumption:                 0.02 sec.
+Elapsed time during routing:          0.01 sec. (200.00 % of cpu)
+------ Verifying Connectivity ------
+------ No unconnect nor short-circuits ------
+------ Writing 'Tmp_Cell_(pos(pos(test2)))'
+------ Trout: task completed on Tue Dec 19 11:38:07 2017
+=======
+WARNING: Seadif file "/home/michaelkraaije/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+------ reading placement 'Tmp_Cell_(posnew(posnew(test)))'
+------ building data structure
+------ making grid
+------ routing started Tue Dec 19 10:51:52 2017
+43 nets have to be routed.
+Routing net(1) 'r61_n25' (2/2): . OK!
+Routing net(2) 'r61_n4' (2/2): . OK!
+Routing net(3) 'r61_n21' (2/2): . OK!
+Routing net(4) 'r61_n3' (2/2): . OK!
+Routing net(5) 'r61_n15' (2/2): . OK!
+Routing net(6) 'r61_n17' (2/2): . OK!
+Routing net(7) 'r61_n20' (2/2): . OK!
+Routing net(8) 'r61_n22' (2/2): . OK!
+Routing net(9) 'r61_n11' (2/2): . OK!
+Routing net(10) 'r61_n16' (2/2): . OK!
+Routing net(11) 'r61_n23' (3/3): .. OK!
+Routing net(12) 'r61_n13' (2/2): . OK!
+Routing net(13) 'position_new_5_0_0' (2/2): .b OK!
+Routing net(14) 'r61_n19' (2/2): . OK!
+Routing net(15) 'position_new_5_0_5' (2/2): .b OK!
+Routing net(16) 'position_new_5_0_1' (2/2): .b OK!
+Routing net(17) 'position_new_5_0_2' (2/2): .b OK!
+Routing net(18) 'position_new_5_0_3' (2/2): .b OK!
+Routing net(19) 'position_new_5_0_4' (2/2): .b OK!
+Routing net(20) 'position_old_5_0_5' (2/2): .b OK!
+Routing net(21) 'position_old_5_0_2' (3/3): ..b OK!
+Routing net(22) 'r61_n7' (3/3): .. OK!
+Routing net(23) 'r61_n24' (2/2): . OK!
+Routing net(24) 'r61_n26' (3/3): .. OK!
+Routing net(25) 'r61_n5' (3/3): .. OK!
+Routing net(26) 'r61_n12' (4/4): ... OK!
+Routing net(27) 'r61_n8' (2/2): . OK!
+Routing net(28) 'r61_n18' (4/4): ... OK!
+Routing net(29) 'r61_n28' (2/2): . OK!
+Routing net(30) 'position_old_5_0_3' (4/4): ...b OK!
+Routing net(31) 'position_old_5_0_0' (3/3): ..b OK!
+Routing net(32) 'r61_n27' (2/2): . OK!
+Routing net(33) 'r61_n14' (2/2): . OK!
+Routing net(34) 'r61_n9' (2/2): . OK!
+Routing net(35) 'r61_n6' (3/3): .. OK!
+Routing net(36) 'r61_n10' (2/2): . OK!
+Routing net(37) 'r61_n2' (2/2): . OK!
+Routing net(38) 'position_old_5_0_1' (3/3): ..b OK!
+Routing net(39) 'button' (7/7): ......b OK!
+Routing net(40) 'n11' (7/7): ...... OK!
+Routing net(41) 'position_old_5_0_4' (4/4): ...b OK!
+Routing net(42) 'n8' (35/35): ..................................b OK!
+Routing net(43) 'n9' (35/35): ..................................b OK!
+READY
+----- Some interesting statistics ------
+Total number of nets:                 43 (100% completion)
+Total length of routed wires:         1444 grids = 12.707 mm
+No. of transistors (total / used):    318/270 = 84.91 %
+CPU-time consumption:                 0.00 sec.
+Elapsed time during routing:          0.01 sec. (0.00 % of cpu)
+------ Verifying Connectivity ------
+------ No unconnect nor short-circuits ------
+------ Writing 'Tmp_Cell_(posnew(posnew(test)))'
+------ Trout: task completed on Tue Dec 19 10:51:52 2017
+>>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
+terminate
+>>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259

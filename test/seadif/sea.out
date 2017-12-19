@@ -1,0 +1,69 @@
+------ opening nelsis ------
+------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
+------ opening seadif ------
+<<<<<<< HEAD
+WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+Warning: A new sealib will be generated: 'test2'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test3'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test4'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test5'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test6'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test7'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test8'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test9'
+         This indicates most likeley that the project was renamed.
+Warning: A new sealib will be generated: 'test10'
+         This indicates most likeley that the project was renamed.
+------ checking your circuit 'divider' ------
+------ reading nelsis circuit-cell 'divider' ------
+WARNING: Zero terminal net: 'tick_port' (cell 'divider')
+------ writing nelsis 'divider' as sdfcir 'divider(divider(test10)) ------
+------ input check seems good enough: calling placer ------
+calling program: madonna -l test10 -f divider -c divider -o Tmp_Cell_ -ex divider
+------ madonna successful ------
+------ converting result back into nelsis as cell 'Tmpnoname13661' ------
+calling program: nelsea -rLH -f divider -c divider -l Tmp_Cell_ Tmpnoname13661
+ERROR: reverse conversion of placed/routed cell
+       from seadif back to nelsis failed
+       Exit status: 9
+lock
+=======
+<<<<<<< HEAD
+WARNING: Seadif file "/home/jrkoning/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+Warning: A new sealib will be generated: 'test2'
+         This indicates most likeley that the project was renamed.
+------ checking your circuit 'pos' ------
+------ circuit 'pos' is still up-to-date ------
+------ checking match with placement layout 'Tmppos32105' ------
+------ reading nelsis layout-cell 'Tmppos32105' ------
+------ writing nelsis 'Tmppos32105' as sdflay 'Tmp_Cell_(pos(pos(test2)))' ------
+------ input seems good enough: calling router ------
+calling program: trout -l test2 -f pos -c pos -o Tmp_Cell_ -e Tmp_Cell_
+------ routing successful ------
+------ converting result back into nelsis as cell 'Tmppos32105' ------
+calling program: nelsea -rLH -f pos -c pos -l Tmp_Cell_ Tmppos32105
+=======
+WARNING: Seadif file "/home/michaelkraaije/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+------ checking your circuit 'posnew' ------
+------ circuit 'posnew' is still up-to-date ------
+------ checking match with placement layout 'Tmpposnew7760' ------
+------ reading nelsis layout-cell 'Tmpposnew7760' ------
+------ writing nelsis 'Tmpposnew7760' as sdflay 'Tmp_Cell_(posnew(posnew(test)))' ------
+------ input seems good enough: calling router ------
+calling program: trout -l test -f posnew -c posnew -o Tmp_Cell_ -e Tmp_Cell_
+------ routing successful ------
+------ converting result back into nelsis as cell 'Tmpposnew7760' ------
+calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpposnew7760
+>>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
+------ sea: task completed ------
+>>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259

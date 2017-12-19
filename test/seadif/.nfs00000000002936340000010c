@@ -1,0 +1,54 @@
+
+Madonna version 3.4 (compiled Tue, 01 Nov 2016 14:38:16 on linux-2.6-i686)
+
+WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+reading circuit "divider(divider(test10))" ...done
+
+Kissing madonna hello...
+
+Reading image description file "/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif"...
+
+
+------ net distribution (total #nets = 45):
+        0..1     2     3     4     5     6     7 8..10 11..20  >20
+
+           0    37     5     0     0     0     0     0     1     2
+
+------ partitioning 28 cells into (hor x vert) = (6 x 2) partitions
+
+------ requested grid points = (42, 56)
+
+------ cost@start = 166, cost@end = 129, moves = 18
+------ cost@start = 129, cost@end = 123, moves = 5
+------ cost@start = 123, cost@end = 122, moves = 5
+------ 8 nets have to be routed on a 11 x 3 global grid
+     + routing net tick (2 terminals):  weight = 200
+     + routing net n15 (2 terminals):  weight = 202
+     + routing net reset (2 terminals):  weight = 204
+     + routing net clk (2 terminals):  weight = 204
+     + routing net v_count_0_port (2 terminals):  weight = 202
+     + routing net n14 (2 terminals):  weight = 200
+     + routing net disp_ena (8 terminals):  weight = 1400
+     + routing net n39 (2 terminals):  weight = 200
+
+------ Routed 8 nets, total weight = 2812
+
+
+
+------ Detailed placement of (Tmp_Cell_(divider(divider(test10))))...
+------ Reading input data
+------ Creating temporary data structures
+------ Placement plane size : [42:56]
+------ Doing placement 
+------ Compacting  
+
+         2  column[s] deleted.
+
+         Magnification coefficient obtained :0.631773
+
+------ Writing created layout to database
+Kissing madonna good bye...
+
+Madonna took 0.0 seconds of your cpu
+terminate
