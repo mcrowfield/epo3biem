@@ -1,0 +1,13 @@
+I position_old_5_0_5 position_old(5)
+I position_old_5_0_4 position_old(4)
+I position_old_5_0_3 position_old(3)
+I position_old_5_0_2 position_old(2)
+I position_old_5_0_1 position_old(1)
+I position_old_5_0_0 position_old(0)
+I button button
+O position_new_5_0_5 position_new(5)
+O position_new_5_0_4 position_new(4)
+O position_new_5_0_3 position_new(3)
+O position_new_5_0_2 position_new(2)
+O position_new_5_0_1 position_new(1)
+O position_new_5_0_0 position_new(0)
