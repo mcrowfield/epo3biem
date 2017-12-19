@@ -1,0 +1,9 @@
+Layout to Postscript printer command sequence
+running getepslay -t Tmppos11997
+makeboxl: warning: mask_copies not more supported!
+makegln: Temp file compression turned off
+printing Tmppos11997.eps
+seadif/print.command: line 1: lpr: command not found
+seadif/print.command: line 1: lpq: command not found
+terminate
+terminate

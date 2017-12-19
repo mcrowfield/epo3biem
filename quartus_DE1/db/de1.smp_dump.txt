@@ -1,0 +1,6 @@
+
+State Machine - |top_de1|helicopter:inst6|pos:lbl1|state
+Name state.adds state.holds state.resets 
+state.resets 0 0 0 
+state.holds 0 1 1 
+state.adds 1 0 1 

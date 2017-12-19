@@ -1,0 +1,18 @@
+------ opening nelsis ------
+------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
+------ opening seadif ------
+WARNING: Seadif file "/home/vschonk/Downloads/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+Warning: A new sealib will be generated: 'test2'
+         This indicates most likeley that the project was renamed.
+------ checking your circuit 'draw' ------
+------ circuit 'draw' is still up-to-date ------
+------ checking match with placement layout 'Tmpdraw10436' ------
+------ reading nelsis layout-cell 'Tmpdraw10436' ------
+------ writing nelsis 'Tmpdraw10436' as sdflay 'Tmp_Cell_(draw(draw(test2)))' ------
+------ input seems good enough: calling router ------
+calling program: trout -l test2 -f draw -c draw -o Tmp_Cell_ -e Tmp_Cell_
+WARNING: routing is not 100% successful
+------ converting result back into nelsis as cell 'Tmpdraw10436' ------
+calling program: nelsea -rLH -f draw -c draw -l Tmp_Cell_ Tmpdraw10436
+------ sea: task completed ------

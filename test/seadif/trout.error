@@ -1,0 +1,31 @@
+This is the file 'seadif/trout.error' which was created by
+the program 'trout' on Tue Dec 19 12:32:20 2017
+Trout was verifying the netlist description of
+your circuit circuit 'draw' with the current layout in seadali.
+The following nets in the layout are not according to
+the netlist description of circuit 'draw'. They are also
+marked in the layout.
+------------------------- list of errors -------------------------
+@@@@@ entirely unconnected net: 'n41' (2 terminals)
+@@@@@ partially unconnected net: 'position_5_0_4' (1 unconnects among 2)
+@@@@@ entirely unconnected net: 'n82' (2 terminals)
+@@@@@ partially unconnected net: 'position_5_0_0' (2 unconnects among 5)
+@@@@@ partially unconnected net: 'n72' (2 unconnects among 4)
+@@@@@ partially unconnected net: 'n48' (3 unconnects among 5)
+@@@@@ partially unconnected net: 'n49' (4 unconnects among 5)
+@@@@@ partially unconnected net: 'n46' (4 unconnects among 5)
+@@@@@ partially unconnected net: 'position_5_0_1' (14 unconnects among 16)
+@@@@@ partially unconnected net: 'n52' (3 unconnects among 5)
+@@@@@ entirely unconnected net: 'n57' (2 terminals)
+@@@@@ entirely unconnected net: 'n54' (2 terminals)
+@@@@@ entirely unconnected net: 'n38' (4 terminals)
+@@@@@ entirely unconnected net: 'n94' (2 terminals)
+@@@@@ entirely unconnected net: 'n92' (2 terminals)
+@@@@@ entirely unconnected net: 'n87' (2 terminals)
+@@@@@ entirely unconnected net: 'n74' (2 terminals)
+
+WARNING: 17 out of the 93 nets are not properly connected.
+         In the layout each of the unconnects is marked by
+         an arrow followed by the name of the net: <=-<net_name>
+------------------------------------------------------------------
+lock
