@@ -1,5 +1,5 @@
-read_file -f ddc ./ADB/helicopter.ddc
-set designer vschonk
+read_file -f ddc ./ADB/pos.ddc
+set designer jrkoning
 set company TU-Delft
 start_gui
 gui_create_schematic

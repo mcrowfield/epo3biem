@@ -1,139 +1,67 @@
 >>>>>> trout: Automatic Router for Sea-of-Gates           <<<<<<
 >>>>>> (c) 1995 Patrick Groeneveld, Delft Univ. of Techn. <<<<<<
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif'
------- reading placement 'Tmp_Cell_(posnew(posnew(test)))'
+WARNING: Seadif file "/home/jrkoning/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
+------ reading placement 'Tmp_Cell_(pos(pos(test2)))'
 ------ building data structure
 ------ making grid
------- routing started Fri Dec 15 09:36:40 2017
-39 nets have to be routed.
-Routing net(1) 'position_new_4_0_0' (2/2): .b OK!
-Routing net(2) 'position_new_4_0_3' (2/2): .b OK!
-Routing net(3) 'r61_n3' (2/2): . OK!
-Routing net(4) 'r61_n17' (2/2): . OK!
-Routing net(5) 'position_new_4_0_1' (2/2): .b OK!
-Routing net(6) 'position_new_4_0_2' (2/2): .b OK!
-Routing net(7) 'position_old_4_0_4' (2/2): .b OK!
-Routing net(8) 'position_new_4_0_4' (2/2): .b OK!
-Routing net(9) 'r61_n10' (2/2): . OK!
-Routing net(10) 'r61_n7' (2/2): . OK!
-Routing net(11) 'r61_n12' (2/2): . OK!
-Routing net(12) 'r61_n22' (2/2): . OK!
-Routing net(13) 'r61_n21' (2/2): . OK!
-Routing net(14) 'r61_n19' (2/2): . OK!
-Routing net(15) 'r61_n15' (2/2): . OK!
-Routing net(16) 'r61_n26' (2/2): . OK!
-Routing net(17) 'r61_n6' (3/3): .. OK!
-Routing net(18) 'r61_n4' (5/5): .... OK!
-Routing net(19) 'r61_n24' (3/3): .. OK!
-Routing net(20) 'r61_n25' (2/2): . OK!
-Routing net(21) 'r61_n8' (2/2): . OK!
-Routing net(22) 'r61_n18' (2/2): . OK!
-Routing net(23) 'r61_n9' (2/2): x FAILED
-Routing net(24) 'r61_n11' (2/2): . OK!
-Routing net(25) 'r61_n2' (2/2): . OK!
-Routing net(26) 'r61_n23' (2/2): . OK!
-Routing net(27) 'r61_n16' (2/2): . OK!
-Routing net(28) 'r61_n13' (3/3): .. OK!
-Routing net(29) 'position_old_4_0_0' (4/4): ...b OK!
-Routing net(30) 'r61_n5' (3/3): .. OK!
-Routing net(31) 'button' (6/6): .....b OK!
-Routing net(32) 'position_old_4_0_1' (5/5): ....b OK!
-Routing net(33) 'position_old_4_0_2' (3/3): .xb FAILED
-Routing net(34) 'n11' (6/6): ..... OK!
-Routing net(35) 'position_old_4_0_3' (4/4): ...b OK!
-Routing net(36) 'n8' (32/32): ...............................b OK!
-Routing net(37) 'r61_n20' (3/3): xxR>. FAILED
-Routing net(38) 'r61_n14' (3/3): .. OK!
-Routing net(39) 'n9' (32/32): ...............................b OK!
------ Don't worry, I'm trying again -----
-Routing net(1) 'r61_n9' (2/2): . OK!
-Routing net(2) 'position_old_4_0_2' (3/3): ..b OK!
-Routing net(3) 'r61_n20' (3/3): .. OK!
-Routing net(4) 'position_new_4_0_0' (2/2): .b OK!
-Routing net(5) 'r61_n3' (2/2): . OK!
-Routing net(6) 'position_new_4_0_3' (2/2): .b OK!
-Routing net(7) 'r61_n17' (2/2): . OK!
-Routing net(8) 'position_new_4_0_4' (2/2): .b OK!
-Routing net(9) 'position_old_4_0_4' (2/2): .b OK!
-Routing net(10) 'position_new_4_0_2' (2/2): .b OK!
-Routing net(11) 'position_new_4_0_1' (2/2): .b OK!
-Routing net(12) 'r61_n10' (2/2): . OK!
-Routing net(13) 'r61_n7' (2/2): . OK!
-Routing net(14) 'r61_n12' (2/2): . OK!
-Routing net(15) 'r61_n22' (2/2): . OK!
-Routing net(16) 'r61_n15' (2/2): . OK!
-Routing net(17) 'r61_n19' (2/2): . OK!
-Routing net(18) 'r61_n21' (2/2): . OK!
-Routing net(19) 'r61_n26' (2/2): . OK!
-Routing net(20) 'r61_n6' (3/3): .. OK!
-Routing net(21) 'r61_n4' (5/5): .... OK!
-Routing net(22) 'r61_n25' (2/2): . OK!
-Routing net(23) 'r61_n24' (3/3): xxR>x FAILED
-Routing net(24) 'r61_n8' (2/2): . OK!
-Routing net(25) 'r61_n18' (2/2): . OK!
-Routing net(26) 'r61_n11' (2/2): . OK!
-Routing net(27) 'r61_n2' (2/2): x FAILED
-Routing net(28) 'r61_n23' (2/2): . OK!
-Routing net(29) 'r61_n13' (3/3): .. OK!
-Routing net(30) 'r61_n16' (2/2): x FAILED
-Routing net(31) 'r61_n5' (3/3): .. OK!
-Routing net(32) 'position_old_4_0_0' (4/4): ...b OK!
-Routing net(33) 'button' (6/6): ..x..b FAILED
-Routing net(34) 'position_old_4_0_3' (4/4): ..xb FAILED
-Routing net(35) 'n11' (6/6): ....x FAILED
-Routing net(36) 'position_old_4_0_1' (5/5): ...xb FAILED
-Routing net(37) 'n8' (32/32): ...............................b OK!
-Routing net(38) 'r61_n14' (3/3): .. OK!
-Routing net(39) 'n9' (32/32): ...............................b OK!
------ Don't worry, I'm trying again -----
-Routing net(1) 'r61_n24' (3/3): .. OK!
-Routing net(2) 'r61_n9' (2/2): . OK!
-Routing net(3) 'r61_n2' (2/2): . OK!
-Routing net(4) 'r61_n16' (2/2): . OK!
-Routing net(5) 'button' (6/6): .....b OK!
-Routing net(6) 'position_old_4_0_2' (3/3): ..b OK!
-Routing net(7) 'n11' (6/6): ..... OK!
-Routing net(8) 'position_old_4_0_3' (4/4): ...b OK!
-Routing net(9) 'position_old_4_0_1' (5/5): ....b OK!
-Routing net(10) 'r61_n20' (3/3): .. OK!
-Routing net(11) 'position_new_4_0_0' (2/2): .b OK!
-Routing net(12) 'position_new_4_0_3' (2/2): .b OK!
-Routing net(13) 'r61_n3' (2/2): . OK!
-Routing net(14) 'r61_n17' (2/2): . OK!
-Routing net(15) 'position_new_4_0_1' (2/2): .b OK!
-Routing net(16) 'position_new_4_0_2' (2/2): .b OK!
-Routing net(17) 'position_old_4_0_4' (2/2): .b OK!
-Routing net(18) 'position_new_4_0_4' (2/2): .b OK!
-Routing net(19) 'r61_n10' (2/2): . OK!
-Routing net(20) 'r61_n7' (2/2): . OK!
-Routing net(21) 'r61_n12' (2/2): . OK!
-Routing net(22) 'r61_n22' (2/2): . OK!
-Routing net(23) 'r61_n21' (2/2): . OK!
-Routing net(24) 'r61_n19' (2/2): . OK!
-Routing net(25) 'r61_n15' (2/2): . OK!
-Routing net(26) 'r61_n26' (2/2): . OK!
-Routing net(27) 'r61_n6' (3/3): .. OK!
-Routing net(28) 'r61_n4' (5/5): .... OK!
-Routing net(29) 'r61_n25' (2/2): . OK!
-Routing net(30) 'r61_n8' (2/2): . OK!
-Routing net(31) 'r61_n18' (2/2): . OK!
-Routing net(32) 'r61_n11' (2/2): . OK!
-Routing net(33) 'r61_n23' (2/2): . OK!
-Routing net(34) 'r61_n13' (3/3): .. OK!
-Routing net(35) 'position_old_4_0_0' (4/4): ...b OK!
-Routing net(36) 'r61_n5' (3/3): .. OK!
-Routing net(37) 'n8' (32/32): ...............................b OK!
-Routing net(38) 'r61_n14' (3/3): .. OK!
-Routing net(39) 'n9' (32/32): ...............................b OK!
+------ routing started Tue Dec 19 11:38:07 2017
+45 nets have to be routed.
+Routing net(1) 'n29' (2/2): . OK!
+Routing net(2) 'n32' (2/2): . OK!
+Routing net(3) 'n34' (2/2): . OK!
+Routing net(4) 'n36' (2/2): . OK!
+Routing net(5) 'n38' (2/2): . OK!
+Routing net(6) 'next_state_0_port' (2/2): . OK!
+Routing net(7) 'n25' (2/2): . OK!
+Routing net(8) 'n27' (2/2): . OK!
+Routing net(9) 'n41' (2/2): . OK!
+Routing net(10) 'n28' (2/2): . OK!
+Routing net(11) 'n30' (2/2): . OK!
+Routing net(12) 'n33' (2/2): . OK!
+Routing net(13) 'n35' (2/2): . OK!
+Routing net(14) 'n37' (2/2): . OK!
+Routing net(15) 'n39' (2/2): . OK!
+Routing net(16) 'clk' (9/9): ........b OK!
+Routing net(17) 'n40' (2/2): . OK!
+Routing net(18) 'n20' (2/2): . OK!
+Routing net(19) 'n21' (2/2): . OK!
+Routing net(20) 'n22' (2/2): . OK!
+Routing net(21) 'n23' (2/2): . OK!
+Routing net(22) 'n24' (2/2): . OK!
+Routing net(23) 'n19' (2/2): . OK!
+Routing net(24) 'position_new_5_0_0' (2/2): .b OK!
+Routing net(25) 'position_new_5_0_1' (2/2): .b OK!
+Routing net(26) 'position_new_5_0_2' (2/2): .b OK!
+Routing net(27) 'position_new_5_0_3' (2/2): .b OK!
+Routing net(28) 'position_new_5_0_4' (2/2): .b OK!
+Routing net(29) 'position_new_5_0_5' (2/2): .b OK!
+Routing net(30) 'position_old_5_0_1' (3/3): ..b OK!
+Routing net(31) 'position_old_5_0_4' (3/3): ..b OK!
+Routing net(32) 'position_old_5_0_3' (3/3): ..b OK!
+Routing net(33) 'position_old_5_0_2' (3/3): ..b OK!
+Routing net(34) 'position_old_5_0_0' (3/3): ..b OK!
+Routing net(35) 'enable' (3/3): ..b OK!
+Routing net(36) 'state_1_port' (3/3): .. OK!
+Routing net(37) 'position_old_5_0_5' (3/3): ..b OK!
+Routing net(38) 'n42' (2/2): . OK!
+Routing net(39) 'n26' (4/4): ... OK!
+Routing net(40) 'n31' (7/7): ...... OK!
+Routing net(41) 'count' (3/3): ..b OK!
+Routing net(42) 'vdd' :  (Power special)
+Routing net(43) 'state_0_port' (10/10): ......... OK!
+Routing net(44) 'next_state_1_port' (2/2): . OK!
+Routing net(45) 'vss' :  (Power special)
 READY
 ----- Some interesting statistics ------
-Total number of nets:                 39 (100% completion)
-Total length of routed wires:         1988 grids = 17.494 mm
-No. of transistors (total / used):    360/254 = 70.56 %
+Total number of nets:                 45 (100% completion)
+Total length of routed wires:         2023 grids = 17.802 mm
+No. of transistors (total / used):    5220/446 = 8.54 %
 CPU-time consumption:                 0.02 sec.
-Elapsed time during routing:          0.02 sec. (100.00 % of cpu)
+Elapsed time during routing:          0.01 sec. (200.00 % of cpu)
 ------ Verifying Connectivity ------
 ------ No unconnect nor short-circuits ------
------- Writing 'Tmp_Cell_(posnew(posnew(test)))'
------- Trout: task completed on Fri Dec 15 09:36:40 2017
+------ Writing 'Tmp_Cell_(pos(pos(test2)))'
+------ Trout: task completed on Tue Dec 19 11:38:07 2017
 terminate
