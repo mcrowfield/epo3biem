@@ -62,8 +62,7 @@ component helicopter is
 end component helicopter;
 
 
-signal clk, reset, disp_ena, hsync, vsync, shz, tick, button, enable: STD_LOGIC;
-signal red_t, green_t, blue_t, red_o, green_o, blue_o: STD_LOGIC;
+signal clk, reset, disp_ena, hsync, vsync, shz, tick, button, enable, blue_out: STD_LOGIC;
 signal x:  STD_LOGIC_VECTOR(7 downto 0);
 signal xv: STD_LOGIC_VECTOR(6 downto 0);
 signal y:  STD_LOGIC_VECTOR(9 downto 0);
@@ -79,11 +78,11 @@ begin
   enable <= '1', '0' after 30 ms;
   
 L1: vga_controller port map(pixel_clk => clk, reset => reset, h_sync => hsync, v_sync => vsync, 
-                            disp_ena => disp_ena, column => x, row => y, shz => shz, red => '0', green => '0', blue => blue_t, RGB => "100", red_o => red_o, green_o => green_o, blue_o => blue_o);
+                            disp_ena => disp_ena, column => x, row => y, shz => shz);
 L2: divider port map(disp_ena => disp_ena, row => y, column => x, xv => xv,
                                 yv => yv, tick => tick, shz => shz, reset => reset, clk => clk);
 L3: helicopter port map(clk => clk, reset => reset, x_input => xv, y_input => yv, button => button, count => tick, enable => enable,
-				blue => blue_t);
+				blue => blue_out);
                                 
 end architecture behavioural;
 

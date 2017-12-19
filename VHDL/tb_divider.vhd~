@@ -63,7 +63,7 @@ end component helicopter;
 
 
 signal clk, reset, disp_ena, hsync, vsync, shz, tick, button, enable: STD_LOGIC;
-signal red_t, green_t, blue_t, red_o, green_o, blue_o: STD_LOGIC;
+signal red_t, green_t, blue_t, red_o, green_o, blue_o;
 signal x:  STD_LOGIC_VECTOR(7 downto 0);
 signal xv: STD_LOGIC_VECTOR(6 downto 0);
 signal y:  STD_LOGIC_VECTOR(9 downto 0);

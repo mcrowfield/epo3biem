@@ -1,6 +1,7 @@
 ------ opening nelsis ------
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
 ------ opening seadif ------
+<<<<<<< HEAD
 ------ checking your circuit 'posnew' ------
 ------ circuit 'posnew' is still up-to-date ------
 ------ checking match with placement layout 'Tmpposnew4795' ------
@@ -12,3 +13,25 @@ calling program: trout -l test -f posnew -c posnew -o Tmp_Cell_ -e Tmp_Cell_
 ------ converting result back into nelsis as cell 'Tmpposnew4795' ------
 calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpposnew4795
 ------ sea: task completed ------
+=======
+Warning: A new sealib will be generated: 'test2'
+         This indicates most likeley that the project was renamed.
+------ checking your circuit 'helicopter' ------
+------ reading nelsis circuit-cell 'posnew' ------
+------ reading nelsis circuit-cell 'pos' ------
+WARNING: Zero terminal net: 'position_old_5_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_4_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_3_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_2_port' (cell 'pos')
+WARNING: Zero terminal net: 'position_old_1_port' (cell 'pos')
+WARNING: many (6) useless nets were removed (printed only 5)
+------ reading nelsis circuit-cell 'draw' ------
+------ reading nelsis circuit-cell 'helicopter' ------
+------ reading nelsis layout-cell 'posnew' ------
+ERROR: Your son-circuit 'pos' has no corresponding layout
+ERROR: Your son-circuit 'draw' has no corresponding layout
+ERROR: 2 error(s) have occurred during checking the 3
+       son-cells of your nelsis circuit cell 'helicopter'.
+       Please check the consistency of your cell.
+lock
+>>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
