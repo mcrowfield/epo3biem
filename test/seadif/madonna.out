@@ -5,6 +5,7 @@ Madonna version 3.4 (compiled Tue, 01 Nov 2016 14:38:16 on linux-2.6-i686)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
 
 reading circuit "divider(divider(test10))" ...done
@@ -22,12 +23,16 @@ reading circuit "posnew(posnew(test))" ...done
 =======
 reading circuit "posnew(posnew(test))" ...done
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+reading circuit "posnew(posnew(test))" ...done
+>>>>>>> parent of c7e97f1... vga_controller less registers
 
 Kissing madonna hello...
 
 Reading image description file "/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif"...
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -118,6 +123,11 @@ Reading image description file "/data/public/common/software/nelsis/20161101_32/
         0..1     2     3     4     5     6     7 8..10 11..20  >20
 
 >>>>>>> parent of c7e97f1... vga_controller less registers
+=======
+------ net distribution (total #nets = 43):
+        0..1     2     3     4     5     6     7 8..10 11..20  >20
+
+>>>>>>> parent of c7e97f1... vga_controller less registers
            0    27     8     4     0     0     2     0     0     2
 
 ------ partitioning 34 cells into (hor x vert) = (7 x 2) partitions
@@ -163,6 +173,9 @@ Reading image description file "/data/public/common/software/nelsis/20161101_32/
 ------ Detailed placement of (Tmp_Cell_(posnew(posnew(test))))...
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -178,6 +191,7 @@ Reading image description file "/data/public/common/software/nelsis/20161101_32/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
          2  column[s] deleted.
 
          Magnification coefficient obtained :0.631773
@@ -185,6 +199,9 @@ Reading image description file "/data/public/common/software/nelsis/20161101_32/
          Magnification coefficient obtained :0.738889
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+         Magnification coefficient obtained :0.738889
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
          Magnification coefficient obtained :0.738889
 >>>>>>> parent of c7e97f1... vga_controller less registers

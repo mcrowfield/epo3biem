@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #@ # Date:   Tue Dec 19 11:58:03 2017
 #@ # Run by: mapostma@tud208883
 =======
@@ -12,6 +13,8 @@
 #@ # Run by: jrkoning@ce-epo3.ewi.tudelft.nl
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
@@ -27,8 +30,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
@@ -5471,6 +5477,7 @@ source /data/public/common/software/synopsys/L-2016.03-SP2/admin/setup/.synopsys
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 source -echo -verbose {/home/mapostma/Documents/EPO3 Github/epo3biem/synthesize.tcl}
 #@ # -- Starting source /home/mapostma/Documents/EPO3 Github/epo3biem/synthesize.tcl
 =======
@@ -5482,6 +5489,10 @@ source -echo -verbose /home/jrkoning/epo3git/epo3biem/plot.tcl
 source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
+#@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 #@ # -- Starting source /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
@@ -5525,6 +5536,7 @@ source -echo -verbose /home/michaelkraaije/epo3git/epo3biem/synthesize.tcl
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 source -echo -verbose /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
@@ -5564,6 +5576,8 @@ change_selection
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 source -echo -verbose /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
 #@ # -- Starting source /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
 
@@ -5573,6 +5587,9 @@ source -echo -verbose /home/vschonk/Downloads/epo3git/epo3biem/plot.tcl
 #@ start_gui
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -41950,8 +41967,11 @@ quit
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======

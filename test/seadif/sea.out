@@ -5,9 +5,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
 
 =======
+=======
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
@@ -26,6 +29,9 @@ calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpposnew4795
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of c7e97f1... vga_controller less registers
+=======
 >>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> parent of c7e97f1... vga_controller less registers
@@ -51,6 +57,7 @@ ERROR: 2 error(s) have occurred during checking the 3
        son-cells of your nelsis circuit cell 'helicopter'.
        Please check the consistency of your cell.
 lock
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,6 +93,9 @@ calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpposnew7760
 >>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
 ------ sea: task completed ------
 >>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+=======
+>>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
+>>>>>>> parent of c7e97f1... vga_controller less registers
 =======
 >>>>>>> 99ee7df89d447bcb6eac5fce43814e8ff6b306ed
 >>>>>>> parent of c7e97f1... vga_controller less registers
