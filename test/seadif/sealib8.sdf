@@ -1,0 +1,2218 @@
+(Seadif "Doktor Fremdenliebe"
+   (Library "test7"
+      (Alias "srv312:/vol/vol1/student-homes/p/mapostma/Documents/EPO3 Github/epo3biem/test")
+      (Technology "fishbone")
+      (Status
+	 (Written
+	    (TimeStamp 117 12 19 11 53 12)
+	    (Author "by user; cpu tud208883; disk srv312:/vol/vol1/student-homes/p/mapostma/Documents/EPO3 Github/epo3biem/test")
+	    (Program "nelsea")))
+      (Function "vga_controller"
+	 (Status
+	    (Written
+	       (TimeStamp 117 12 19 11 53 12)
+	       (Author "by user; cpu tud208883; disk srv312:/vol/vol1/student-homes/p/mapostma/Documents/EPO3 Github/epo3biem/test")
+	       (Program "nelsea")))
+	 (FunType "no type")
+	 (Circuit "vga_controller"
+	    (Status
+	       (Written
+		  (TimeStamp 117 12 19 11 53 12)
+		  (Author "by user; cpu tud208883; disk srv312:/vol/vol1/student-homes/p/mapostma/Documents/EPO3 Github/epo3biem/test")
+		  (Program "sea; checked and OK")))
+	    (CirPortList
+	       (CirPort "pixel_clk")
+	       (CirPort "reset")
+	       (CirPort "h_sync")
+	       (CirPort "v_sync")
+	       (CirPort "disp_ena")
+	       (CirPort "column_7_0_7")
+	       (CirPort "column_7_0_6")
+	       (CirPort "column_7_0_5")
+	       (CirPort "column_7_0_4")
+	       (CirPort "column_7_0_3")
+	       (CirPort "column_7_0_2")
+	       (CirPort "column_7_0_1")
+	       (CirPort "column_7_0_0")
+	       (CirPort "row_9_0_9")
+	       (CirPort "row_9_0_8")
+	       (CirPort "row_9_0_7")
+	       (CirPort "row_9_0_6")
+	       (CirPort "row_9_0_5")
+	       (CirPort "row_9_0_4")
+	       (CirPort "row_9_0_3")
+	       (CirPort "row_9_0_2")
+	       (CirPort "row_9_0_1")
+	       (CirPort "row_9_0_0")
+	       (CirPort "shz")
+	       (CirPort "vss")
+	       (CirPort "vdd"))
+	    (CirInstList
+	       (CirInst "v_count_reg_0_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_7_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_6_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_5_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_4_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_3_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_2_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_1_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_count_reg_0_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_9_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_8_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "shz_reg" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_1_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_2_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_3_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_4_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_5_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_6_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_count_reg_7_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "h_sync_reg" (CirCellRef "dfn10" (CirFunRef "dfn10" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "v_sync_reg" (CirCellRef "dfn10" (CirFunRef "dfn10" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "disp_ena_reg" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_7_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_6_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_5_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_4_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_3_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_2_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_1_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "column_reg_0_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_9_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_8_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_7_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_6_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_5_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_4_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_3_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_2_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_1_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "row_reg_0_inst" (CirCellRef "dfr11" (CirFunRef "dfr11" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U150" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U151" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U152" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U153" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U154" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U155" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U156" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U157" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U158" (CirCellRef "no310" (CirFunRef "no310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U159" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U160" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U161" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U162" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U163" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U164" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U165" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U166" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U167" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U168" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U169" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U170" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U171" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U172" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U173" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U174" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U175" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U176" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U177" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U178" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U179" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U180" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U181" (CirCellRef "ex210" (CirFunRef "ex210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U182" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U183" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U184" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U185" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U186" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U187" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U188" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U189" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U190" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U191" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U192" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U193" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U194" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U195" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U196" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U197" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U198" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U199" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U200" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U201" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U202" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U203" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U204" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U205" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U206" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U207" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U208" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U209" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U210" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U211" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U212" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U213" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U214" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U215" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U216" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U217" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U218" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U219" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U220" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U221" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U222" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U223" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U224" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U225" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U226" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U227" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U228" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U229" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U230" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U231" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U232" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U233" (CirCellRef "no310" (CirFunRef "no310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U234" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U235" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U236" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U237" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U238" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U239" (CirCellRef "no310" (CirFunRef "no310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U240" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U241" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U242" (CirCellRef "no310" (CirFunRef "no310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U243" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U244" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U245" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U246" (CirCellRef "ex210" (CirFunRef "ex210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U247" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U248" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U249" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U250" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U251" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U252" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U253" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U254" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U255" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U256" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U257" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U258" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U259" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U260" (CirCellRef "ex210" (CirFunRef "ex210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U261" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U262" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U263" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U264" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U265" (CirCellRef "ex210" (CirFunRef "ex210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U266" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U267" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U268" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U269" (CirCellRef "ex210" (CirFunRef "ex210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U270" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U271" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U272" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U273" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U274" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U275" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U276" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U277" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U278" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U279" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U280" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U281" (CirCellRef "na210" (CirFunRef "na210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U282" (CirCellRef "ex210" (CirFunRef "ex210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U283" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U284" (CirCellRef "mu111" (CirFunRef "mu111" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U285" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U286" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U287" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U288" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U289" (CirCellRef "no210" (CirFunRef "no210" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U290" (CirCellRef "iv110" (CirFunRef "iv110" (CirLibRef "g_digilib5_99"))) "")
+	       (CirInst "U291" (CirCellRef "na310" (CirFunRef "na310" (CirLibRef "g_digilib5_99"))) ""))
+	    (NetList
+	       (Net "column_7_0_7"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U210"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_7_inst"))
+		     (NetPortRef "column_7_0_7")))
+	       (Net "column_7_0_6"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U211"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_6_inst"))
+		     (NetPortRef "column_7_0_6")))
+	       (Net "column_7_0_5"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U212"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_5_inst"))
+		     (NetPortRef "column_7_0_5")))
+	       (Net "column_7_0_4"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U213"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_4_inst"))
+		     (NetPortRef "column_7_0_4")))
+	       (Net "column_7_0_3"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U214"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_3_inst"))
+		     (NetPortRef "column_7_0_3")))
+	       (Net "column_7_0_2"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U215"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_2_inst"))
+		     (NetPortRef "column_7_0_2")))
+	       (Net "column_7_0_1"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U216"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_1_inst"))
+		     (NetPortRef "column_7_0_1")))
+	       (Net "column_7_0_0"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U217"))
+		     (NetPortRef "Q" (NetInstRef "column_reg_0_inst"))
+		     (NetPortRef "column_7_0_0")))
+	       (Net "row_9_0_9"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U221"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_9_inst"))
+		     (NetPortRef "row_9_0_9")))
+	       (Net "row_9_0_8"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U222"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_8_inst"))
+		     (NetPortRef "row_9_0_8")))
+	       (Net "row_9_0_7"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U223"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_7_inst"))
+		     (NetPortRef "row_9_0_7")))
+	       (Net "row_9_0_6"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U224"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_6_inst"))
+		     (NetPortRef "row_9_0_6")))
+	       (Net "row_9_0_5"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U225"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_5_inst"))
+		     (NetPortRef "row_9_0_5")))
+	       (Net "row_9_0_4"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U226"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_4_inst"))
+		     (NetPortRef "row_9_0_4")))
+	       (Net "row_9_0_3"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U227"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_3_inst"))
+		     (NetPortRef "row_9_0_3")))
+	       (Net "row_9_0_2"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U228"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_2_inst"))
+		     (NetPortRef "row_9_0_2")))
+	       (Net "row_9_0_1"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U229"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_1_inst"))
+		     (NetPortRef "row_9_0_1")))
+	       (Net "row_9_0_0"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U230"))
+		     (NetPortRef "Q" (NetInstRef "row_reg_0_inst"))
+		     (NetPortRef "row_9_0_0")))
+	       (Net "n150"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U171"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_0_inst"))))
+	       (Net "reset"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U153"))
+		     (NetPortRef "A" (NetInstRef "U151"))
+		     (NetPortRef "R" (NetInstRef "row_reg_0_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_1_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_2_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_3_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_4_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_5_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_6_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_7_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_8_inst"))
+		     (NetPortRef "R" (NetInstRef "row_reg_9_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_0_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_1_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_2_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_3_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_4_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_5_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_6_inst"))
+		     (NetPortRef "R" (NetInstRef "column_reg_7_inst"))
+		     (NetPortRef "R" (NetInstRef "disp_ena_reg"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_7_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_6_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_5_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_4_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_3_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_2_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_1_inst"))
+		     (NetPortRef "R" (NetInstRef "shz_reg"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_8_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_9_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_0_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_1_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_2_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_3_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_4_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_5_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_6_inst"))
+		     (NetPortRef "R" (NetInstRef "h_count_reg_7_inst"))
+		     (NetPortRef "R" (NetInstRef "v_count_reg_0_inst"))
+		     (NetPortRef "reset")))
+	       (Net "pixel_clk"
+		  (Joined
+		     (NetPortRef "CK" (NetInstRef "row_reg_0_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_1_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_2_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_3_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_4_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_5_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_6_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_7_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_8_inst"))
+		     (NetPortRef "CK" (NetInstRef "row_reg_9_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_0_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_1_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_2_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_3_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_4_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_5_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_6_inst"))
+		     (NetPortRef "CK" (NetInstRef "column_reg_7_inst"))
+		     (NetPortRef "CK" (NetInstRef "disp_ena_reg"))
+		     (NetPortRef "CK" (NetInstRef "v_sync_reg"))
+		     (NetPortRef "CK" (NetInstRef "h_sync_reg"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_7_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_6_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_5_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_4_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_3_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_2_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_1_inst"))
+		     (NetPortRef "CK" (NetInstRef "shz_reg"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_8_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_9_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_0_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_1_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_2_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_3_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_4_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_5_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_6_inst"))
+		     (NetPortRef "CK" (NetInstRef "h_count_reg_7_inst"))
+		     (NetPortRef "CK" (NetInstRef "v_count_reg_0_inst"))
+		     (NetPortRef "pixel_clk")))
+	       (Net "v_count_0_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U283"))
+		     (NetPortRef "C" (NetInstRef "U242"))
+		     (NetPortRef "A" (NetInstRef "U230"))
+		     (NetPortRef "A" (NetInstRef "U174"))
+		     (NetPortRef "A" (NetInstRef "U161"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_0_inst"))))
+	       (Net "vss"
+		  (Joined
+		     (NetPortRef "vss" (NetInstRef "U291"))
+		     (NetPortRef "vss" (NetInstRef "U290"))
+		     (NetPortRef "vss" (NetInstRef "U289"))
+		     (NetPortRef "vss" (NetInstRef "U288"))
+		     (NetPortRef "vss" (NetInstRef "U287"))
+		     (NetPortRef "vss" (NetInstRef "U286"))
+		     (NetPortRef "vss" (NetInstRef "U285"))
+		     (NetPortRef "vss" (NetInstRef "U284"))
+		     (NetPortRef "vss" (NetInstRef "U283"))
+		     (NetPortRef "vss" (NetInstRef "U282"))
+		     (NetPortRef "vss" (NetInstRef "U281"))
+		     (NetPortRef "vss" (NetInstRef "U280"))
+		     (NetPortRef "vss" (NetInstRef "U279"))
+		     (NetPortRef "vss" (NetInstRef "U278"))
+		     (NetPortRef "vss" (NetInstRef "U277"))
+		     (NetPortRef "vss" (NetInstRef "U276"))
+		     (NetPortRef "vss" (NetInstRef "U275"))
+		     (NetPortRef "vss" (NetInstRef "U274"))
+		     (NetPortRef "vss" (NetInstRef "U273"))
+		     (NetPortRef "vss" (NetInstRef "U272"))
+		     (NetPortRef "vss" (NetInstRef "U271"))
+		     (NetPortRef "vss" (NetInstRef "U270"))
+		     (NetPortRef "vss" (NetInstRef "U269"))
+		     (NetPortRef "vss" (NetInstRef "U268"))
+		     (NetPortRef "vss" (NetInstRef "U267"))
+		     (NetPortRef "vss" (NetInstRef "U266"))
+		     (NetPortRef "vss" (NetInstRef "U265"))
+		     (NetPortRef "vss" (NetInstRef "U264"))
+		     (NetPortRef "vss" (NetInstRef "U263"))
+		     (NetPortRef "vss" (NetInstRef "U262"))
+		     (NetPortRef "vss" (NetInstRef "U261"))
+		     (NetPortRef "vss" (NetInstRef "U260"))
+		     (NetPortRef "vss" (NetInstRef "U259"))
+		     (NetPortRef "vss" (NetInstRef "U258"))
+		     (NetPortRef "vss" (NetInstRef "U257"))
+		     (NetPortRef "vss" (NetInstRef "U256"))
+		     (NetPortRef "vss" (NetInstRef "U255"))
+		     (NetPortRef "vss" (NetInstRef "U254"))
+		     (NetPortRef "vss" (NetInstRef "U253"))
+		     (NetPortRef "vss" (NetInstRef "U252"))
+		     (NetPortRef "vss" (NetInstRef "U251"))
+		     (NetPortRef "vss" (NetInstRef "U250"))
+		     (NetPortRef "vss" (NetInstRef "U249"))
+		     (NetPortRef "vss" (NetInstRef "U248"))
+		     (NetPortRef "vss" (NetInstRef "U247"))
+		     (NetPortRef "vss" (NetInstRef "U246"))
+		     (NetPortRef "vss" (NetInstRef "U245"))
+		     (NetPortRef "vss" (NetInstRef "U244"))
+		     (NetPortRef "vss" (NetInstRef "U243"))
+		     (NetPortRef "vss" (NetInstRef "U242"))
+		     (NetPortRef "vss" (NetInstRef "U241"))
+		     (NetPortRef "vss" (NetInstRef "U240"))
+		     (NetPortRef "vss" (NetInstRef "U239"))
+		     (NetPortRef "vss" (NetInstRef "U238"))
+		     (NetPortRef "vss" (NetInstRef "U237"))
+		     (NetPortRef "vss" (NetInstRef "U236"))
+		     (NetPortRef "vss" (NetInstRef "U235"))
+		     (NetPortRef "vss" (NetInstRef "U234"))
+		     (NetPortRef "vss" (NetInstRef "U233"))
+		     (NetPortRef "vss" (NetInstRef "U232"))
+		     (NetPortRef "vss" (NetInstRef "U231"))
+		     (NetPortRef "vss" (NetInstRef "U230"))
+		     (NetPortRef "vss" (NetInstRef "U229"))
+		     (NetPortRef "vss" (NetInstRef "U228"))
+		     (NetPortRef "vss" (NetInstRef "U227"))
+		     (NetPortRef "vss" (NetInstRef "U226"))
+		     (NetPortRef "vss" (NetInstRef "U225"))
+		     (NetPortRef "vss" (NetInstRef "U224"))
+		     (NetPortRef "vss" (NetInstRef "U223"))
+		     (NetPortRef "vss" (NetInstRef "U222"))
+		     (NetPortRef "vss" (NetInstRef "U221"))
+		     (NetPortRef "vss" (NetInstRef "U220"))
+		     (NetPortRef "vss" (NetInstRef "U219"))
+		     (NetPortRef "vss" (NetInstRef "U218"))
+		     (NetPortRef "vss" (NetInstRef "U217"))
+		     (NetPortRef "vss" (NetInstRef "U216"))
+		     (NetPortRef "vss" (NetInstRef "U215"))
+		     (NetPortRef "vss" (NetInstRef "U214"))
+		     (NetPortRef "vss" (NetInstRef "U213"))
+		     (NetPortRef "vss" (NetInstRef "U212"))
+		     (NetPortRef "vss" (NetInstRef "U211"))
+		     (NetPortRef "vss" (NetInstRef "U210"))
+		     (NetPortRef "vss" (NetInstRef "U209"))
+		     (NetPortRef "vss" (NetInstRef "U208"))
+		     (NetPortRef "vss" (NetInstRef "U207"))
+		     (NetPortRef "vss" (NetInstRef "U206"))
+		     (NetPortRef "vss" (NetInstRef "U205"))
+		     (NetPortRef "vss" (NetInstRef "U204"))
+		     (NetPortRef "vss" (NetInstRef "U203"))
+		     (NetPortRef "vss" (NetInstRef "U202"))
+		     (NetPortRef "vss" (NetInstRef "U201"))
+		     (NetPortRef "vss" (NetInstRef "U200"))
+		     (NetPortRef "vss" (NetInstRef "U199"))
+		     (NetPortRef "vss" (NetInstRef "U198"))
+		     (NetPortRef "vss" (NetInstRef "U197"))
+		     (NetPortRef "vss" (NetInstRef "U196"))
+		     (NetPortRef "vss" (NetInstRef "U195"))
+		     (NetPortRef "vss" (NetInstRef "U194"))
+		     (NetPortRef "vss" (NetInstRef "U193"))
+		     (NetPortRef "vss" (NetInstRef "U192"))
+		     (NetPortRef "vss" (NetInstRef "U191"))
+		     (NetPortRef "vss" (NetInstRef "U190"))
+		     (NetPortRef "vss" (NetInstRef "U189"))
+		     (NetPortRef "vss" (NetInstRef "U188"))
+		     (NetPortRef "vss" (NetInstRef "U187"))
+		     (NetPortRef "vss" (NetInstRef "U186"))
+		     (NetPortRef "vss" (NetInstRef "U185"))
+		     (NetPortRef "vss" (NetInstRef "U184"))
+		     (NetPortRef "vss" (NetInstRef "U183"))
+		     (NetPortRef "vss" (NetInstRef "U182"))
+		     (NetPortRef "vss" (NetInstRef "U181"))
+		     (NetPortRef "vss" (NetInstRef "U180"))
+		     (NetPortRef "vss" (NetInstRef "U179"))
+		     (NetPortRef "vss" (NetInstRef "U178"))
+		     (NetPortRef "vss" (NetInstRef "U177"))
+		     (NetPortRef "vss" (NetInstRef "U176"))
+		     (NetPortRef "vss" (NetInstRef "U175"))
+		     (NetPortRef "vss" (NetInstRef "U174"))
+		     (NetPortRef "vss" (NetInstRef "U173"))
+		     (NetPortRef "vss" (NetInstRef "U172"))
+		     (NetPortRef "vss" (NetInstRef "U171"))
+		     (NetPortRef "vss" (NetInstRef "U170"))
+		     (NetPortRef "vss" (NetInstRef "U169"))
+		     (NetPortRef "vss" (NetInstRef "U168"))
+		     (NetPortRef "vss" (NetInstRef "U167"))
+		     (NetPortRef "vss" (NetInstRef "U166"))
+		     (NetPortRef "vss" (NetInstRef "U165"))
+		     (NetPortRef "vss" (NetInstRef "U164"))
+		     (NetPortRef "vss" (NetInstRef "U163"))
+		     (NetPortRef "vss" (NetInstRef "U162"))
+		     (NetPortRef "vss" (NetInstRef "U161"))
+		     (NetPortRef "vss" (NetInstRef "U160"))
+		     (NetPortRef "vss" (NetInstRef "U159"))
+		     (NetPortRef "vss" (NetInstRef "U158"))
+		     (NetPortRef "vss" (NetInstRef "U157"))
+		     (NetPortRef "vss" (NetInstRef "U156"))
+		     (NetPortRef "vss" (NetInstRef "U155"))
+		     (NetPortRef "vss" (NetInstRef "U154"))
+		     (NetPortRef "vss" (NetInstRef "U153"))
+		     (NetPortRef "vss" (NetInstRef "U152"))
+		     (NetPortRef "vss" (NetInstRef "U151"))
+		     (NetPortRef "vss" (NetInstRef "U150"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_0_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_1_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_2_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_3_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_4_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_5_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_6_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_7_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_8_inst"))
+		     (NetPortRef "vss" (NetInstRef "row_reg_9_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_0_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_1_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_2_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_3_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_4_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_5_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_6_inst"))
+		     (NetPortRef "vss" (NetInstRef "column_reg_7_inst"))
+		     (NetPortRef "vss" (NetInstRef "disp_ena_reg"))
+		     (NetPortRef "vss" (NetInstRef "v_sync_reg"))
+		     (NetPortRef "vss" (NetInstRef "h_sync_reg"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_7_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_6_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_5_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_4_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_3_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_2_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_1_inst"))
+		     (NetPortRef "vss" (NetInstRef "shz_reg"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_8_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_9_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_0_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_1_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_2_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_3_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_4_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_5_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_6_inst"))
+		     (NetPortRef "vss" (NetInstRef "h_count_reg_7_inst"))
+		     (NetPortRef "vss" (NetInstRef "v_count_reg_0_inst"))
+		     (NetPortRef "vss")))
+	       (Net "vdd"
+		  (Joined
+		     (NetPortRef "vdd" (NetInstRef "U291"))
+		     (NetPortRef "vdd" (NetInstRef "U290"))
+		     (NetPortRef "vdd" (NetInstRef "U289"))
+		     (NetPortRef "vdd" (NetInstRef "U288"))
+		     (NetPortRef "vdd" (NetInstRef "U287"))
+		     (NetPortRef "vdd" (NetInstRef "U286"))
+		     (NetPortRef "vdd" (NetInstRef "U285"))
+		     (NetPortRef "vdd" (NetInstRef "U284"))
+		     (NetPortRef "vdd" (NetInstRef "U283"))
+		     (NetPortRef "vdd" (NetInstRef "U282"))
+		     (NetPortRef "vdd" (NetInstRef "U281"))
+		     (NetPortRef "vdd" (NetInstRef "U280"))
+		     (NetPortRef "vdd" (NetInstRef "U279"))
+		     (NetPortRef "vdd" (NetInstRef "U278"))
+		     (NetPortRef "vdd" (NetInstRef "U277"))
+		     (NetPortRef "vdd" (NetInstRef "U276"))
+		     (NetPortRef "vdd" (NetInstRef "U275"))
+		     (NetPortRef "vdd" (NetInstRef "U274"))
+		     (NetPortRef "vdd" (NetInstRef "U273"))
+		     (NetPortRef "vdd" (NetInstRef "U272"))
+		     (NetPortRef "vdd" (NetInstRef "U271"))
+		     (NetPortRef "vdd" (NetInstRef "U270"))
+		     (NetPortRef "vdd" (NetInstRef "U269"))
+		     (NetPortRef "vdd" (NetInstRef "U268"))
+		     (NetPortRef "vdd" (NetInstRef "U267"))
+		     (NetPortRef "vdd" (NetInstRef "U266"))
+		     (NetPortRef "vdd" (NetInstRef "U265"))
+		     (NetPortRef "vdd" (NetInstRef "U264"))
+		     (NetPortRef "vdd" (NetInstRef "U263"))
+		     (NetPortRef "vdd" (NetInstRef "U262"))
+		     (NetPortRef "vdd" (NetInstRef "U261"))
+		     (NetPortRef "vdd" (NetInstRef "U260"))
+		     (NetPortRef "vdd" (NetInstRef "U259"))
+		     (NetPortRef "vdd" (NetInstRef "U258"))
+		     (NetPortRef "vdd" (NetInstRef "U257"))
+		     (NetPortRef "vdd" (NetInstRef "U256"))
+		     (NetPortRef "vdd" (NetInstRef "U255"))
+		     (NetPortRef "vdd" (NetInstRef "U254"))
+		     (NetPortRef "vdd" (NetInstRef "U253"))
+		     (NetPortRef "vdd" (NetInstRef "U252"))
+		     (NetPortRef "vdd" (NetInstRef "U251"))
+		     (NetPortRef "vdd" (NetInstRef "U250"))
+		     (NetPortRef "vdd" (NetInstRef "U249"))
+		     (NetPortRef "vdd" (NetInstRef "U248"))
+		     (NetPortRef "vdd" (NetInstRef "U247"))
+		     (NetPortRef "vdd" (NetInstRef "U246"))
+		     (NetPortRef "vdd" (NetInstRef "U245"))
+		     (NetPortRef "vdd" (NetInstRef "U244"))
+		     (NetPortRef "vdd" (NetInstRef "U243"))
+		     (NetPortRef "vdd" (NetInstRef "U242"))
+		     (NetPortRef "vdd" (NetInstRef "U241"))
+		     (NetPortRef "vdd" (NetInstRef "U240"))
+		     (NetPortRef "vdd" (NetInstRef "U239"))
+		     (NetPortRef "vdd" (NetInstRef "U238"))
+		     (NetPortRef "vdd" (NetInstRef "U237"))
+		     (NetPortRef "vdd" (NetInstRef "U236"))
+		     (NetPortRef "vdd" (NetInstRef "U235"))
+		     (NetPortRef "vdd" (NetInstRef "U234"))
+		     (NetPortRef "vdd" (NetInstRef "U233"))
+		     (NetPortRef "vdd" (NetInstRef "U232"))
+		     (NetPortRef "vdd" (NetInstRef "U231"))
+		     (NetPortRef "vdd" (NetInstRef "U230"))
+		     (NetPortRef "vdd" (NetInstRef "U229"))
+		     (NetPortRef "vdd" (NetInstRef "U228"))
+		     (NetPortRef "vdd" (NetInstRef "U227"))
+		     (NetPortRef "vdd" (NetInstRef "U226"))
+		     (NetPortRef "vdd" (NetInstRef "U225"))
+		     (NetPortRef "vdd" (NetInstRef "U224"))
+		     (NetPortRef "vdd" (NetInstRef "U223"))
+		     (NetPortRef "vdd" (NetInstRef "U222"))
+		     (NetPortRef "vdd" (NetInstRef "U221"))
+		     (NetPortRef "vdd" (NetInstRef "U220"))
+		     (NetPortRef "vdd" (NetInstRef "U219"))
+		     (NetPortRef "vdd" (NetInstRef "U218"))
+		     (NetPortRef "vdd" (NetInstRef "U217"))
+		     (NetPortRef "vdd" (NetInstRef "U216"))
+		     (NetPortRef "vdd" (NetInstRef "U215"))
+		     (NetPortRef "vdd" (NetInstRef "U214"))
+		     (NetPortRef "vdd" (NetInstRef "U213"))
+		     (NetPortRef "vdd" (NetInstRef "U212"))
+		     (NetPortRef "vdd" (NetInstRef "U211"))
+		     (NetPortRef "vdd" (NetInstRef "U210"))
+		     (NetPortRef "vdd" (NetInstRef "U209"))
+		     (NetPortRef "vdd" (NetInstRef "U208"))
+		     (NetPortRef "vdd" (NetInstRef "U207"))
+		     (NetPortRef "vdd" (NetInstRef "U206"))
+		     (NetPortRef "vdd" (NetInstRef "U205"))
+		     (NetPortRef "vdd" (NetInstRef "U204"))
+		     (NetPortRef "vdd" (NetInstRef "U203"))
+		     (NetPortRef "vdd" (NetInstRef "U202"))
+		     (NetPortRef "vdd" (NetInstRef "U201"))
+		     (NetPortRef "vdd" (NetInstRef "U200"))
+		     (NetPortRef "vdd" (NetInstRef "U199"))
+		     (NetPortRef "vdd" (NetInstRef "U198"))
+		     (NetPortRef "vdd" (NetInstRef "U197"))
+		     (NetPortRef "vdd" (NetInstRef "U196"))
+		     (NetPortRef "vdd" (NetInstRef "U195"))
+		     (NetPortRef "vdd" (NetInstRef "U194"))
+		     (NetPortRef "vdd" (NetInstRef "U193"))
+		     (NetPortRef "vdd" (NetInstRef "U192"))
+		     (NetPortRef "vdd" (NetInstRef "U191"))
+		     (NetPortRef "vdd" (NetInstRef "U190"))
+		     (NetPortRef "vdd" (NetInstRef "U189"))
+		     (NetPortRef "vdd" (NetInstRef "U188"))
+		     (NetPortRef "vdd" (NetInstRef "U187"))
+		     (NetPortRef "vdd" (NetInstRef "U186"))
+		     (NetPortRef "vdd" (NetInstRef "U185"))
+		     (NetPortRef "vdd" (NetInstRef "U184"))
+		     (NetPortRef "vdd" (NetInstRef "U183"))
+		     (NetPortRef "vdd" (NetInstRef "U182"))
+		     (NetPortRef "vdd" (NetInstRef "U181"))
+		     (NetPortRef "vdd" (NetInstRef "U180"))
+		     (NetPortRef "vdd" (NetInstRef "U179"))
+		     (NetPortRef "vdd" (NetInstRef "U178"))
+		     (NetPortRef "vdd" (NetInstRef "U177"))
+		     (NetPortRef "vdd" (NetInstRef "U176"))
+		     (NetPortRef "vdd" (NetInstRef "U175"))
+		     (NetPortRef "vdd" (NetInstRef "U174"))
+		     (NetPortRef "vdd" (NetInstRef "U173"))
+		     (NetPortRef "vdd" (NetInstRef "U172"))
+		     (NetPortRef "vdd" (NetInstRef "U171"))
+		     (NetPortRef "vdd" (NetInstRef "U170"))
+		     (NetPortRef "vdd" (NetInstRef "U169"))
+		     (NetPortRef "vdd" (NetInstRef "U168"))
+		     (NetPortRef "vdd" (NetInstRef "U167"))
+		     (NetPortRef "vdd" (NetInstRef "U166"))
+		     (NetPortRef "vdd" (NetInstRef "U165"))
+		     (NetPortRef "vdd" (NetInstRef "U164"))
+		     (NetPortRef "vdd" (NetInstRef "U163"))
+		     (NetPortRef "vdd" (NetInstRef "U162"))
+		     (NetPortRef "vdd" (NetInstRef "U161"))
+		     (NetPortRef "vdd" (NetInstRef "U160"))
+		     (NetPortRef "vdd" (NetInstRef "U159"))
+		     (NetPortRef "vdd" (NetInstRef "U158"))
+		     (NetPortRef "vdd" (NetInstRef "U157"))
+		     (NetPortRef "vdd" (NetInstRef "U156"))
+		     (NetPortRef "vdd" (NetInstRef "U155"))
+		     (NetPortRef "vdd" (NetInstRef "U154"))
+		     (NetPortRef "vdd" (NetInstRef "U153"))
+		     (NetPortRef "vdd" (NetInstRef "U152"))
+		     (NetPortRef "vdd" (NetInstRef "U151"))
+		     (NetPortRef "vdd" (NetInstRef "U150"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_0_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_1_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_2_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_3_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_4_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_5_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_6_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_7_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_8_inst"))
+		     (NetPortRef "vdd" (NetInstRef "row_reg_9_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_0_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_1_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_2_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_3_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_4_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_5_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_6_inst"))
+		     (NetPortRef "vdd" (NetInstRef "column_reg_7_inst"))
+		     (NetPortRef "vdd" (NetInstRef "disp_ena_reg"))
+		     (NetPortRef "vdd" (NetInstRef "v_sync_reg"))
+		     (NetPortRef "vdd" (NetInstRef "h_sync_reg"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_7_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_6_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_5_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_4_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_3_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_2_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_1_inst"))
+		     (NetPortRef "vdd" (NetInstRef "shz_reg"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_8_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_9_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_0_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_1_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_2_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_3_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_4_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_5_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_6_inst"))
+		     (NetPortRef "vdd" (NetInstRef "h_count_reg_7_inst"))
+		     (NetPortRef "vdd" (NetInstRef "v_count_reg_0_inst"))
+		     (NetPortRef "vdd")))
+	       (Net "N45"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U244"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_7_inst"))))
+	       (Net "h_count_7_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U287"))
+		     (NetPortRef "A" (NetInstRef "U248"))
+		     (NetPortRef "A" (NetInstRef "U210"))
+		     (NetPortRef "B" (NetInstRef "U162"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_7_inst"))))
+	       (Net "N44"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U250"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_6_inst"))))
+	       (Net "h_count_6_port"
+		  (Joined
+		     (NetPortRef "C" (NetInstRef "U287"))
+		     (NetPortRef "B" (NetInstRef "U256"))
+		     (NetPortRef "A" (NetInstRef "U219"))
+		     (NetPortRef "A" (NetInstRef "U211"))
+		     (NetPortRef "A" (NetInstRef "U163"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_6_inst"))))
+	       (Net "N43"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U258"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_5_inst"))))
+	       (Net "h_count_5_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U289"))
+		     (NetPortRef "A" (NetInstRef "U262"))
+		     (NetPortRef "B" (NetInstRef "U219"))
+		     (NetPortRef "A" (NetInstRef "U212"))
+		     (NetPortRef "A" (NetInstRef "U164"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_5_inst"))))
+	       (Net "N42"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U264"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_4_inst"))))
+	       (Net "h_count_4_port"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U289"))
+		     (NetPortRef "A" (NetInstRef "U266"))
+		     (NetPortRef "A" (NetInstRef "U213"))
+		     (NetPortRef "S" (NetInstRef "U165"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_4_inst"))))
+	       (Net "N41"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U268"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_3_inst"))))
+	       (Net "h_count_3_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U290"))
+		     (NetPortRef "A" (NetInstRef "U270"))
+		     (NetPortRef "A" (NetInstRef "U214"))
+		     (NetPortRef "C" (NetInstRef "U166"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_3_inst"))))
+	       (Net "N40"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U271"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_2_inst"))))
+	       (Net "h_count_2_port"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U291"))
+		     (NetPortRef "A" (NetInstRef "U277"))
+		     (NetPortRef "A" (NetInstRef "U215"))
+		     (NetPortRef "A" (NetInstRef "U166"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_2_inst"))))
+	       (Net "N39"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U280"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_1_inst"))))
+	       (Net "h_count_1_port"
+		  (Joined
+		     (NetPortRef "C" (NetInstRef "U291"))
+		     (NetPortRef "B" (NetInstRef "U284"))
+		     (NetPortRef "A" (NetInstRef "U216"))
+		     (NetPortRef "A" (NetInstRef "U168"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_1_inst"))))
+	       (Net "N38"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U285"))
+		     (NetPortRef "D" (NetInstRef "h_count_reg_0_inst"))))
+	       (Net "h_count_0_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U291"))
+		     (NetPortRef "A" (NetInstRef "U285"))
+		     (NetPortRef "B" (NetInstRef "U283"))
+		     (NetPortRef "A" (NetInstRef "U217"))
+		     (NetPortRef "B" (NetInstRef "U168"))
+		     (NetPortRef "Q" (NetInstRef "h_count_reg_0_inst"))))
+	       (Net "n149"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U175"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_9_inst"))))
+	       (Net "v_count_9_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U237"))
+		     (NetPortRef "B" (NetInstRef "U232"))
+		     (NetPortRef "A" (NetInstRef "U177"))
+		     (NetPortRef "B" (NetInstRef "U158"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_9_inst"))))
+	       (Net "n148"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U179"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_8_inst"))))
+	       (Net "v_count_8_port"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U239"))
+		     (NetPortRef "A" (NetInstRef "U235"))
+		     (NetPortRef "A" (NetInstRef "U222"))
+		     (NetPortRef "A" (NetInstRef "U183"))
+		     (NetPortRef "A" (NetInstRef "U181"))
+		     (NetPortRef "B" (NetInstRef "U176"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_8_inst"))))
+	       (Net "N46"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U236"))
+		     (NetPortRef "D" (NetInstRef "shz_reg"))))
+	       (Net "shz"
+		  (Joined
+		     (NetPortRef "Q" (NetInstRef "shz_reg"))
+		     (NetPortRef "shz")))
+	       (Net "n147"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U184"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_1_inst"))))
+	       (Net "v_count_1_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U284"))
+		     (NetPortRef "A" (NetInstRef "U242"))
+		     (NetPortRef "A" (NetInstRef "U229"))
+		     (NetPortRef "A" (NetInstRef "U186"))
+		     (NetPortRef "B" (NetInstRef "U161"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_1_inst"))))
+	       (Net "n146"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U187"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_2_inst"))))
+	       (Net "v_count_2_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U278"))
+		     (NetPortRef "B" (NetInstRef "U242"))
+		     (NetPortRef "A" (NetInstRef "U228"))
+		     (NetPortRef "A" (NetInstRef "U190"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_2_inst"))))
+	       (Net "n145"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U191"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_3_inst"))))
+	       (Net "v_count_3_port"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U270"))
+		     (NetPortRef "A" (NetInstRef "U240"))
+		     (NetPortRef "A" (NetInstRef "U227"))
+		     (NetPortRef "A" (NetInstRef "U194"))
+		     (NetPortRef "A" (NetInstRef "U158"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_3_inst"))))
+	       (Net "n144"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U195"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_4_inst"))))
+	       (Net "v_count_4_port"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U266"))
+		     (NetPortRef "B" (NetInstRef "U243"))
+		     (NetPortRef "A" (NetInstRef "U226"))
+		     (NetPortRef "A" (NetInstRef "U198"))
+		     (NetPortRef "C" (NetInstRef "U158"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_4_inst"))))
+	       (Net "n143"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U199"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_5_inst"))))
+	       (Net "v_count_5_port"
+		  (Joined
+		     (NetPortRef "B" (NetInstRef "U262"))
+		     (NetPortRef "A" (NetInstRef "U243"))
+		     (NetPortRef "A" (NetInstRef "U234"))
+		     (NetPortRef "A" (NetInstRef "U225"))
+		     (NetPortRef "A" (NetInstRef "U201"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_5_inst"))))
+	       (Net "n142"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U202"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_6_inst"))))
+	       (Net "v_count_6_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U256"))
+		     (NetPortRef "A" (NetInstRef "U239"))
+		     (NetPortRef "B" (NetInstRef "U234"))
+		     (NetPortRef "A" (NetInstRef "U224"))
+		     (NetPortRef "A" (NetInstRef "U204"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_6_inst"))))
+	       (Net "n141"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U205"))
+		     (NetPortRef "D" (NetInstRef "v_count_reg_7_inst"))))
+	       (Net "v_count_7_port"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U249"))
+		     (NetPortRef "C" (NetInstRef "U239"))
+		     (NetPortRef "A" (NetInstRef "U223"))
+		     (NetPortRef "A" (NetInstRef "U209"))
+		     (NetPortRef "Q" (NetInstRef "v_count_reg_7_inst"))))
+	       (Net "n140"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U152"))
+		     (NetPortRef "D" (NetInstRef "h_sync_reg"))))
+	       (Net "h_sync"
+		  (Joined
+		     (NetPortRef "Q" (NetInstRef "h_sync_reg"))
+		     (NetPortRef "h_sync")))
+	       (Net "n138"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U150"))
+		     (NetPortRef "D" (NetInstRef "v_sync_reg"))))
+	       (Net "v_sync"
+		  (Joined
+		     (NetPortRef "Q" (NetInstRef "v_sync_reg"))
+		     (NetPortRef "v_sync")))
+	       (Net "n152"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U170"))
+		     (NetPortRef "D" (NetInstRef "disp_ena_reg"))))
+	       (Net "disp_ena"
+		  (Joined
+		     (NetPortRef "Q" (NetInstRef "disp_ena_reg"))
+		     (NetPortRef "disp_ena")))
+	       (Net "n136"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U210"))
+		     (NetPortRef "D" (NetInstRef "column_reg_7_inst"))))
+	       (Net "n135"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U211"))
+		     (NetPortRef "D" (NetInstRef "column_reg_6_inst"))))
+	       (Net "n134"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U212"))
+		     (NetPortRef "D" (NetInstRef "column_reg_5_inst"))))
+	       (Net "n133"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U213"))
+		     (NetPortRef "D" (NetInstRef "column_reg_4_inst"))))
+	       (Net "n132"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U214"))
+		     (NetPortRef "D" (NetInstRef "column_reg_3_inst"))))
+	       (Net "n131"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U215"))
+		     (NetPortRef "D" (NetInstRef "column_reg_2_inst"))))
+	       (Net "n130"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U216"))
+		     (NetPortRef "D" (NetInstRef "column_reg_1_inst"))))
+	       (Net "n129"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U217"))
+		     (NetPortRef "D" (NetInstRef "column_reg_0_inst"))))
+	       (Net "n128"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U220"))
+		     (NetPortRef "D" (NetInstRef "row_reg_9_inst"))))
+	       (Net "n127"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U222"))
+		     (NetPortRef "D" (NetInstRef "row_reg_8_inst"))))
+	       (Net "n126"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U223"))
+		     (NetPortRef "D" (NetInstRef "row_reg_7_inst"))))
+	       (Net "n125"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U224"))
+		     (NetPortRef "D" (NetInstRef "row_reg_6_inst"))))
+	       (Net "n124"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U225"))
+		     (NetPortRef "D" (NetInstRef "row_reg_5_inst"))))
+	       (Net "n123"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U226"))
+		     (NetPortRef "D" (NetInstRef "row_reg_4_inst"))))
+	       (Net "n122"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U227"))
+		     (NetPortRef "D" (NetInstRef "row_reg_3_inst"))))
+	       (Net "n121"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U228"))
+		     (NetPortRef "D" (NetInstRef "row_reg_2_inst"))))
+	       (Net "n120"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U229"))
+		     (NetPortRef "D" (NetInstRef "row_reg_1_inst"))))
+	       (Net "n119"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U230"))
+		     (NetPortRef "D" (NetInstRef "row_reg_0_inst"))))
+	       (Net "n137"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U151"))
+		     (NetPortRef "A" (NetInstRef "U150"))))
+	       (Net "n252"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U157"))
+		     (NetPortRef "B" (NetInstRef "U151"))))
+	       (Net "n139"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U153"))
+		     (NetPortRef "A" (NetInstRef "U152"))))
+	       (Net "n253"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U162"))
+		     (NetPortRef "B" (NetInstRef "U153"))))
+	       (Net "n217"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U248"))
+		     (NetPortRef "B" (NetInstRef "U247"))
+		     (NetPortRef "A" (NetInstRef "U218"))
+		     (NetPortRef "A" (NetInstRef "U154"))))
+	       (Net "n218"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U219"))
+		     (NetPortRef "B" (NetInstRef "U218"))
+		     (NetPortRef "B" (NetInstRef "U154"))))
+	       (Net "n154"
+		  (Joined
+		     (NetPortRef "S" (NetInstRef "U216"))
+		     (NetPortRef "S" (NetInstRef "U214"))
+		     (NetPortRef "S" (NetInstRef "U212"))
+		     (NetPortRef "S" (NetInstRef "U210"))
+		     (NetPortRef "Y" (NetInstRef "U154"))))
+	       (Net "n220"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U232"))
+		     (NetPortRef "A" (NetInstRef "U231"))
+		     (NetPortRef "A" (NetInstRef "U155"))))
+	       (Net "n155"
+		  (Joined
+		     (NetPortRef "S" (NetInstRef "U222"))
+		     (NetPortRef "A" (NetInstRef "U221"))
+		     (NetPortRef "B" (NetInstRef "U170"))
+		     (NetPortRef "Y" (NetInstRef "U155"))))
+	       (Net "n186"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U286"))
+		     (NetPortRef "B" (NetInstRef "U285"))
+		     (NetPortRef "A" (NetInstRef "U271"))
+		     (NetPortRef "S" (NetInstRef "U270"))
+		     (NetPortRef "A" (NetInstRef "U268"))
+		     (NetPortRef "S" (NetInstRef "U266"))
+		     (NetPortRef "A" (NetInstRef "U264"))
+		     (NetPortRef "S" (NetInstRef "U262"))
+		     (NetPortRef "A" (NetInstRef "U208"))
+		     (NetPortRef "A" (NetInstRef "U178"))
+		     (NetPortRef "A" (NetInstRef "U156"))))
+	       (Net "n156"
+		  (Joined
+		     (NetPortRef "A" (NetInstRef "U259"))
+		     (NetPortRef "A" (NetInstRef "U251"))
+		     (NetPortRef "A" (NetInstRef "U245"))
+		     (NetPortRef "A" (NetInstRef "U236"))
+		     (NetPortRef "B" (NetInstRef "U209"))
+		     (NetPortRef "B" (NetInstRef "U204"))
+		     (NetPortRef "B" (NetInstRef "U201"))
+		     (NetPortRef "B" (NetInstRef "U198"))
+		     (NetPortRef "B" (NetInstRef "U194"))
+		     (NetPortRef "B" (NetInstRef "U190"))
+		     (NetPortRef "B" (NetInstRef "U186"))
+		     (NetPortRef "B" (NetInstRef "U183"))
+		     (NetPortRef "B" (NetInstRef "U174"))
+		     (NetPortRef "Y" (NetInstRef "U156"))))
+	       (Net "n157"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U159"))
+		     (NetPortRef "A" (NetInstRef "U157"))))
+	       (Net "n158"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U233"))
+		     (NetPortRef "A" (NetInstRef "U232"))
+		     (NetPortRef "B" (NetInstRef "U157"))))
+	       (Net "n159"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U158"))
+		     (NetPortRef "C" (NetInstRef "U157"))))
+	       (Net "n160"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U242"))
+		     (NetPortRef "A" (NetInstRef "U241"))
+		     (NetPortRef "A" (NetInstRef "U159"))))
+	       (Net "n161"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U160"))
+		     (NetPortRef "B" (NetInstRef "U159"))))
+	       (Net "n162"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U161"))
+		     (NetPortRef "A" (NetInstRef "U160"))))
+	       (Net "n163"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U278"))
+		     (NetPortRef "A" (NetInstRef "U276"))
+		     (NetPortRef "B" (NetInstRef "U160"))))
+	       (Net "n164"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U165"))
+		     (NetPortRef "A" (NetInstRef "U162"))))
+	       (Net "n165"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U163"))
+		     (NetPortRef "C" (NetInstRef "U162"))))
+	       (Net "n166"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U164"))
+		     (NetPortRef "B" (NetInstRef "U163"))))
+	       (Net "n167"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U169"))
+		     (NetPortRef "A" (NetInstRef "U165"))))
+	       (Net "n168"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U166"))
+		     (NetPortRef "B" (NetInstRef "U165"))))
+	       (Net "n169"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U167"))
+		     (NetPortRef "B" (NetInstRef "U166"))))
+	       (Net "n170"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U168"))
+		     (NetPortRef "A" (NetInstRef "U167"))))
+	       (Net "n171"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U277"))
+		     (NetPortRef "B" (NetInstRef "U276"))
+		     (NetPortRef "A" (NetInstRef "U169"))))
+	       (Net "n172"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U290"))
+		     (NetPortRef "B" (NetInstRef "U288"))
+		     (NetPortRef "B" (NetInstRef "U169"))))
+	       (Net "n173"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U218"))
+		     (NetPortRef "S" (NetInstRef "U217"))
+		     (NetPortRef "S" (NetInstRef "U215"))
+		     (NetPortRef "S" (NetInstRef "U213"))
+		     (NetPortRef "S" (NetInstRef "U211"))
+		     (NetPortRef "A" (NetInstRef "U170"))))
+	       (Net "n175"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U174"))
+		     (NetPortRef "A" (NetInstRef "U171"))))
+	       (Net "n176"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U172"))
+		     (NetPortRef "B" (NetInstRef "U171"))))
+	       (Net "n177"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U173"))
+		     (NetPortRef "A" (NetInstRef "U172"))))
+	       (Net "n178"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U208"))
+		     (NetPortRef "A" (NetInstRef "U207"))
+		     (NetPortRef "A" (NetInstRef "U197"))
+		     (NetPortRef "A" (NetInstRef "U193"))
+		     (NetPortRef "B" (NetInstRef "U189"))
+		     (NetPortRef "B" (NetInstRef "U178"))
+		     (NetPortRef "A" (NetInstRef "U173"))))
+	       (Net "n179"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U283"))
+		     (NetPortRef "B" (NetInstRef "U282"))
+		     (NetPortRef "B" (NetInstRef "U279"))
+		     (NetPortRef "B" (NetInstRef "U173"))))
+	       (Net "n181"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U177"))
+		     (NetPortRef "A" (NetInstRef "U175"))))
+	       (Net "n182"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U176"))
+		     (NetPortRef "B" (NetInstRef "U175"))))
+	       (Net "n183"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U207"))
+		     (NetPortRef "A" (NetInstRef "U206"))
+		     (NetPortRef "B" (NetInstRef "U203"))
+		     (NetPortRef "A" (NetInstRef "U200"))
+		     (NetPortRef "A" (NetInstRef "U185"))
+		     (NetPortRef "A" (NetInstRef "U180"))
+		     (NetPortRef "A" (NetInstRef "U176"))))
+	       (Net "n184"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U182"))
+		     (NetPortRef "B" (NetInstRef "U181"))
+		     (NetPortRef "C" (NetInstRef "U176"))))
+	       (Net "n185"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U178"))
+		     (NetPortRef "B" (NetInstRef "U177"))))
+	       (Net "n187"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U183"))
+		     (NetPortRef "A" (NetInstRef "U179"))))
+	       (Net "n188"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U180"))
+		     (NetPortRef "B" (NetInstRef "U179"))))
+	       (Net "n189"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U181"))
+		     (NetPortRef "B" (NetInstRef "U180"))))
+	       (Net "n190"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U255"))
+		     (NetPortRef "A" (NetInstRef "U254"))
+		     (NetPortRef "A" (NetInstRef "U246"))
+		     (NetPortRef "A" (NetInstRef "U182"))))
+	       (Net "n191"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U247"))
+		     (NetPortRef "B" (NetInstRef "U246"))
+		     (NetPortRef "B" (NetInstRef "U182"))))
+	       (Net "n192"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U186"))
+		     (NetPortRef "A" (NetInstRef "U184"))))
+	       (Net "n193"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U185"))
+		     (NetPortRef "B" (NetInstRef "U184"))))
+	       (Net "n194"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U282"))
+		     (NetPortRef "B" (NetInstRef "U281"))
+		     (NetPortRef "B" (NetInstRef "U185"))))
+	       (Net "n195"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U190"))
+		     (NetPortRef "A" (NetInstRef "U187"))))
+	       (Net "n196"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U188"))
+		     (NetPortRef "B" (NetInstRef "U187"))))
+	       (Net "n197"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U189"))
+		     (NetPortRef "A" (NetInstRef "U188"))))
+	       (Net "n198"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U272"))
+		     (NetPortRef "B" (NetInstRef "U271"))
+		     (NetPortRef "A" (NetInstRef "U189"))))
+	       (Net "n199"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U194"))
+		     (NetPortRef "A" (NetInstRef "U191"))))
+	       (Net "n200"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U192"))
+		     (NetPortRef "B" (NetInstRef "U191"))))
+	       (Net "n201"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U193"))
+		     (NetPortRef "A" (NetInstRef "U192"))))
+	       (Net "n202"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U269"))
+		     (NetPortRef "B" (NetInstRef "U268"))
+		     (NetPortRef "B" (NetInstRef "U193"))))
+	       (Net "n203"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U198"))
+		     (NetPortRef "A" (NetInstRef "U195"))))
+	       (Net "n204"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U196"))
+		     (NetPortRef "B" (NetInstRef "U195"))))
+	       (Net "n205"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U197"))
+		     (NetPortRef "A" (NetInstRef "U196"))))
+	       (Net "n206"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U265"))
+		     (NetPortRef "B" (NetInstRef "U264"))
+		     (NetPortRef "B" (NetInstRef "U197"))))
+	       (Net "n207"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U201"))
+		     (NetPortRef "A" (NetInstRef "U199"))))
+	       (Net "n208"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U200"))
+		     (NetPortRef "B" (NetInstRef "U199"))))
+	       (Net "n209"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U260"))
+		     (NetPortRef "B" (NetInstRef "U259"))
+		     (NetPortRef "B" (NetInstRef "U200"))))
+	       (Net "n210"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U204"))
+		     (NetPortRef "A" (NetInstRef "U202"))))
+	       (Net "n211"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U203"))
+		     (NetPortRef "B" (NetInstRef "U202"))))
+	       (Net "n212"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U252"))
+		     (NetPortRef "B" (NetInstRef "U251"))
+		     (NetPortRef "A" (NetInstRef "U203"))))
+	       (Net "n213"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U209"))
+		     (NetPortRef "A" (NetInstRef "U205"))))
+	       (Net "n214"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U206"))
+		     (NetPortRef "B" (NetInstRef "U205"))))
+	       (Net "n215"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U246"))
+		     (NetPortRef "B" (NetInstRef "U245"))
+		     (NetPortRef "B" (NetInstRef "U206"))))
+	       (Net "n216"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U237"))
+		     (NetPortRef "B" (NetInstRef "U236"))
+		     (NetPortRef "B" (NetInstRef "U208"))))
+	       (Net "n219"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U221"))
+		     (NetPortRef "A" (NetInstRef "U220"))))
+	       (Net "n174"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U231"))
+		     (NetPortRef "S" (NetInstRef "U230"))
+		     (NetPortRef "S" (NetInstRef "U229"))
+		     (NetPortRef "S" (NetInstRef "U228"))
+		     (NetPortRef "S" (NetInstRef "U227"))
+		     (NetPortRef "S" (NetInstRef "U226"))
+		     (NetPortRef "S" (NetInstRef "U225"))
+		     (NetPortRef "S" (NetInstRef "U224"))
+		     (NetPortRef "S" (NetInstRef "U223"))))
+	       (Net "n221"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U235"))
+		     (NetPortRef "A" (NetInstRef "U233"))))
+	       (Net "n222"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U249"))
+		     (NetPortRef "A" (NetInstRef "U247"))
+		     (NetPortRef "B" (NetInstRef "U233"))))
+	       (Net "n223"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U234"))
+		     (NetPortRef "C" (NetInstRef "U233"))))
+	       (Net "n224"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U238"))
+		     (NetPortRef "B" (NetInstRef "U237"))))
+	       (Net "n225"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U243"))
+		     (NetPortRef "A" (NetInstRef "U238"))))
+	       (Net "n226"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U240"))
+		     (NetPortRef "B" (NetInstRef "U238"))))
+	       (Net "n227"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U239"))
+		     (NetPortRef "C" (NetInstRef "U238"))))
+	       (Net "n228"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U241"))
+		     (NetPortRef "B" (NetInstRef "U240"))))
+	       (Net "n229"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U245"))
+		     (NetPortRef "A" (NetInstRef "U244"))))
+	       (Net "n180"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U287"))
+		     (NetPortRef "A" (NetInstRef "U286"))
+		     (NetPortRef "S" (NetInstRef "U284"))
+		     (NetPortRef "S" (NetInstRef "U283"))
+		     (NetPortRef "A" (NetInstRef "U281"))
+		     (NetPortRef "S" (NetInstRef "U276"))
+		     (NetPortRef "S" (NetInstRef "U256"))
+		     (NetPortRef "S" (NetInstRef "U247"))))
+	       (Net "n230"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U251"))
+		     (NetPortRef "A" (NetInstRef "U250"))))
+	       (Net "n231"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U254"))
+		     (NetPortRef "A" (NetInstRef "U252"))))
+	       (Net "n232"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U253"))
+		     (NetPortRef "B" (NetInstRef "U252"))))
+	       (Net "n233"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U256"))
+		     (NetPortRef "B" (NetInstRef "U255"))
+		     (NetPortRef "A" (NetInstRef "U253"))))
+	       (Net "n234"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U257"))
+		     (NetPortRef "A" (NetInstRef "U255"))
+		     (NetPortRef "B" (NetInstRef "U253"))))
+	       (Net "n235"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U263"))
+		     (NetPortRef "A" (NetInstRef "U260"))
+		     (NetPortRef "A" (NetInstRef "U257"))))
+	       (Net "n236"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U261"))
+		     (NetPortRef "B" (NetInstRef "U260"))
+		     (NetPortRef "B" (NetInstRef "U257"))))
+	       (Net "n237"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U259"))
+		     (NetPortRef "A" (NetInstRef "U258"))))
+	       (Net "n238"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U262"))
+		     (NetPortRef "A" (NetInstRef "U261"))))
+	       (Net "n239"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U270"))
+		     (NetPortRef "B" (NetInstRef "U269"))
+		     (NetPortRef "B" (NetInstRef "U267"))
+		     (NetPortRef "A" (NetInstRef "U263"))))
+	       (Net "n240"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U266"))
+		     (NetPortRef "B" (NetInstRef "U265"))
+		     (NetPortRef "B" (NetInstRef "U263"))))
+	       (Net "n241"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U275"))
+		     (NetPortRef "A" (NetInstRef "U274"))
+		     (NetPortRef "A" (NetInstRef "U267"))
+		     (NetPortRef "C" (NetInstRef "U263"))))
+	       (Net "n242"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U267"))
+		     (NetPortRef "A" (NetInstRef "U265"))))
+	       (Net "n243"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U274"))
+		     (NetPortRef "A" (NetInstRef "U272"))
+		     (NetPortRef "A" (NetInstRef "U269"))))
+	       (Net "n244"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U273"))
+		     (NetPortRef "B" (NetInstRef "U272"))))
+	       (Net "n245"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U276"))
+		     (NetPortRef "B" (NetInstRef "U275"))
+		     (NetPortRef "A" (NetInstRef "U273"))))
+	       (Net "n246"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U279"))
+		     (NetPortRef "A" (NetInstRef "U275"))
+		     (NetPortRef "B" (NetInstRef "U273"))))
+	       (Net "n247"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U284"))
+		     (NetPortRef "A" (NetInstRef "U282"))
+		     (NetPortRef "A" (NetInstRef "U279"))))
+	       (Net "n248"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U281"))
+		     (NetPortRef "A" (NetInstRef "U280"))))
+	       (Net "n249"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U288"))
+		     (NetPortRef "B" (NetInstRef "U287"))))
+	       (Net "n250"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U291"))
+		     (NetPortRef "A" (NetInstRef "U288"))))
+	       (Net "n251"
+		  (Joined
+		     (NetPortRef "Y" (NetInstRef "U289"))
+		     (NetPortRef "C" (NetInstRef "U288")))))
+	    (Layout "Tmp_Cell_"
+	       (Status
+		  (Written
+		     (TimeStamp 117 12 19 11 53 13)
+		     (Author "Madonna")
+		     (Program "phil")))
+	       (LayBbx 184 169)
+	       (LaySlice vertical
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U280"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 13 0 1 0))
+			(LayInst "U290"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 11 0 1 0))
+			(LayInst "U166"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 7 0 1 0))
+			(LayInst "column_reg_3_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 7 0 -1 28))
+			(LayInst "U216"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 -1 28))
+			(LayInst "U276"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 1 0)))
+		     (LayInstList
+			(LayInst "U214"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 1 28))
+			(LayInst "row_reg_3_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 -1 56)))
+		     (LayInstList
+			(LayInst "U169"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 7 0 -1 84))
+			(LayInst "U251"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 4 0 -1 84))
+			(LayInst "U288"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 -1 84))
+			(LayInst "v_count_reg_2_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 1 56)))
+		     (LayInstList
+			(LayInst "h_count_reg_6_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 -1 112))
+			(LayInst "row_reg_5_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 1 84)))
+		     (LayInstList
+			(LayInst "U250"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 7 0 -1 140))
+			(LayInst "U211"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 -1 140))
+			(LayInst "v_count_reg_5_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 1 112)))
+		     (LayInstList
+			(LayInst "U201"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 -1 168))
+			(LayInst "U199"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 0 0 1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U277"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 30 0 -1 28))
+			(LayInst "U188"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 30 0 1 0))
+			(LayInst "U281"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 18 0 1 0))
+			(LayInst "U291"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 26 0 1 0))
+			(LayInst "U207"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 16 0 1 0)))
+		     (LayInstList
+			(LayInst "column_reg_6_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 21 0 -1 56))
+			(LayInst "h_count_reg_5_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 16 0 1 28)))
+		     (LayInstList
+			(LayInst "U227"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 16 0 -1 84)))
+		     (LayInstList
+			(LayInst "U190"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 21 0 -1 112))
+			(LayInst "U187"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 21 0 1 84)))
+		     (LayInstList
+			(LayInst "U225"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 16 0 -1 140)))
+		     (LayInstList
+			(LayInst "U258"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 29 0 1 140))
+			(LayInst "U244"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 20 0 -1 168))
+			(LayInst "U245"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 20 0 1 140))
+			(LayInst "U259"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 16 0 -1 168))
+			(LayInst "U200"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 16 0 1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U167"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 45 0 1 0))
+			(LayInst "U168"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 42 0 1 0))
+			(LayInst "U285"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 39 0 1 0))
+			(LayInst "U284"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 1 0))
+			(LayInst "row_reg_6_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 -1 28)))
+		     (LayInstList
+			(LayInst "U173"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 44 0 1 28))
+			(LayInst "h_count_reg_0_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 42 0 -1 56))
+			(LayInst "U283"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 37 0 1 28)))
+		     (LayInstList
+			(LayInst "U172"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 40 0 -1 84))
+			(LayInst "U286"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 38 0 -1 84))
+			(LayInst "U206"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 35 0 -1 84))
+			(LayInst "U171"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 -1 84))
+			(LayInst "column_reg_0_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 1 56)))
+		     (LayInstList
+			(LayInst "U252"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 38 0 -1 112))
+			(LayInst "U203"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 35 0 -1 112))
+			(LayInst "U182"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 -1 112))
+			(LayInst "U246"
+			   (LayCellRef "ex210" (LayCirRef "ex210" (LayFunRef "ex210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 1 84)))
+		     (LayInstList
+			(LayInst "U161"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 42 0 1 112))
+			(LayInst "U160"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 33 0 -1 140))
+			(LayInst "U242"
+			   (LayCellRef "no310" (LayCirRef "no310" (LayFunRef "no310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 33 0 1 112))
+			(LayInst "U278"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 46 0 1 112)))
+		     (LayInstList
+			(LayInst "U174"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 -1 168))
+			(LayInst "v_count_reg_0_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 32 0 1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U279"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 60 0 -1 28))
+			(LayInst "U282"
+			   (LayCellRef "ex210" (LayCirRef "ex210" (LayFunRef "ex210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 53 0 -1 28))
+			(LayInst "column_reg_2_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 1 0)))
+		     (LayInstList
+			(LayInst "U247"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 1 28)))
+		     (LayInstList
+			(LayInst "U217"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 53 0 1 56))
+			(LayInst "U224"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 -1 84)))
+		     (LayInstList
+			(LayInst "U254"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 54 0 -1 112))
+			(LayInst "U219"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 51 0 -1 112))
+			(LayInst "U240"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 -1 112))
+			(LayInst "column_reg_4_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 1 84)))
+		     (LayInstList
+			(LayInst "U241"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 55 0 1 112))
+			(LayInst "U159"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 52 0 -1 140))
+			(LayInst "U238"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 -1 140))
+			(LayInst "U230"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 1 112)))
+		     (LayInstList
+			(LayInst "row_reg_0_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 48 0 -1 168))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U185"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 69 0 1 0))
+			(LayInst "h_count_reg_3_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 -1 28)))
+		     (LayInstList
+			(LayInst "U215"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 -1 56))
+			(LayInst "column_reg_7_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 1 28)))
+		     (LayInstList
+			(LayInst "shz_reg"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 71 0 -1 84))
+			(LayInst "U237"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 68 0 -1 84))
+			(LayInst "U158"
+			   (LayCellRef "no310" (LayCirRef "no310" (LayFunRef "no310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 -1 84))
+			(LayInst "U266"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 1 56)))
+		     (LayInstList
+			(LayInst "U164"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 74 0 -1 112))
+			(LayInst "U243"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 72 0 1 84))
+			(LayInst "U289"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 71 0 -1 112))
+			(LayInst "U234"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 69 0 1 84))
+			(LayInst "U262"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 -1 112)))
+		     (LayInstList
+			(LayInst "U213"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 -1 140))
+			(LayInst "h_count_reg_7_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 1 112)))
+		     (LayInstList
+			(LayInst "h_count_reg_1_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 69 0 -1 168))
+			(LayInst "v_count_reg_6_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 64 0 1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "v_sync_reg"
+			   (LayCellRef "dfn10" (LayCirRef "dfn10" (LayFunRef "dfn10" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 80 0 1 0)))
+		     (LayInstList
+			(LayInst "U156"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 88 0 1 28))
+			(LayInst "U255"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 81 0 -1 56))
+			(LayInst "U208"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 92 0 -1 56))
+			(LayInst "U236"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 92 0 1 28)))
+		     (LayInstList
+			(LayInst "U210"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 80 0 1 56)))
+		     (LayInstList
+			(LayInst "U249"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 93 0 1 84))
+			(LayInst "U253"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 85 0 -1 112))
+			(LayInst "U287"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 85 0 1 84)))
+		     (LayInstList
+			(LayInst "U261"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 87 0 -1 140))
+			(LayInst "U163"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 85 0 1 112))
+			(LayInst "U256"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 80 0 -1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U275"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 100 0 1 0))
+			(LayInst "U273"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 97 0 1 0))
+			(LayInst "disp_ena_reg"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 -1 28)))
+		     (LayInstList
+			(LayInst "U248"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 109 0 -1 56))
+			(LayInst "U271"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 105 0 -1 56))
+			(LayInst "U218"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 100 0 -1 56))
+			(LayInst "U154"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 -1 56))
+			(LayInst "column_reg_5_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 1 28)))
+		     (LayInstList
+			(LayInst "h_count_reg_2_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 103 0 -1 84))
+			(LayInst "U267"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 100 0 -1 84))
+			(LayInst "U263"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 -1 84))
+			(LayInst "U265"
+			   (LayCellRef "ex210" (LayCirRef "ex210" (LayFunRef "ex210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 1 56)))
+		     (LayInstList
+			(LayInst "U270"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 -1 112))
+			(LayInst "U165"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 1 84)))
+		     (LayInstList
+			(LayInst "U157"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 103 0 -1 140))
+			(LayInst "U228"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 -1 140))
+			(LayInst "row_reg_7_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 1 112)))
+		     (LayInstList
+			(LayInst "column_reg_1_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 103 0 1 140))
+			(LayInst "U257"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 100 0 -1 168))
+			(LayInst "U162"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 -1 168))
+			(LayInst "U260"
+			   (LayCellRef "ex210" (LayCirRef "ex210" (LayFunRef "ex210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 96 0 1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U150"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 120 0 -1 28))
+			(LayInst "U268"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 117 0 -1 28))
+			(LayInst "row_reg_8_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 112 0 1 0)))
+		     (LayInstList
+			(LayInst "U155"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 123 0 1 28))
+			(LayInst "U232"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 120 0 1 28))
+			(LayInst "U193"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 117 0 1 28))
+			(LayInst "v_count_reg_9_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 112 0 -1 56)))
+		     (LayInstList
+			(LayInst "U212"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 112 0 1 56)))
+		     (LayInstList
+			(LayInst "U231"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 119 0 -1 112))
+			(LayInst "U170"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 123 0 -1 112))
+			(LayInst "U233"
+			   (LayCellRef "no310" (LayCirRef "no310" (LayFunRef "no310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 114 0 -1 112))
+			(LayInst "row_reg_2_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 112 0 1 84)))
+		     (LayInstList
+			(LayInst "U151"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 117 0 1 112))
+			(LayInst "U223"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 112 0 -1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U176"
+			   (LayCellRef "na310" (LayCirRef "na310" (LayFunRef "na310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 140 0 1 0))
+			(LayInst "U181"
+			   (LayCellRef "ex210" (LayCirRef "ex210" (LayFunRef "ex210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 133 0 1 0))
+			(LayInst "h_count_reg_4_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 128 0 -1 28)))
+		     (LayInstList
+			(LayInst "U177"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 140 0 -1 56))
+			(LayInst "U222"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 133 0 -1 56))
+			(LayInst "row_reg_1_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 128 0 1 28)))
+		     (LayInstList
+			(LayInst "U192"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 134 0 -1 84))
+			(LayInst "U194"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 131 0 -1 84))
+			(LayInst "U175"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 128 0 -1 84))
+			(LayInst "v_count_reg_3_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 128 0 1 56)))
+		     (LayInstList
+			(LayInst "U226"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 133 0 1 84))
+			(LayInst "row_reg_4_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 128 0 -1 112)))
+		     (LayInstList
+			(LayInst "h_sync_reg"
+			   (LayCellRef "dfn10" (LayCirRef "dfn10" (LayFunRef "dfn10" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 128 0 1 112)))
+		     (LayInstList
+			(LayInst "U153"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 128 0 1 140))
+			(LayInst "U180"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 132 0 -1 168))
+			(LayInst "U239"
+			   (LayCellRef "no310" (LayCirRef "no310" (LayFunRef "no310" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 132 0 1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U184"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 152 0 1 28))
+			(LayInst "U186"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 149 0 1 28))
+			(LayInst "v_count_reg_1_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 144 0 -1 56)))
+		     (LayInstList
+			(LayInst "U204"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 147 0 -1 84))
+			(LayInst "U198"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 144 0 -1 84)))
+		     (LayInstList
+			(LayInst "U269"
+			   (LayCellRef "ex210" (LayCirRef "ex210" (LayFunRef "ex210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 144 0 1 84)))
+		     (LayInstList
+			(LayInst "U274"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 148 0 1 112))
+			(LayInst "U191"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 145 0 1 112))
+			(LayInst "U229"
+			   (LayCellRef "mu111" (LayCirRef "mu111" (LayFunRef "mu111" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 144 0 -1 140)))
+		     (LayInstList
+			(LayInst "U152"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 144 0 -1 168))
+			(LayInst "U183"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 144 0 1 140))))
+		  (LaySlice horizontal
+		     (LayInstList
+			(LayInst "U189"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 173 0 1 0))
+			(LayInst "U272"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 177 0 -1 28))
+			(LayInst "U264"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 177 0 1 0))
+			(LayInst "U178"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 180 0 -1 28))
+			(LayInst "U205"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 180 0 1 0)))
+		     (LayInstList
+			(LayInst "U196"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 181 0 -1 56))
+			(LayInst "U197"
+			   (LayCellRef "no210" (LayCirRef "no210" (LayFunRef "no210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 181 0 1 28)))
+		     (LayInstList
+			(LayInst "U235"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 163 0 -1 84))
+			(LayInst "U195"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 -1 84))
+			(LayInst "v_count_reg_4_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 1 56)))
+		     (LayInstList
+			(LayInst "U202"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 -1 112))
+			(LayInst "v_count_reg_7_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 1 84)))
+		     (LayInstList
+			(LayInst "U220"
+			   (LayCellRef "iv110" (LayCirRef "iv110" (LayFunRef "iv110" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 166 0 -1 140))
+			(LayInst "U209"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 163 0 -1 140))
+			(LayInst "U221"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 -1 140))
+			(LayInst "row_reg_9_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 1 112)))
+		     (LayInstList
+			(LayInst "U179"
+			   (LayCellRef "na210" (LayCirRef "na210" (LayFunRef "na210" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 -1 168))
+			(LayInst "v_count_reg_8_inst"
+			   (LayCellRef "dfr11" (LayCirRef "dfr11" (LayFunRef "dfr11" (LayLibRef "g_digilib5_99"))))
+			   (Orient 1 0 160 0 1 140))))))))))

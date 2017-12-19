@@ -1,0 +1,333 @@
+
+library ieee,CellsLib;
+
+use ieee.std_logic_1164.all;
+use CellsLib.CellsLib_DECL_PACK.all;
+
+architecture synthesised of vga_controller is
+
+   component na310
+      port( A, B, C : in std_logic;  Y : out std_logic);
+   end component;
+   
+   component iv110
+      port( A : in std_logic;  Y : out std_logic);
+   end component;
+   
+   component no210
+      port( A, B : in std_logic;  Y : out std_logic);
+   end component;
+   
+   component mu111
+      port( A, B, S : in std_logic;  Y : out std_logic);
+   end component;
+   
+   component ex210
+      port( A, B : in std_logic;  Y : out std_logic);
+   end component;
+   
+   component na210
+      port( A, B : in std_logic;  Y : out std_logic);
+   end component;
+   
+   component no310
+      port( A, B, C : in std_logic;  Y : out std_logic);
+   end component;
+   
+   component dfr11
+      port( D, R, CK : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component dfn10
+      port( D, CK : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal column_7_port, column_6_port, column_5_port, column_4_port, 
+      column_3_port, column_2_port, column_1_port, column_0_port, row_9_port, 
+      row_8_port, row_7_port, row_6_port, row_5_port, row_4_port, row_3_port, 
+      row_2_port, row_1_port, row_0_port, h_count_7_port, h_count_6_port, 
+      h_count_5_port, h_count_4_port, h_count_3_port, h_count_2_port, 
+      h_count_1_port, h_count_0_port, v_count_9_port, v_count_8_port, 
+      v_count_7_port, v_count_6_port, v_count_5_port, v_count_4_port, 
+      v_count_3_port, v_count_2_port, v_count_1_port, v_count_0_port, N38, N39,
+      N40, N41, N42, N43, N44, N45, N46, n122, n123, n124, n125, n126, n127, 
+      n128, n129, n130, n131, n132, n133, n134, n135, n136, n137, n138, n139, 
+      n140, n141, n142, n143, n144, n145, n146, n147, n148, n149, n150, n151, 
+      n152, n153, n155, n160, n161, n162, n163, n164, n165, n166, n167, n168, 
+      n169, n170, n171, n172, n173, n174, n175, n176, n177, n178, n179, n180, 
+      n181, n182, n183, n184, n185, n186, n187, n188, n189, n190, n191, n192, 
+      n193, n194, n195, n196, n197, n198, n199, n200, n201, n202, n203, n204, 
+      n205, n206, n207, n208, n209, n210, n211, n212, n213, n214, n215, n216, 
+      n217, n218, n219, n220, n221, n222, n223, n224, n225, n226, n227, n228, 
+      n229, n230, n231, n232, n233, n234, n235, n236, n237, n238, n239, n240, 
+      n241, n242, n243, n244, n245, n246, n247, n248, n249, n250, n251, n252, 
+      n253, n254, n255, n256, n257, n258, n259, n260, n264, n265 : std_logic;
+
+begin
+   column <= ( column_7_port, column_6_port, column_5_port, column_4_port, 
+      column_3_port, column_2_port, column_1_port, column_0_port );
+   row <= ( row_9_port, row_8_port, row_7_port, row_6_port, row_5_port, 
+      row_4_port, row_3_port, row_2_port, row_1_port, row_0_port );
+   
+   v_count_reg_0_inst : dfr11 port map( D => n153, R => reset, CK => pixel_clk,
+                           Q => v_count_0_port);
+   h_count_reg_7_inst : dfr11 port map( D => N45, R => reset, CK => pixel_clk, 
+                           Q => h_count_7_port);
+   h_count_reg_6_inst : dfr11 port map( D => N44, R => reset, CK => pixel_clk, 
+                           Q => h_count_6_port);
+   h_count_reg_5_inst : dfr11 port map( D => N43, R => reset, CK => pixel_clk, 
+                           Q => h_count_5_port);
+   h_count_reg_4_inst : dfr11 port map( D => N42, R => reset, CK => pixel_clk, 
+                           Q => h_count_4_port);
+   h_count_reg_3_inst : dfr11 port map( D => N41, R => reset, CK => pixel_clk, 
+                           Q => h_count_3_port);
+   h_count_reg_2_inst : dfr11 port map( D => N40, R => reset, CK => pixel_clk, 
+                           Q => h_count_2_port);
+   h_count_reg_1_inst : dfr11 port map( D => N39, R => reset, CK => pixel_clk, 
+                           Q => h_count_1_port);
+   h_count_reg_0_inst : dfr11 port map( D => N38, R => reset, CK => pixel_clk, 
+                           Q => h_count_0_port);
+   v_count_reg_9_inst : dfr11 port map( D => n152, R => reset, CK => pixel_clk,
+                           Q => v_count_9_port);
+   v_count_reg_8_inst : dfr11 port map( D => n151, R => reset, CK => pixel_clk,
+                           Q => v_count_8_port);
+   shz_reg : dfr11 port map( D => N46, R => reset, CK => pixel_clk, Q => shz);
+   v_count_reg_1_inst : dfr11 port map( D => n150, R => reset, CK => pixel_clk,
+                           Q => v_count_1_port);
+   v_count_reg_2_inst : dfr11 port map( D => n149, R => reset, CK => pixel_clk,
+                           Q => v_count_2_port);
+   v_count_reg_3_inst : dfr11 port map( D => n148, R => reset, CK => pixel_clk,
+                           Q => v_count_3_port);
+   v_count_reg_4_inst : dfr11 port map( D => n147, R => reset, CK => pixel_clk,
+                           Q => v_count_4_port);
+   v_count_reg_5_inst : dfr11 port map( D => n146, R => reset, CK => pixel_clk,
+                           Q => v_count_5_port);
+   v_count_reg_6_inst : dfr11 port map( D => n145, R => reset, CK => pixel_clk,
+                           Q => v_count_6_port);
+   v_count_reg_7_inst : dfr11 port map( D => n144, R => reset, CK => pixel_clk,
+                           Q => v_count_7_port);
+   h_sync_reg : dfn10 port map( D => n143, CK => pixel_clk, Q => h_sync);
+   v_sync_reg : dfn10 port map( D => n141, CK => pixel_clk, Q => v_sync);
+   disp_ena_reg : dfr11 port map( D => n155, R => reset, CK => pixel_clk, Q => 
+                           disp_ena);
+   column_reg_7_inst : dfr11 port map( D => n139, R => reset, CK => pixel_clk, 
+                           Q => column_7_port);
+   column_reg_6_inst : dfr11 port map( D => n138, R => reset, CK => pixel_clk, 
+                           Q => column_6_port);
+   column_reg_5_inst : dfr11 port map( D => n137, R => reset, CK => pixel_clk, 
+                           Q => column_5_port);
+   column_reg_4_inst : dfr11 port map( D => n136, R => reset, CK => pixel_clk, 
+                           Q => column_4_port);
+   column_reg_3_inst : dfr11 port map( D => n135, R => reset, CK => pixel_clk, 
+                           Q => column_3_port);
+   column_reg_2_inst : dfr11 port map( D => n134, R => reset, CK => pixel_clk, 
+                           Q => column_2_port);
+   column_reg_1_inst : dfr11 port map( D => n133, R => reset, CK => pixel_clk, 
+                           Q => column_1_port);
+   column_reg_0_inst : dfr11 port map( D => n132, R => reset, CK => pixel_clk, 
+                           Q => column_0_port);
+   row_reg_9_inst : dfr11 port map( D => n131, R => reset, CK => pixel_clk, Q 
+                           => row_9_port);
+   row_reg_8_inst : dfr11 port map( D => n130, R => reset, CK => pixel_clk, Q 
+                           => row_8_port);
+   row_reg_7_inst : dfr11 port map( D => n129, R => reset, CK => pixel_clk, Q 
+                           => row_7_port);
+   row_reg_6_inst : dfr11 port map( D => n128, R => reset, CK => pixel_clk, Q 
+                           => row_6_port);
+   row_reg_5_inst : dfr11 port map( D => n127, R => reset, CK => pixel_clk, Q 
+                           => row_5_port);
+   row_reg_4_inst : dfr11 port map( D => n126, R => reset, CK => pixel_clk, Q 
+                           => row_4_port);
+   row_reg_3_inst : dfr11 port map( D => n125, R => reset, CK => pixel_clk, Q 
+                           => row_3_port);
+   row_reg_2_inst : dfr11 port map( D => n124, R => reset, CK => pixel_clk, Q 
+                           => row_2_port);
+   row_reg_1_inst : dfr11 port map( D => n123, R => reset, CK => pixel_clk, Q 
+                           => row_1_port);
+   row_reg_0_inst : dfr11 port map( D => n122, R => reset, CK => pixel_clk, Q 
+                           => row_0_port);
+   U156 : iv110 port map( A => n140, Y => n141);
+   U157 : no210 port map( A => reset, B => n264, Y => n140);
+   U158 : iv110 port map( A => n142, Y => n143);
+   U159 : no210 port map( A => reset, B => n265, Y => n142);
+   U160 : no210 port map( A => n226, B => n227, Y => n160);
+   U161 : iv110 port map( A => n229, Y => n161);
+   U162 : iv110 port map( A => n195, Y => n162);
+   U163 : iv110 port map( A => n163, Y => red_o);
+   U164 : no210 port map( A => RGB(2), B => red, Y => n163);
+   U165 : iv110 port map( A => n164, Y => green_o);
+   U166 : no210 port map( A => RGB(1), B => green, Y => n164);
+   U167 : iv110 port map( A => n165, Y => blue_o);
+   U168 : no210 port map( A => RGB(0), B => blue, Y => n165);
+   U169 : na310 port map( A => n166, B => n167, C => n168, Y => n264);
+   U170 : no310 port map( A => v_count_3_port, B => v_count_9_port, C => 
+                           v_count_4_port, Y => n168);
+   U171 : no210 port map( A => n169, B => n170, Y => n166);
+   U172 : no210 port map( A => n171, B => n172, Y => n170);
+   U173 : no210 port map( A => v_count_0_port, B => v_count_1_port, Y => n171);
+   U174 : na310 port map( A => n173, B => h_count_7_port, C => n174, Y => n265)
+                           ;
+   U175 : no210 port map( A => h_count_6_port, B => n175, Y => n174);
+   U176 : iv110 port map( A => h_count_5_port, Y => n175);
+   U177 : mu111 port map( A => n176, B => n177, S => h_count_4_port, Y => n173)
+                           ;
+   U178 : na310 port map( A => h_count_2_port, B => n178, C => h_count_3_port, 
+                           Y => n177);
+   U179 : iv110 port map( A => n179, Y => n178);
+   U180 : no210 port map( A => h_count_1_port, B => h_count_0_port, Y => n179);
+   U181 : na210 port map( A => n180, B => n181, Y => n176);
+   U182 : no210 port map( A => n182, B => n161, Y => n155);
+   U183 : na210 port map( A => n184, B => n185, Y => n153);
+   U184 : iv110 port map( A => n186, Y => n185);
+   U185 : no210 port map( A => n187, B => n188, Y => n186);
+   U186 : na210 port map( A => v_count_0_port, B => n162, Y => n184);
+   U187 : na210 port map( A => n190, B => n191, Y => n152);
+   U188 : na310 port map( A => n192, B => v_count_8_port, C => n193, Y => n191)
+                           ;
+   U189 : na210 port map( A => v_count_9_port, B => n194, Y => n190);
+   U190 : na210 port map( A => n195, B => n187, Y => n194);
+   U191 : na210 port map( A => n196, B => n197, Y => n151);
+   U192 : na210 port map( A => n192, B => n198, Y => n197);
+   U193 : ex210 port map( A => v_count_8_port, B => n193, Y => n198);
+   U194 : no210 port map( A => n199, B => n200, Y => n193);
+   U195 : na210 port map( A => v_count_8_port, B => n162, Y => n196);
+   U196 : na210 port map( A => n201, B => n202, Y => n150);
+   U197 : na210 port map( A => n192, B => n203, Y => n202);
+   U198 : na210 port map( A => v_count_1_port, B => n162, Y => n201);
+   U199 : na210 port map( A => n204, B => n205, Y => n149);
+   U200 : iv110 port map( A => n206, Y => n205);
+   U201 : no210 port map( A => n207, B => n187, Y => n206);
+   U202 : na210 port map( A => v_count_2_port, B => n162, Y => n204);
+   U203 : na210 port map( A => n208, B => n209, Y => n148);
+   U204 : iv110 port map( A => n210, Y => n209);
+   U205 : no210 port map( A => n187, B => n211, Y => n210);
+   U206 : na210 port map( A => v_count_3_port, B => n162, Y => n208);
+   U207 : na210 port map( A => n212, B => n213, Y => n147);
+   U208 : iv110 port map( A => n214, Y => n213);
+   U209 : no210 port map( A => n187, B => n215, Y => n214);
+   U210 : na210 port map( A => v_count_4_port, B => n162, Y => n212);
+   U211 : na210 port map( A => n216, B => n217, Y => n146);
+   U212 : na210 port map( A => n192, B => n218, Y => n217);
+   U213 : na210 port map( A => v_count_5_port, B => n162, Y => n216);
+   U214 : na210 port map( A => n219, B => n220, Y => n145);
+   U215 : na210 port map( A => n221, B => n192, Y => n220);
+   U216 : na210 port map( A => v_count_6_port, B => n162, Y => n219);
+   U217 : na210 port map( A => n222, B => n223, Y => n144);
+   U218 : na210 port map( A => n192, B => n224, Y => n223);
+   U219 : iv110 port map( A => n187, Y => n192);
+   U220 : na210 port map( A => n195, B => n225, Y => n187);
+   U221 : na210 port map( A => v_count_7_port, B => n162, Y => n222);
+   U222 : mu111 port map( A => h_count_7_port, B => column_7_port, S => n160, Y
+                           => n139);
+   U223 : mu111 port map( A => h_count_6_port, B => column_6_port, S => n182, Y
+                           => n138);
+   U224 : mu111 port map( A => h_count_5_port, B => column_5_port, S => n160, Y
+                           => n137);
+   U225 : mu111 port map( A => h_count_4_port, B => column_4_port, S => n182, Y
+                           => n136);
+   U226 : mu111 port map( A => h_count_3_port, B => column_3_port, S => n160, Y
+                           => n135);
+   U227 : mu111 port map( A => h_count_2_port, B => column_2_port, S => n182, Y
+                           => n134);
+   U228 : mu111 port map( A => h_count_1_port, B => column_1_port, S => n160, Y
+                           => n133);
+   U229 : mu111 port map( A => h_count_0_port, B => column_0_port, S => n182, Y
+                           => n132);
+   U230 : no210 port map( A => n226, B => n227, Y => n182);
+   U231 : no210 port map( A => h_count_6_port, B => h_count_5_port, Y => n227);
+   U232 : iv110 port map( A => n228, Y => n131);
+   U233 : na210 port map( A => n161, B => row_9_port, Y => n228);
+   U234 : mu111 port map( A => v_count_8_port, B => row_8_port, S => n161, Y =>
+                           n130);
+   U235 : mu111 port map( A => v_count_7_port, B => row_7_port, S => n183, Y =>
+                           n129);
+   U236 : mu111 port map( A => v_count_6_port, B => row_6_port, S => n183, Y =>
+                           n128);
+   U237 : mu111 port map( A => v_count_5_port, B => row_5_port, S => n183, Y =>
+                           n127);
+   U238 : mu111 port map( A => v_count_4_port, B => row_4_port, S => n183, Y =>
+                           n126);
+   U239 : mu111 port map( A => v_count_3_port, B => row_3_port, S => n183, Y =>
+                           n125);
+   U240 : mu111 port map( A => v_count_2_port, B => row_2_port, S => n183, Y =>
+                           n124);
+   U241 : mu111 port map( A => v_count_1_port, B => row_1_port, S => n183, Y =>
+                           n123);
+   U242 : mu111 port map( A => v_count_0_port, B => row_0_port, S => n183, Y =>
+                           n122);
+   U243 : iv110 port map( A => n229, Y => n183);
+   U244 : no210 port map( A => n167, B => v_count_9_port, Y => n229);
+   U245 : no310 port map( A => n230, B => n231, C => n232, Y => n167);
+   U246 : na210 port map( A => v_count_5_port, B => v_count_6_port, Y => n232);
+   U247 : iv110 port map( A => v_count_8_port, Y => n230);
+   U248 : no210 port map( A => n162, B => n225, Y => N46);
+   U249 : na210 port map( A => v_count_9_port, B => n233, Y => n225);
+   U250 : na310 port map( A => n234, B => n235, C => n236, Y => n233);
+   U251 : no310 port map( A => v_count_6_port, B => v_count_8_port, C => 
+                           v_count_7_port, Y => n236);
+   U252 : na210 port map( A => v_count_3_port, B => n237, Y => n235);
+   U253 : iv110 port map( A => n169, Y => n237);
+   U254 : no310 port map( A => v_count_1_port, B => v_count_2_port, C => 
+                           v_count_0_port, Y => n169);
+   U255 : no210 port map( A => v_count_5_port, B => v_count_4_port, Y => n234);
+   U256 : iv110 port map( A => n238, Y => N45);
+   U257 : na210 port map( A => n162, B => n224, Y => n238);
+   U258 : ex210 port map( A => n199, B => n200, Y => n224);
+   U259 : mu111 port map( A => n231, B => n226, S => n189, Y => n200);
+   U260 : iv110 port map( A => h_count_7_port, Y => n226);
+   U261 : iv110 port map( A => v_count_7_port, Y => n231);
+   U262 : iv110 port map( A => n239, Y => N44);
+   U263 : na210 port map( A => n162, B => n221, Y => n239);
+   U264 : no210 port map( A => n240, B => n241, Y => n221);
+   U265 : no210 port map( A => n242, B => n243, Y => n241);
+   U266 : iv110 port map( A => n199, Y => n240);
+   U267 : na210 port map( A => n243, B => n242, Y => n199);
+   U268 : mu111 port map( A => v_count_6_port, B => h_count_6_port, S => n189, 
+                           Y => n242);
+   U269 : no210 port map( A => n244, B => n245, Y => n243);
+   U270 : iv110 port map( A => n246, Y => N43);
+   U271 : na210 port map( A => n162, B => n218, Y => n246);
+   U272 : ex210 port map( A => n244, B => n245, Y => n218);
+   U273 : iv110 port map( A => n247, Y => n245);
+   U274 : mu111 port map( A => h_count_5_port, B => v_count_5_port, S => n195, 
+                           Y => n247);
+   U275 : na310 port map( A => n248, B => n249, C => n250, Y => n244);
+   U276 : no210 port map( A => n195, B => n215, Y => N42);
+   U277 : ex210 port map( A => n251, B => n249, Y => n215);
+   U278 : mu111 port map( A => h_count_4_port, B => v_count_4_port, S => n195, 
+                           Y => n249);
+   U279 : na210 port map( A => n250, B => n248, Y => n251);
+   U280 : no210 port map( A => n195, B => n211, Y => N41);
+   U281 : ex210 port map( A => n252, B => n248, Y => n211);
+   U282 : mu111 port map( A => h_count_3_port, B => v_count_3_port, S => n195, 
+                           Y => n248);
+   U283 : no210 port map( A => n195, B => n207, Y => N40);
+   U284 : na210 port map( A => n252, B => n253, Y => n207);
+   U285 : na210 port map( A => n254, B => n255, Y => n253);
+   U286 : iv110 port map( A => n250, Y => n252);
+   U287 : no210 port map( A => n255, B => n254, Y => n250);
+   U288 : mu111 port map( A => n172, B => n180, S => n189, Y => n254);
+   U289 : iv110 port map( A => h_count_2_port, Y => n180);
+   U290 : iv110 port map( A => v_count_2_port, Y => n172);
+   U291 : na210 port map( A => n256, B => n188, Y => n255);
+   U292 : iv110 port map( A => n257, Y => N39);
+   U293 : na210 port map( A => n189, B => n203, Y => n257);
+   U294 : ex210 port map( A => n256, B => n188, Y => n203);
+   U295 : mu111 port map( A => v_count_0_port, B => h_count_0_port, S => n189, 
+                           Y => n188);
+   U296 : mu111 port map( A => v_count_1_port, B => h_count_1_port, S => n189, 
+                           Y => n256);
+   U297 : no210 port map( A => h_count_0_port, B => n195, Y => N38);
+   U298 : iv110 port map( A => n189, Y => n195);
+   U299 : na310 port map( A => h_count_7_port, B => n258, C => h_count_6_port, 
+                           Y => n189);
+   U300 : na310 port map( A => n259, B => n181, C => n260, Y => n258);
+   U301 : no210 port map( A => h_count_5_port, B => h_count_4_port, Y => n260);
+   U302 : iv110 port map( A => h_count_3_port, Y => n181);
+   U303 : na310 port map( A => h_count_0_port, B => h_count_2_port, C => 
+                           h_count_1_port, Y => n259);
+
+end synthesised;
+
+
+
