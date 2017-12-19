@@ -1,10 +1,12 @@
 >>>>>> trout: Automatic Router for Sea-of-Gates           <<<<<<
 >>>>>> (c) 1995 Patrick Groeneveld, Delft Univ. of Techn. <<<<<<
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif'
+WARNING: Seadif file "/home/michaelkraaije/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
 ------ reading placement 'Tmp_Cell_(posnew(posnew(test)))'
 ------ building data structure
 ------ making grid
------- routing started Tue Dec 19 09:58:23 2017
+------ routing started Tue Dec 19 10:51:52 2017
 43 nets have to be routed.
 Routing net(1) 'r61_n25' (2/2): . OK!
 Routing net(2) 'r61_n4' (2/2): . OK!
@@ -29,35 +31,35 @@ Routing net(20) 'position_old_5_0_5' (2/2): .b OK!
 Routing net(21) 'position_old_5_0_2' (3/3): ..b OK!
 Routing net(22) 'r61_n7' (3/3): .. OK!
 Routing net(23) 'r61_n24' (2/2): . OK!
-Routing net(24) 'r61_n28' (2/2): . OK!
-Routing net(25) 'r61_n14' (2/2): . OK!
-Routing net(26) 'r61_n9' (2/2): . OK!
-Routing net(27) 'r61_n26' (3/3): .. OK!
-Routing net(28) 'r61_n5' (3/3): .. OK!
-Routing net(29) 'r61_n12' (4/4): ... OK!
-Routing net(30) 'r61_n18' (4/4): ... OK!
-Routing net(31) 'r61_n8' (2/2): . OK!
-Routing net(32) 'position_old_5_0_3' (4/4): ...b OK!
-Routing net(33) 'r61_n6' (3/3): .. OK!
-Routing net(34) 'position_old_5_0_0' (3/3): ..b OK!
-Routing net(35) 'position_old_5_0_4' (4/4): ...b OK!
+Routing net(24) 'r61_n26' (3/3): .. OK!
+Routing net(25) 'r61_n5' (3/3): .. OK!
+Routing net(26) 'r61_n12' (4/4): ... OK!
+Routing net(27) 'r61_n8' (2/2): . OK!
+Routing net(28) 'r61_n18' (4/4): ... OK!
+Routing net(29) 'r61_n28' (2/2): . OK!
+Routing net(30) 'position_old_5_0_3' (4/4): ...b OK!
+Routing net(31) 'position_old_5_0_0' (3/3): ..b OK!
+Routing net(32) 'r61_n27' (2/2): . OK!
+Routing net(33) 'r61_n14' (2/2): . OK!
+Routing net(34) 'r61_n9' (2/2): . OK!
+Routing net(35) 'r61_n6' (3/3): .. OK!
 Routing net(36) 'r61_n10' (2/2): . OK!
 Routing net(37) 'r61_n2' (2/2): . OK!
-Routing net(38) 'r61_n27' (2/2): . OK!
-Routing net(39) 'n11' (7/7): ...... OK!
-Routing net(40) 'button' (7/7): ......b OK!
-Routing net(41) 'position_old_5_0_1' (3/3): ..b OK!
+Routing net(38) 'position_old_5_0_1' (3/3): ..b OK!
+Routing net(39) 'button' (7/7): ......b OK!
+Routing net(40) 'n11' (7/7): ...... OK!
+Routing net(41) 'position_old_5_0_4' (4/4): ...b OK!
 Routing net(42) 'n8' (35/35): ..................................b OK!
 Routing net(43) 'n9' (35/35): ..................................b OK!
 READY
 ----- Some interesting statistics ------
 Total number of nets:                 43 (100% completion)
-Total length of routed wires:         1390 grids = 12.232 mm
+Total length of routed wires:         1444 grids = 12.707 mm
 No. of transistors (total / used):    318/270 = 84.91 %
 CPU-time consumption:                 0.00 sec.
-Elapsed time during routing:          0.00 sec. (100.00 % of cpu)
+Elapsed time during routing:          0.01 sec. (0.00 % of cpu)
 ------ Verifying Connectivity ------
 ------ No unconnect nor short-circuits ------
 ------ Writing 'Tmp_Cell_(posnew(posnew(test)))'
------- Trout: task completed on Tue Dec 19 09:58:23 2017
+------ Trout: task completed on Tue Dec 19 10:51:52 2017
 terminate

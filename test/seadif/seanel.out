@@ -1,6 +1,8 @@
 ------ opening nelsis ------
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
 ------ opening seadif ------
+WARNING: Seadif file "/home/michaelkraaije/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
+
 ------ reading sdf laycell 'Tmp_Cell_(posnew(posnew(test)))': OK ------
------- writing sdflay 'Tmp_Cell_(posnew(posnew(test)))' into nelsis 'Tmpposnew4795' ------
+------ writing sdflay 'Tmp_Cell_(posnew(posnew(test)))' into nelsis 'Tmpposnew7760' ------
 ------ nelsea: task completed ------

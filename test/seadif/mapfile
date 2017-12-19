@@ -1,5 +1,5 @@
 # This is a maptable for nelsis <--> seadif conversion, generated/maintained by 'nelsea'
-# Written on: Tue Dec 19 09:58:23 2017
+# Written on: Tue Dec 19 10:51:53 2017
 # You can edit this file to control the mapping process
 # Each line contains the name of a nelsis cell and its corresponding seadif cell
 # The status field may contain the following values:
@@ -10,11 +10,11 @@
 #    N E L S I S     |                   S E A D I F                     | nelsis->sdf sdf->nelsis
 # view    cellname   | library      function     circuit      layout     |   status      status
 #--------------------+---------------------------------------------------+------------------------
+ layout   na210        g_digilib5_99 na210        na210        na210        not_written not_written
+ layout   iv110        g_digilib5_99 iv110        iv110        iv110        not_written not_written
  layout   no210        g_digilib5_99 no210        no210        no210        not_written not_written
  layout   ex210        g_digilib5_99 ex210        ex210        ex210        not_written not_written
- layout   iv110        g_digilib5_99 iv110        iv110        iv110        not_written not_written
- layout   na210        g_digilib5_99 na210        na210        na210        not_written not_written
- layout   Tmpposnew4795 test         posnew       posnew       Tmp_Cell_    not_written written
+ layout   Tmpposnew7760 test         posnew       posnew       Tmp_Cell_    not_written written
  circuit  cap          primitives   cap          cap          $dummy       primitive   primitive
  circuit  res          primitives   res          res          $dummy       primitive   primitive
  circuit  penh         primitives   penh         penh         $dummy       primitive   primitive
