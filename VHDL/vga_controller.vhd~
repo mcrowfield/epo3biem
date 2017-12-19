@@ -133,9 +133,5 @@ BEGIN
     END IF;
   END PROCESS;
 
-  red_o <= (red OR RGB(2));
-  green_o <= (green OR RGB(1));
-  blue_o <= (blue OR RGB(0));
-
 END behavior;
 

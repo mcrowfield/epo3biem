@@ -1,7 +1,10 @@
 B	test	33	1	srv312:/vol/vol1/student-homes/k/michaelkraaije/epo3git/epo3biem/test
-F	posnew	372	1
-C	posnew	624	1
-L	Tmp_Cell_	13601	0
-F	Error_Marker_	31541	1
-C	Error_Marker_	31703	1
-L	Error_Marker_	31839	0
+F	posnew	373	1
+C	posnew	625	1
+L	Tmp_Cell_	14857	1
+F	Error_Marker_	33792	1
+C	Error_Marker_	33954	1
+L	Error_Marker_	34090	1
+F	divider	34234	1
+C	divider	34486	1
+L	Tmp_Cell_	46983	1
