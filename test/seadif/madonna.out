@@ -1,108 +1,63 @@
 
 Madonna version 3.4 (compiled Tue, 01 Nov 2016 14:38:16 on linux-2.6-i686)
 
-<<<<<<< HEAD
-WARNING: Seadif file "/home/mapostma/Documents/EPO3 Github/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
-
-reading circuit "divider(divider(test10))" ...done
-=======
-WARNING: Seadif file "/home/jrkoning/epo3git/epo3biem/test/seadif/sealib2.sdf" is not a magic cookie (skipped).
-
-reading circuit "pos(pos(test2))" ...done
->>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+reading circuit "posnew(posnew(test))" ...done
 
 Kissing madonna hello...
 
 Reading image description file "/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif"...
 
 
-<<<<<<< HEAD
------- net distribution (total #nets = 45):
-=======
-<<<<<<< HEAD
------- net distribution (total #nets = 45):
-        0..1     2     3     4     5     6     7 8..10 11..20  >20
-
-           0    30     9     1     0     0     1     2     0     2
-
------- partitioning 34 cells into (hor x vert) = (5 x 2) partitions
-
------- requested grid points = (60, 112)
-
------- cost@start = 257, cost@end = 187, moves = 29
------- cost@start = 187, cost@end = 157, moves = 16
------- cost@start = 157, cost@end = 151, moves = 9
------- cost@start = 151, cost@end = 149, moves = 17
------- cost@start = 149, cost@end = 143, moves = 6
------- cost@start = 143, cost@end = 142, moves = 5
------- 9 nets have to be routed on a 9 x 3 global grid
-     + routing net position_old_5_0_5 (2 terminals):  weight = 200
-     + routing net next_state_0_port (2 terminals):  weight = 200
-     + routing net enable (2 terminals):  weight = 200
-     + routing net clk (8 terminals):  weight = 1400
-     + routing net state_0_port (7 terminals):  weight = 1200
-     + routing net state_1_port (2 terminals):  weight = 200
-     + routing net n26 (2 terminals):  weight = 200
-     + routing net n31 (7 terminals):  weight = 1200
-     + routing net n40 (2 terminals):  weight = 200
-
------- Routed 9 nets, total weight = 5000
-
-
-
------- Detailed placement of (Tmp_Cell_(pos(pos(test2))))...
------- Reading input data
------- Creating temporary data structures
------- Placement plane size : [60:112]
------- Doing placement 
------- Compacting  
-
-         3  column[s] deleted.
-
-         Magnification coefficient obtained :0.959161
-=======
 ------ net distribution (total #nets = 43):
->>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
         0..1     2     3     4     5     6     7 8..10 11..20  >20
 
-           0    37     5     0     0     0     0     0     1     2
+           0    27     8     4     0     0     2     0     0     2
 
------- partitioning 28 cells into (hor x vert) = (6 x 2) partitions
+------ partitioning 34 cells into (hor x vert) = (7 x 2) partitions
 
------- requested grid points = (42, 56)
+------ requested grid points = (49, 56)
 
------- cost@start = 166, cost@end = 129, moves = 18
------- cost@start = 129, cost@end = 123, moves = 5
------- cost@start = 123, cost@end = 122, moves = 5
------- 8 nets have to be routed on a 11 x 3 global grid
-     + routing net tick (2 terminals):  weight = 200
-     + routing net n15 (2 terminals):  weight = 202
-     + routing net reset (2 terminals):  weight = 204
-     + routing net clk (2 terminals):  weight = 204
-     + routing net v_count_0_port (2 terminals):  weight = 202
-     + routing net n14 (2 terminals):  weight = 200
-     + routing net disp_ena (8 terminals):  weight = 1400
-     + routing net n39 (2 terminals):  weight = 200
+------ cost@start = 303, cost@end = 210, moves = 32
+------ cost@start = 210, cost@end = 185, moves = 29
+------ cost@start = 185, cost@end = 145, moves = 20
+------ cost@start = 145, cost@end = 145, moves = 6
+------ 21 nets have to be routed on a 13 x 3 global grid
+     + routing net n8 (12 terminals):  weight = 2200
+     + routing net n9 (12 terminals):  weight = 2200
+     + routing net button (3 terminals):  weight = 404
+     + routing net n11 (6 terminals):  weight = 908
+     + routing net r61_n7 (2 terminals):  weight = 200
+     + routing net position_old_5_0_1 (2 terminals):  weight = 200
+     + routing net r61_n25 (2 terminals):  weight = 202
+     + routing net r61_n23 (2 terminals):  weight = 204
+     + routing net r61_n5 (2 terminals):  weight = 200
+     + routing net r61_n6 (2 terminals):  weight = 200
+     + routing net r61_n20 (2 terminals):  weight = 200
+     + routing net r61_n22 (2 terminals):  weight = 200
+     + routing net r61_n21 (2 terminals):  weight = 202
+     + routing net r61_n18 (2 terminals):  weight = 200
+     + routing net position_old_5_0_3 (2 terminals):  weight = 200
+     + routing net r61_n12 (3 terminals):  weight = 400
+     + routing net position_old_5_0_4 (2 terminals):  weight = 200
+     + routing net r61_n10 (2 terminals):  weight = 200
+     + routing net r61_n11 (2 terminals):  weight = 200
+     + routing net r61_n8 (2 terminals):  weight = 204
+     + routing net r61_n9 (2 terminals):  weight = 200
 
------- Routed 8 nets, total weight = 2812
+------ Routed 21 nets, total weight = 9324
 
 
 
------- Detailed placement of (Tmp_Cell_(divider(divider(test10))))...
+------ Detailed placement of (Tmp_Cell_(posnew(posnew(test))))...
 ------ Reading input data
 ------ Creating temporary data structures
------- Placement plane size : [42:56]
+------ Placement plane size : [49:56]
 ------ Doing placement 
 ------ Compacting  
 
-<<<<<<< HEAD
-         2  column[s] deleted.
+         1  column[s] deleted.
 
-         Magnification coefficient obtained :0.631773
-=======
-         Magnification coefficient obtained :0.738889
->>>>>>> 9eaa79fb88a349a7324963bc0eca39907e8f29b0
->>>>>>> 0e03a5bee655ae6f852fec6836b16c3ee6a3c259
+         Magnification coefficient obtained :0.633333
 
 ------ Writing created layout to database
 Kissing madonna good bye...
