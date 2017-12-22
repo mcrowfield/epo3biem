@@ -1,6 +1,7 @@
 ------ opening nelsis ------
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
 ------ opening seadif ------
+<<<<<<< HEAD
 ------ checking your circuit 'draw' ------
 ------ circuit 'draw' is still up-to-date ------
 ------ checking match with placement layout 'Tmpdraw28439' ------
@@ -11,4 +12,16 @@ calling program: trout -l test -f draw -c draw -o Tmp_Cell_ -d Tmp_Cell_
 ------ routing successful ------
 ------ converting result back into nelsis as cell 'Tmpdraw28439' ------
 calling program: nelsea -rLH -f draw -c draw -l Tmp_Cell_ Tmpdraw28439
+=======
+------ checking your circuit 'posnew' ------
+------ circuit 'posnew' is still up-to-date ------
+------ checking match with placement layout 'Tmpposnew3361' ------
+------ reading nelsis layout-cell 'Tmpposnew3361' ------
+------ writing nelsis 'Tmpposnew3361' as sdflay 'Tmp_Cell_(posnew(posnew(test)))' ------
+------ input seems good enough: calling router ------
+calling program: trout -l test -f posnew -c posnew -o Tmp_Cell_ -e Tmp_Cell_
+------ routing successful ------
+------ converting result back into nelsis as cell 'Tmpposnew3361' ------
+calling program: nelsea -rLH -f posnew -c posnew -l Tmp_Cell_ Tmpposnew3361
+>>>>>>> 7699a281e68ac2cee89701c9f3e3c7d6ab0f6980
 ------ sea: task completed ------
