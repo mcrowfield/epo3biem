@@ -12,3 +12,13 @@ entity collide is
       collision : out std_logic
     );
 end collide;
+
+architecture behavioural of collide is
+    
+begin
+    
+    collision   <= blue_in AND red_in;
+    blue_out    <= blue_in;
+    red_out     <= red_out;
+    
+end behavioural;
