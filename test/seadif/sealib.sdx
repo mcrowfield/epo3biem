@@ -1,17 +1,18 @@
-<<<<<<< HEAD
-B	test	33	1	srv312:/vol/vol1/student-homes/s/vschonk/EPO/epo3/git/epo3biem/test
-F	draw	367	1
-C	draw	614	1
-L	Tmp_Cell_	28471	1
-F	Error_Marker_	70183	1
-C	Error_Marker_	70346	1
-L	Error_Marker_	70483	1
-=======
 B	test	33	1	srv312:/vol/vol1/student-homes/k/michaelkraaije/epo3git/epo3biem/test
 F	posnew	372	1
-C	posnew	624	1
-L	Tmp_Cell_	14856	1
-F	Error_Marker_	33722	1
-C	Error_Marker_	33884	1
-L	Error_Marker_	34020	1
->>>>>>> 7699a281e68ac2cee89701c9f3e3c7d6ab0f6980
+C	posnew	623	1
+L	posnew	14841	1
+F	pos	33741	1
+C	pos	33989	1
+L	pos	49162	1
+L	Tmp_Cell_	74282	1
+F	draw	99373	1
+C	draw	99622	1
+L	draw	127481	1
+L	Tmp_Cell_	170046	1
+F	helicopter	212581	1
+C	helicopter	212836	1
+L	Tmp_Cell_	219250	1
+F	Error_Marker_	228118	1
+C	Error_Marker_	228279	1
+L	Error_Marker_	228414	1

@@ -1,0 +1,10 @@
+nspice_pp: tmp.cmd, line 4: signal already attached to node position_new_5_0
+nspice_pp: tmp.cmd, line 5: signal already attached to node position_new_5_0
+nspice_pp: tmp.cmd, line 6: signal already attached to node position_new_5_0
+nspice_pp: tmp.cmd, line 7: signal already attached to node position_new_5_0
+nspice_pp: tmp.cmd, line 8: signal already attached to node position_new_5_0
+nspice_pp: tmp.cmd, line 11: signal already attached to node position_old_5_0
+nspice_pp: tmp.cmd, line 12: signal already attached to node position_old_5_0
+nspice_pp: tmp.cmd, line 13: signal already attached to node position_old_5_0
+nspice_pp: tmp.cmd, line 15: signal already attached to node position_old_5_0
+nspice_pp: Cannot find node position_new_5_0 in posnew_tmp.spc

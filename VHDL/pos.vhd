@@ -51,7 +51,7 @@ end process;
 process is
         begin
         wait until clk'event and clk='1';
-        if (enable = '1') then
+        if (enable = '0') then
           state <= resets;
         else
           state <= next_state;

@@ -1,11 +1,7 @@
 ------ opening nelsis ------
 ------ reading image description file '/data/public/common/software/nelsis/20161101_32/share/lib/celllibs/fishbone/image.seadif' ------
 ------ opening seadif ------
-<<<<<<< HEAD
------- reading sdf laycell 'Tmp_Cell_(draw(draw(test)))': OK ------
------- writing sdflay 'Tmp_Cell_(draw(draw(test)))' into nelsis 'Tmpdraw28439' ------
-=======
------- reading sdf laycell 'Tmp_Cell_(posnew(posnew(test)))': OK ------
------- writing sdflay 'Tmp_Cell_(posnew(posnew(test)))' into nelsis 'Tmpposnew3361' ------
->>>>>>> 7699a281e68ac2cee89701c9f3e3c7d6ab0f6980
+------ reading sdf laycell 'Tmp_Cell_(helicopter(helicopter(test)))': OK ------
+------ writing sdflay 'Tmp_Cell_(helicopter(helicopter(test)))' into nelsis 'Tmphelicopter13687' ------
+WARING: terminal in illegal layer: 'reset' (not written)
 ------ nelsea: task completed ------
