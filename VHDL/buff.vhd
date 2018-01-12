@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use CellsLib.CellsLib_DECL_PACK.all;
 
-entity buffer is
+entity buff is
 
     port(
       clk         : in std_logic;
@@ -11,9 +11,9 @@ entity buffer is
       button_in   : in std_logic;
       button_out  : out std_logic
     );
-end buffer;
+end buff;
 
-architecture behavioural of buffer is
+architecture behavioural of buff is
     
 signal buf_sig:std_logic;
     
