@@ -20,6 +20,6 @@ signal buf_sig:std_logic;
 begin
     
 L1: dfr11 port map (button_in,reset,clk,buf_sig);
-L1: dfr11 port map (buf_sig,reset,clk,button_out);
+L2: dfr11 port map (buf_sig,reset,clk,button_out);
     
 end behavioural;
