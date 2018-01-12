@@ -19,6 +19,6 @@ begin
     
     collision   <= blue_in AND red_in;
     blue_out    <= blue_in;
-    red_out     <= red_out;
+    red_out     <= red_in;
     
 end behavioural;
